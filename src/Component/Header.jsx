@@ -27,7 +27,7 @@ const Header = ({ children, scrollToAbout, scrollToHome, scrollToPortfolio, scro
 
     return (
         <>
-            <header className={`flex justify-between items-center px-[10%] py-10 flex-grow-0 h-20 w-full fixed top-0 z-30 right-0 left-0  bg-white ${scroll ? 'shadow-md' : ''}`}>
+            <header className={`flex justify-between items-center px-[10%] py-10 flex-grow-0 h-20 w-full fixed top-0 z-30 right-0 left-0  ${scroll ? 'shadow-md backdrop-blur-3xl bg-opacity-60' : ''}`}>
                 <div className='flex justify-center items-center gap-20'>
                     <p className='font-bold text-xl text-primary'>FRENGKI <span className='text-oren'>ISKANDAR</span></p>
                 </div>

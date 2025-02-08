@@ -1,0 +1,26 @@
+[
+    {
+        "name" : "QnA Infidea",
+        "image" : "pro.jpg",
+        "category"  : "Frontend Dev",
+        "link" : "https://qna.infidea.id/"
+    },
+    {
+        "name" : "Deri Store",
+        "image" : "tiwihead.png",
+        "category"  : "Fullstack Dev",
+        "link" : "https://deristore-tiwiponsel.vercel.app/"
+    },
+    {
+        "name" : "Personal Landing Page",
+        "image" : "personal.jpg",
+        "category"  : "Frontend Dev",
+        "link" : "https://portfolio-ten-puce-45.vercel.app/"
+    },
+    {
+        "name" : "Nexcent UI",
+        "image" : "nexcent.jpg",
+        "category"  : "Frontend Dev",
+        "link" :"#"
+    }
+]

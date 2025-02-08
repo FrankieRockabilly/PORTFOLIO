@@ -1,9 +1,6 @@
 import React from 'react'
-import qna from '../Assets/Image/pro.jpg'
-// import personal from '../Assets/Image/personal.jpg'
-import nexcent from '../Assets/Image/nexcent.jpg'
-import tiwiponsel from '../Assets/Image/tiwiponsel.png'
 import Line from './Line'
+import project from '../Assets/Json/Project.json'
 
 const Projects = () => {
     return (
@@ -15,56 +12,26 @@ const Projects = () => {
                 </div>
                 <div className='flex justify-center items-center gap-20 flex-wrap'>
                     {/* item project */}
-                    {/* 1 */}
-                    <div className='w-96 flex flex-col justify-center items-center gap-5 px-5 py-2 shadow-lg  rounded-lg'>
-                        <div className='w-72 h-64'>
-                            <img src={qna} alt="infidea" className='w-full h-full bg-contain rounded-2xl' />
-                        </div>
-                        <h1 className='w-40 text-center font-semibold tracking-wider'>QnA Infidea</h1>
+                    {project.map((value, index) => {
+                        return (
+                            <div className='w-72 flex flex-col justify-center items-center gap-5 px-5 py-2 shadow-lg  rounded-lg' key={index}>
+                                <div className='w-72 h-64'>
+                                    <img src={value.image} alt="infidea" className='w-full h-full bg-contain rounded-2xl' />
+                                </div>
+                                <h1 className='w-40 text-center font-semibold tracking-wider'>{value.name} </h1>
 
-                        <div className='flex justify-between items-center w-full text-gray-500'>
-                            <p>Project</p>
-                            <p className='text-black font-semibold'>Frontend Dev</p>
-                        </div>
+                                <div className='flex justify-between items-center w-full text-gray-500'>
+                                    <p>Project</p>
+                                    <p className='text-black font-semibold'>{value.category} </p>
+                                </div>
 
-                        <div className='py-8'>
-                            <button className='px-8 rounded-xl border py-5 hover:bg-primary text-gray-400 hover:text-white transition-all duration-300 ease-in'><a href="https://qna.infidea.id/" target='blank'>See Project</a></button>
-                        </div>
-                    </div>
+                                <div className='py-8'>
+                                    <button className='px-8 rounded-xl border py-5 hover:bg-primary text-gray-400 hover:text-white transition-all duration-300 ease-in'><a href={value.link} target='blank'>See Project</a></button>
+                                </div>
+                            </div>
+                        )
+                    })}
 
-                    {/* 2 */}
-                    <div className='w-96 flex flex-col justify-center items-center gap-5 px-5 py-2 shadow-lg  rounded-lg'>
-                        <div className='w-72 h-64'>
-                            <img src={tiwiponsel} alt="infidea" className='w-full h-full bg-contain rounded-2xl' />
-                        </div>
-                        <h1 className='w-40 text-center font-semibold tracking-wider'>E Commerce</h1>
-
-                        <div className='flex justify-between items-center w-full text-gray-500'>
-                            <p>Project</p>
-                            <p className='text-black font-semibold'>Fullstack Dev</p>
-                        </div>
-
-                        <div className='py-8'>
-                            <button className='px-8 rounded-xl border py-5 hover:bg-primary text-gray-400 hover:text-white transition-all duration-300 ease-in'><a href="https://deristore-tiwiponsel.vercel.app/" target='blank'>See Project</a></button>
-                        </div>
-                    </div>
-
-                    {/* 3 */}
-                    <div className='w-96 flex flex-col justify-center items-center gap-5 px-5 py-2 shadow-lg  rounded-lg'>
-                        <div className='w-72 h-64'>
-                            <img src={nexcent} alt="infidea" className='w-full h-full bg-contain rounded-2xl' />
-                        </div>
-                        <h1 className='w-40 text-center font-semibold tracking-wider'>Nexcent UI</h1>
-
-                        <div className='flex justify-between items-center w-full text-gray-500'>
-                            <p>Project</p>
-                            <p className='text-black font-semibold'>Frontend Dev</p>
-                        </div>
-
-                        <div className='py-8'>
-                            <button className='px-8 rounded-xl border py-5 hover:bg-primary text-gray-400 hover:text-white transition-all duration-300 ease-in'>See Project</button>
-                        </div>
-                    </div>
 
                 </div>
 

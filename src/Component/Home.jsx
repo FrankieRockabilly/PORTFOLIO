@@ -4,14 +4,13 @@ import Header from './Header';
 import SideContent from './SideContent';
 import { FaFacebookF, FaInstagram, FaWhatsapp, FaGithub, FaLinkedinIn } from "react-icons/fa";
 
-import profile from '../Assets/Image/profile.png'
-import tailwind from '../Assets/Image/tailwind.png'
-import express from '../Assets/Image/expresss.png'
+import ins from '../Assets/Image/ins.png'
 import Projects from './Projects';
 import About from './About';
 import Testimonial from './Testimonial';
 import Footer from './Footer';
 import Contact from './Contact';
+import TechStack from './TechStack';
 
 
 const Home = () => {
@@ -37,7 +36,7 @@ const Home = () => {
 
     return (
         <>
-            <div className='font-poppins mt-10 pt-20 bg-white ' ref={homeRef}>
+            <div className='font-poppins pt-20 bg-white ' ref={homeRef}>
                 <div className='flex flex-col flex-grow   text-black  relative overflow-hidden '>
                     {/* animasi kotak oren dan hitam */}
                     {/* header start */}
@@ -58,7 +57,7 @@ const Home = () => {
                         </div>
                         <div className='lg:pt-24 flex flex-col lg:flex-row-reverse justify-center items-start gap-5'>
                             <div className=' lg:w-[50rem] lg:h-[50rem] flex justify-end items-end'>
-                                <img src={profile} alt="" className='w-full h-full  object-cover' />
+                                <img src={ins} alt="" className='w-full h-full  object-cover' />
                             </div>
 
                             <div className='flex flex-col justify-start items-start gap-10 h-full'>
@@ -105,109 +104,8 @@ const Home = () => {
                                 <Line />
                             </div>
 
-                            <div className='mt-20 flex justify-center items-center gap-7 flex-wrap'>
-                                {/* items */}
-                                <div className='group pb-10'>
-                                    <div className=' w-64 h-52 bg-white border flex flex-col justify-center items-center rounded-md relative group-hover:shadow-2xl transition-all duration-300 ease-in-out'>
-                                        <h1 className='font-semibold text-2xl'>HTML</h1>
-                                        <div className='py-4 text-center'>
-                                            <p className='text-gray-500'>SDN 016 Rambah Samo</p>
-                                            <p className='text-gray-500'>2002 - 2011</p>
-                                        </div>
-                                        <div className='w-24 h-24 px-1 py-1 overflow-hidden rounded-full bg-gray-100 flex justify-center items-center absolute -top-16 group-hover:bg-oren transition-all duration-300 ease-in-out'>
-                                            <img src="https://img.freepik.com/premium-psd/html-file-document-file-type-icon-files-format-document-concept-3d-render-illustration_570783-1510.jpg?w=826" alt="" className='bg-cover rounded-full' />
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className='group pb-10'>
-                                    <div className=' w-64 h-52 bg-white border flex flex-col justify-center items-center rounded-md relative group-hover:shadow-2xl transition-all duration-300 ease-in-out'>
-                                        <h1 className='font-semibold text-2xl'>CSS</h1>
-                                        <div className='py-4 text-center'>
-                                            <p className='text-gray-500'>SMP Salafiyah Babussalam</p>
-                                            <p className='text-gray-500'>2012 - 2014</p>
-                                        </div>
-                                        <div className='w-24 h-24 px-1 py-1 overflow-hidden rounded-full bg-gray-100 flex justify-center items-center absolute -top-16 group-hover:bg-oren transition-all duration-300 ease-in-out'>
-                                            <img src="https://img.freepik.com/premium-psd/css-file-document-file-type-icon-files-format-document-concept-3d-render-illustration_570783-1505.jpg?w=826" alt="" className='bg-cover rounded-full' />
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className='group pb-10'>
-                                    <div className=' w-64 h-52 bg-white border flex flex-col justify-center items-center rounded-md relative group-hover:shadow-2xl transition-all duration-300 ease-in-out'>
-                                        <h1 className='font-semibold text-2xl'>Javascript</h1>
-                                        <div className='py-4 text-center'>
-                                            <p className='text-gray-500'>SMA Salafiyah Babussalam</p>
-                                            <p className='text-gray-500'>2015-2017</p>
-                                        </div>
-                                        <div className='w-24 h-24 px-1 py-1 overflow-hidden rounded-full bg-gray-100 flex justify-center items-center absolute -top-16 group-hover:bg-oren transition-all duration-300 ease-in-out'>
-                                            <img src="https://img.freepik.com/premium-psd/3d-file-format-js-type-icon-illustration_148391-1381.jpg?w=826" alt="" className='bg-cover rounded-full' />
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div className='group pb-10'>
-                                    <div className=' w-64 h-52 bg-white border flex flex-col justify-center items-center rounded-md relative group-hover:shadow-2xl transition-all duration-300 ease-in-out'>
-                                        <h1 className='font-semibold text-2xl'>Tailwind CSS</h1>
-                                        <div className='py-4 text-center'>
-                                            <p className='text-gray-500'>SMA Salafiyah Babussalam</p>
-                                            <p className='text-gray-500'>2015-2017</p>
-                                        </div>
-                                        <div className='w-24 h-24 px-1 py-1 overflow-hidden rounded-full bg-gray-100 flex justify-center items-center absolute -top-16 group-hover:bg-oren transition-all duration-300 ease-in-out'>
-                                            <img src={tailwind} alt="" className='bg-cover rounded-full' />
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div className='group pb-10'>
-                                    <div className=' w-64 h-52 bg-white border flex flex-col justify-center items-center rounded-md relative group-hover:shadow-2xl transition-all duration-300 ease-in-out'>
-                                        <h1 className='font-semibold text-2xl'>React Js</h1>
-                                        <div className='py-4 text-center'>
-                                            <p className='text-gray-500'>SMA Salafiyah Babussalam</p>
-                                            <p className='text-gray-500'>2015-2017</p>
-                                        </div>
-                                        <div className='w-24 h-24 px-1 py-1 overflow-hidden rounded-full bg-gray-100 flex justify-center items-center absolute -top-16 group-hover:bg-oren transition-all duration-300 ease-in-out'>
-                                            <img src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png" alt="" className='bg-cover bg-white rounded-full' />
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div className='group pb-10'>
-                                    <div className=' w-64 h-52 bg-white border flex flex-col justify-center items-center rounded-md relative group-hover:shadow-2xl transition-all duration-300 ease-in-out'>
-                                        <h1 className='font-semibold text-2xl'>Node Js</h1>
-                                        <div className='py-4 text-center'>
-                                            <p className='text-gray-500'>SMA Salafiyah Babussalam</p>
-                                            <p className='text-gray-500'>2015-2017</p>
-                                        </div>
-                                        <div className='w-24 h-24 px-1 py-1 overflow-hidden rounded-full bg-gray-100 flex justify-center items-center absolute -top-16 group-hover:bg-oren transition-all duration-300 ease-in-out'>
-                                            <img src="https://cdn3d.iconscout.com/3d/free/preview/free-nodejs-3d-icon-download-in-png-blend-fbx-gltf-file-formats--node-js-open-source-code-logos-and-brands-pack-icons-9325317@0.png?f=webp&h=700" alt="" className='bg-cover bg-white rounded-full' />
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div className='group pb-10'>
-                                    <div className=' w-64 h-52 bg-white border flex flex-col justify-center items-center rounded-md relative group-hover:shadow-2xl transition-all duration-300 ease-in-out'>
-                                        <h1 className='font-semibold text-2xl'>Expess Js</h1>
-                                        <div className='py-4 text-center'>
-                                            <p className='text-gray-500'>SMA Salafiyah Babussalam</p>
-                                            <p className='text-gray-500'>2015-2017</p>
-                                        </div>
-                                        <div className='w-24 h-24 px-1 py-1 overflow-hidden rounded-full bg-gray-100 flex justify-center items-center absolute -top-16 group-hover:bg-oren transition-all duration-300 ease-in-out'>
-                                            <img src={express} alt="" className='bg-cover bg-white rounded-full' />
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div className='group pb-10'>
-                                    <div className=' w-64 h-52 bg-white border flex flex-col justify-center items-center rounded-md relative group-hover:shadow-2xl transition-all duration-300 ease-in-out'>
-                                        <h1 className='font-semibold text-2xl'>MySql</h1>
-                                        <div className='py-4 text-center'>
-                                            <p className='text-gray-500'>SMA Salafiyah Babussalam</p>
-                                            <p className='text-gray-500'>2015-2017</p>
-                                        </div>
-                                        <div className='w-24 h-24 px-1 py-1 overflow-hidden rounded-full bg-gray-100 flex justify-center items-center absolute -top-16 group-hover:bg-oren transition-all duration-300 ease-in-out'>
-                                            <img src="https://img.freepik.com/premium-psd/mysql-document-file-format-3d-illustration_903752-1945.jpg?w=826" alt="" className='bg-cover rounded-full' />
-                                        </div>
-                                    </div>
-                                </div>
+                            <div>
+                                <TechStack />
                             </div>
                         </div>
                         <div>
