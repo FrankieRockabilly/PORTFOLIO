@@ -25,7 +25,7 @@ const Footer = ({ scrollToAbout, scrollToHome, scrollToPortfolio, scrollToContac
             duration: 1.5,
             scrollTrigger: {
                 trigger: '.footer',
-                start: 'top 90%',
+                start: 'top 70%',
                 once: true
             }
         })
