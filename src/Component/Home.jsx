@@ -1,7 +1,6 @@
 import React, { useEffect, useRef } from 'react'
 import Line from './Line';
 import Header from './Header';
-import SideContent from './SideContent';
 import { FaFacebookF, FaInstagram, FaWhatsapp, FaGithub, FaLinkedinIn } from "react-icons/fa";
 
 import me from '../Assets/Image/me.png'
@@ -97,7 +96,6 @@ const Home = () => {
                         scrollToHome={scrollToHome}
                         scrollToPortfolio={scrollToPortfolio}
                     >
-                        <SideContent />
                     </Header>
                     {/* end of header */}
 

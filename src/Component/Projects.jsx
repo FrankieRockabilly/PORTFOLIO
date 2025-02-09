@@ -37,12 +37,12 @@ const Projects = () => {
                         <button className="bg-blue-500 text-white px-4 py-2 rounded">Download My CV</button>
                     </a>
                 </div>
-                <div className='flex justify-center items-center gap-20 flex-wrap'>
 
+                <div className='flex justify-around items-center gap-10 flex-wrap'>
                     {/* item project */}
                     {project.map((value, index) => {
                         return (
-                            <div className='w-72 flex flex-col justify-center items-center gap-5 px-5 py-2 shadow-lg  rounded-lg' key={index}>
+                            <div className='w-72 flex flex-col justify-center items-center gap-5 px-5 py-2 shadow-lg  rounded-lg group ' key={index}>
                                 <div className='w-72 h-64'>
                                     <img src={value.image} alt="infidea" className='w-full h-full bg-contain rounded-2xl' />
                                 </div>
@@ -54,7 +54,7 @@ const Projects = () => {
                                 </div>
 
                                 <div className='py-8'>
-                                    <button className='px-8 rounded-xl border py-5 hover:bg-primary text-gray-400 hover:text-white transition-all duration-300 ease-in'><a href={value.link} target='blank'>See Project</a></button>
+                                    <button className='px-8 rounded-xl border py-5 group-hover:bg-primary text-gray-400 group-hover:text-white transition-all duration-300 ease-in'><a href={value.link} target='blank'>See Project</a></button>
                                 </div>
                             </div>
                         )

@@ -22,5 +22,11 @@
         "image" : "nexcent.jpg",
         "category"  : "Frontend Dev",
         "link" :"#"
+    },
+    {
+        "name": "Silahul Mukmin",
+        "image": "silahul.png",
+        "category": "Fullstack Dev",
+        "link": "#"
     }
 ]
