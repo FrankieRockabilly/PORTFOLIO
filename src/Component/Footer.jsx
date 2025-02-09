@@ -1,7 +1,10 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { InstagramLogo, FacebookLogo, LinkedinLogo, WhatsappLogo, GithubLogo } from '@phosphor-icons/react'
 
-const Footer = () => {
+import gsap from 'gsap'
+import ScrollTrigger from 'gsap/src/ScrollTrigger'
+
+const Footer = ({ scrollToAbout, scrollToHome, scrollToPortfolio, scrollToContact }) => {
 
     const [email, setEmail] = useState()
     const handleSubmitEmail = (e) => {
@@ -9,10 +12,29 @@ const Footer = () => {
         alert(`Thanks ${email}`)
     }
 
+
+    useEffect(() => {
+        gsap.registerPlugin(ScrollTrigger)
+
+        gsap.fromTo('.footer', {
+            opacity: 0,
+            x: 40,
+        }, {
+            opacity: 1,
+            x: 0,
+            duration: 1.5,
+            scrollTrigger: {
+                trigger: '.footer',
+                start: 'top 90%',
+                once: true
+            }
+        })
+    })
+
     return (
         <>
-            <div className='px-12  lg:px-36 py-20 bg-zinc-800 text-gray-400'>
-                <div className='flex flex-wrap justify-start items-start gap-20'>
+            <div className='px-12  lg:px-36 py-20 bg-zinc-800 text-gray-400 '>
+                <div className='flex flex-wrap justify-start items-start gap-20 footer'>
 
                     {/* 1 */}
                     <div className='w-[28rem] flex flex-col justify-start items-start gap-5'>
@@ -30,11 +52,11 @@ const Footer = () => {
                     {/* 2 */}
                     <div className='w-64 flex flex-col justify-start items-start gap-5'>
                         <h1 className='text-white'>Quick Links</h1>
-                        <div className='flex flex-col justify-start items-start gap-2'>
-                            <button>Home</button>
-                            <button>About</button>
-                            <button>Portfolio</button>
-                            <button>Contact</button>
+                        <div className='flex flex-col justify-start items-start gap-5'>
+                            <button className='hover:text-oren' onClick={() => scrollToHome()}>Home</button>
+                            <button className='hover:text-oren' onClick={() => scrollToAbout()}>About</button>
+                            <button className='hover:text-oren' onClick={() => scrollToPortfolio()}>Portfolio</button>
+                            <button className='hover:text-oren' onClick={() => scrollToContact()}>Contact</button>
                         </div>
                     </div>
 

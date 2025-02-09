@@ -1,15 +1,35 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Line from './Line'
 
+import gsap from 'gsap'
+import ScrollTrigger from 'gsap/src/ScrollTrigger';
+
 const About = () => {
+    gsap.registerPlugin(ScrollTrigger)
+    useEffect(() => {
+        gsap.fromTo(".aboutbox", {
+            opacity: 0,
+            x: 40,
+        }, {
+            scrollTrigger: {
+                trigger: '.aboutbox',
+                start: 'top 80%',
+                once: true
+            },
+            opacity: 1,
+            x: 0,
+            duration: 2,
+            ease: 'power2.inOut'
+        })
+    }, [])
     return (
         <>
-            <div className='lg:px-36 pt-20 px-5'>
+            <div className='lg:px-36 pt-20 px-5 aboutbox'>
                 <div className='flex flex-col justify-center items-center gap-6 pt-12'>
                     <h1 className='text-center text-5xl font-bold '>About</h1>
                     <Line />
                 </div>
-                <div className='flex flex-wrap justify-center items-center gap-14 py-20'>
+                <div className='flex flex-wrap justify-center items-start gap-14 py-20'>
                     <img src="https://demo.phlox.pro/barber-2/wp-content/uploads/sites/288/2021/03/stylish-man-sitting-barbershop.jpg" alt="" className='rounded-xl' />
                     <div className='flex flex-col justify-start items-start gap-6  max-w-[50rem]'>
                         <h1 className='font-medium text-xl text-oren tracking-widest'>About Me</h1>

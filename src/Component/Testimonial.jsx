@@ -8,7 +8,7 @@ import testimonial from "../Assets/Json/testimonial.json";
 
 const Testimonial = () => {
     return (
-        <div className="bg-gray-100 py-20 px-5">
+        <div className="bg-gray-100 py-20 ">
             <div className="flex flex-col justify-center items-center gap-6 pt-12">
                 <h1 className="text-center text-2xl lg:text-3xl font-bold">Testimonial</h1>
                 <Line />

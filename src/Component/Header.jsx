@@ -4,7 +4,7 @@ import { FaHome, FaClipboardList, FaPhone, FaFacebook, FaWhatsapp, FaInstagram }
 import { LuLayoutList } from "react-icons/lu";
 
 
-const Header = ({ children, scrollToAbout, scrollToHome, scrollToPortfolio, scrollToContact }) => {
+const Header = ({ scrollToAbout, scrollToHome, scrollToPortfolio, scrollToContact }) => {
 
     const [scroll, setScroll] = useState(false)
 
@@ -63,18 +63,16 @@ const Header = ({ children, scrollToAbout, scrollToHome, scrollToPortfolio, scro
                                         <FaFacebook size={20} />
                                         <FaInstagram size={20} />
                                         <FaWhatsapp size={20} />
-
                                     </div>
                                 </div>
-
                             </div>
                         </div>
                     </div>
                     <div className='hidden lg:flex justify-center items-center gap-20 text-xl text-zinc-500'>
-                        <button className='font-light border-b-2 border-white hover:border-primary py-2 hover:text-primary' onClick={() => scrollToHome()}>Home</button>
-                        <button className='font-light border-b-2 border-white hover:border-primary py-2 hover:text-primary' onClick={() => scrollToAbout()}>About</button>
-                        <button className='font-light border-b-2 border-white hover:border-primary py-2 hover:text-primary' onClick={() => scrollToPortfolio()}>Portolio</button>
-                        <button className='font-light border-b-2 border-white hover:border-primary py-2 hover:text-primary' onClick={() => scrollToContact()}>Contact</button>
+                        <button className='font-light py-2 hover:text-primary' onClick={() => scrollToHome()}>Home</button>
+                        <button className='font-light py-2 hover:text-primary' onClick={() => scrollToAbout()}>About</button>
+                        <button className='font-light py-2 hover:text-primary' onClick={() => scrollToPortfolio()}>Portolio</button>
+                        <button className='font-light py-2 hover:text-primary' onClick={() => scrollToContact()}>Contact</button>
                         {/* <div className='hidden md:block text-xl'>
                             <button className='bg-secondary px-7 py-3 rounded-lg text-black'>Contact Me</button>
                         </div> */}
@@ -82,7 +80,6 @@ const Header = ({ children, scrollToAbout, scrollToHome, scrollToPortfolio, scro
 
                 </div>
             </header >
-            {children}
         </>
     )
 }

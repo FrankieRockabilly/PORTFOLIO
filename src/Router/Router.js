@@ -9,7 +9,7 @@ const router = createBrowserRouter([
     element: <MainLayout />, // Gunakan layout utama
     children: [
       {
-        path: '', // Halaman utama
+        path: '/', // Halaman utama
         element: <HomePage />
       }
     ]

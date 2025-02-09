@@ -1,10 +1,10 @@
-import React, { useRef } from 'react'
+import React, { useEffect, useRef } from 'react'
 import Line from './Line';
 import Header from './Header';
 import SideContent from './SideContent';
 import { FaFacebookF, FaInstagram, FaWhatsapp, FaGithub, FaLinkedinIn } from "react-icons/fa";
 
-import ins from '../Assets/Image/ins.png'
+import me from '../Assets/Image/me.png'
 import Projects from './Projects';
 import About from './About';
 import Testimonial from './Testimonial';
@@ -12,6 +12,7 @@ import Footer from './Footer';
 import Contact from './Contact';
 import TechStack from './TechStack';
 
+import gsap from 'gsap';
 
 const Home = () => {
 
@@ -33,10 +34,61 @@ const Home = () => {
         contactRef.current?.scrollIntoView({ behavior: 'smooth' });
     };
 
+    useEffect(() => {
+        gsap.fromTo(".home", {
+            opacity: 0,
+            x: -40,
+        }, {
+            opacity: 1,
+            x: 0,
+            duration: 2,
+            ease: 'power2.inOut'
+        })
+        gsap.fromTo(".paragraph", {
+            opacity: 0,
+            x: -30,
+        }, {
+            opacity: 1,
+            x: 0,
+            duration: 2,
+            delay: 1,
+            ease: 'power2.inOut'
+        })
+        gsap.fromTo(".button", {
+            opacity: 0,
+            x: -30,
+        }, {
+            opacity: 1,
+            x: 0,
+            duration: 2,
+            delay: 2,
+            ease: 'power2.inOut'
+        })
+        gsap.fromTo(".social", {
+            opacity: 0,
+            x: -30,
+        }, {
+            opacity: 1,
+            x: 0,
+            duration: 2,
+            delay: 3,
+            ease: 'power2.inOut'
+        })
+        gsap.fromTo(".image", {
+            opacity: 0,
+            x: 40,
+        }, {
+            opacity: 1,
+            x: 0,
+            duration: 2,
+            ease: 'power2.inOut'
+        })
+
+    }, [])
 
     return (
         <>
-            <div className='font-poppins pt-20 bg-white ' ref={homeRef}>
+            <div className='font-poppins pt-16 lg:pt-0 bg-white ' ref={homeRef}>
                 <div className='flex flex-col flex-grow   text-black  relative overflow-hidden '>
                     {/* animasi kotak oren dan hitam */}
                     {/* header start */}
@@ -51,40 +103,56 @@ const Home = () => {
 
 
                     {/* section start */}
-                    <section className='flex flex-grow  px-12  lg:px-36 ' >
-                        <div>
+                    <section className="relative flex flex-grow px-12 lg:px-36 bg-no-repeat bg-contain overflow-hidden">
+                        {/* Background image menggunakan pseudo-element */}
+                        <div
+                            className="absolute inset-0 bg-no-repeat bg-right bg-contain hidden lg:block image"
+                            style={{
+                                backgroundImage: `url(${me})`,
+                                backgroundSize: "contain",
+                                opacity: 0.8, // Opacity hanya untuk background
+                            }}
+                        ></div>
 
-                        </div>
-                        <div className='lg:pt-24 flex flex-col lg:flex-row-reverse justify-center items-start gap-5'>
-                            <div className=' lg:w-[50rem] lg:h-[50rem] flex justify-end items-end'>
-                                <img src={ins} alt="" className='w-full h-full  object-cover' />
-                            </div>
-
-                            <div className='flex flex-col justify-start items-start gap-10 h-full'>
-                                <h1 className='text-lg text-gray-500 lg:text-2xl tracking-widest border border-oren px-10 py2 rounded-full'>Hallo Everyone</h1>
-                                <p className='text-2xl lg:text-9xl font-bold tracking-widest'>I'm <span className='text-oren'>Frengki</span> Iskandar</p>
+                        {/* Konten utama */}
+                        <div className="relative lg:pt-24 flex flex-col lg:flex-row-reverse justify-center items-start gap-5">
+                            <div className="flex flex-col justify-start items-start gap-10 h-full max-w-[50rem] bg-white/70 p-5 rounded-lg home">
+                                <h1 className="text-lg text-gray-500 lg:text-2xl tracking-widest border border-oren  px-10 py-2 rounded-full">
+                                    Hallo Everyone
+                                </h1>
+                                <p className="text-2xl lg:text-9xl font-bold tracking-widest">
+                                    I'm <span className="text-oren">Frengki</span> Iskandar
+                                </p>
                                 <div>
                                     <Line />
                                 </div>
-                                <p className='text-lg text-gray-500 lg:text-xl lg:w-[45rem]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque deserunt amet provident eum dolores enim voluptatum similique magnam ipsum facere.</p>
-                                <button className='bg-oren px-5 py-3 rounded-full text-white uppercase'>Learn More</button>
-                                <div className='flex justify-around lg:justify-start items-center w-full lg:gap-10'>
-                                    <a href="https://www.facebook.com/frankie.frankie.73997" target='blank'><FaFacebookF size={20} /></a>
-                                    <a href="https://www.instagram.com/popiceduriaan?igsh=a3ZjaXR6OWc0bGoy" target='blank'><FaInstagram size={20} /></a>
-                                    <a href="https://wa.me/6281275691395" target='blank'><FaWhatsapp size={20} /></a>
-                                    <a href="https://github.com/FrankieRockabilly" target='blank'><FaGithub size={20} /></a>
-                                    <a href="https://www.linkedin.com/in/frengki-iskandar-00586b235/" target='blank'><FaLinkedinIn size={20} /></a>
-
+                                <p className="text-lg text-gray-500 lg:text-xl lg:w-[45rem] indent-20 paragraph">
+                                    I am a passionate Full-Stack Developer and Freelance Web Creator, dedicated to crafting modern, responsive, and high-performance websites. With expertise in both front-end and back-end development, I turn ideas into seamless digital experiences
+                                </p>
+                                <button className="bg-oren px-5 py-3 rounded-full text-white uppercase button" onClick={() => scrollToContact()}>
+                                    Contact Me
+                                </button>
+                                <div className="flex justify-around lg:justify-start items-center w-full lg:gap-10 social">
+                                    <a href="https://www.facebook.com/frankie.frankie.73997" target="blank">
+                                        <FaFacebookF size={20} />
+                                    </a>
+                                    <a href="https://www.instagram.com/popiceduriaan?igsh=a3ZjaXR6OWc0bGoy" target="blank">
+                                        <FaInstagram size={20} />
+                                    </a>
+                                    <a href="https://wa.me/6281275691395" target="blank">
+                                        <FaWhatsapp size={20} />
+                                    </a>
+                                    <a href="https://github.com/FrankieRockabilly" target="blank">
+                                        <FaGithub size={20} />
+                                    </a>
+                                    <a href="https://www.linkedin.com/in/frengki-iskandar-00586b235/" target="blank">
+                                        <FaLinkedinIn size={20} />
+                                    </a>
                                 </div>
                             </div>
-
-
-
                         </div>
-
                     </section>
                     {/* end of section */}
-
 
                     {/* section of projects */}
                     <div ref={aboutRef}>
@@ -128,7 +196,11 @@ const Home = () => {
                     </div>
 
                     <div>
-                        <Footer />
+                        <Footer scrollToAbout={scrollToAbout}
+                            scrollToContact={scrollToContact}
+                            scrollToHome={scrollToHome}
+                            scrollToPortfolio={scrollToPortfolio}
+                        />
                     </div>
                 </div>
             </div >
