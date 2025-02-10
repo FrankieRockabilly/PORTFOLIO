@@ -45,9 +45,9 @@ const Projects = () => {
                     {/* item project */}
                     {project.map((value, index) => {
                         return (
-                            <div className='w-72 flex flex-col justify-center items-center gap-5 px-5 py-2 shadow-lg  rounded-lg group relative ' key={index}>
+                            <div className='w-72 flex flex-col justify-center items-center gap-5 px-5 py-2 shadow-lg  rounded-lg group relative overflow-hidden' key={index}>
                                 <div className='w-72 h-64'>
-                                    <img src={value.image} alt="infidea" className='w-full h-full bg-contain rounded-2xl' />
+                                    <img src={value.image} alt="infidea" className='w-full h-full bg-contain rounded-2xl group-hover:scale-105 transition-all duration-200 ease-out' />
                                 </div>
                                 <h1 className='w-40 text-center font-semibold tracking-wider'>{value.name} </h1>
 

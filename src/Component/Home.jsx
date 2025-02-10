@@ -110,24 +110,19 @@ const Home = () => {
 
 
                     {/* section start */}
-                    <section className="relative flex flex-grow px-12 lg:px-36 bg-no-repeat bg-contain overflow-hidden">
-                        {/* Background image menggunakan pseudo-element */}
-                        {/* <div
-                            className="absolute inset-0 bg-no-repeat bg-right bg-contain hidden lg:block image"
-                            style={{
-                                backgroundImage: `url(${me})`,
-                                backgroundSize: "contain",
-                                opacity: 0.8, // Opacity hanya untuk background
-                            }}
-                        ></div> */}
+                    <section className='lg:px-20 lg:py-20 '>
+                        <div className="relative flex flex-grow px-12 pb-9 lg:px-36 bg-no-repeat bg-contain overflow-hidden backdrop-blur-3xl bg-opacity-55 lg: shadow-2xl rounded-2xl ">
+                            <div className='absolute top-[15%] left-[15%] transform translate-y-1/2 hidden xl:block'>
+                                <h1 className='text-[12rem] font-extrabold opacity-[0.15] tracking-widest text-gray-600'>FRENGKI </h1>
+                            </div>
 
                         {/* Konten utama */}
                         <div className="relative lg:pt-32 flex flex-col lg:flex-row-reverse justify-around items-center gap-5  w-full " >
-                            <div className='h-[30rem] w-[30rem] rounded-full border hidden lg:block justify-center items-center overflow-hidden '>
-                                <img src={me} alt="" />
-                            </div>
-                            <div className="flex flex-col justify-start items-start gap-10 h-full max-w-[50rem]  p-5 rounded-lg home backdrop-blur-3xl bg-opacity-60">
-                                <h1 className="text-lg text-gray-500 lg:text-2xl tracking-widest border border-oren  px-10 py-2 rounded-full hello">
+                                <div className='h-[30rem] w-[30rem] bg-white rounded-full border hidden lg:block justify-center items-center overflow-hidden image'>
+                                    <img src={me} alt="" />
+                                </div>
+                                <div className="flex flex-col justify-start items-start gap-8 h-full max-w-[50rem]  p-5 ">
+                                    <h1 className="text-sm text-gray-500 lg:text-2xl tracking-widest border border-oren px-3  lg:px-10 py-2 rounded-full hello">
                                     Hallo Everyone
                                 </h1>
                                 <p className="text-2xl lg:text-7xl font-bold tracking-widest">
@@ -136,7 +131,7 @@ const Home = () => {
                                 <div>
                                     <Line />
                                 </div>
-                                <p className="text-lg text-gray-500 lg:text-xl lg:w-[45rem] indent-20 paragraph">
+                                    <p className="text-base text-gray-500 lg:text-xl lg:w-[45rem] indent-20 paragraph">
                                     I am a passionate Full-Stack Developer and Freelance Web Creator, dedicated to crafting modern, responsive, and high-performance websites. With expertise in both front-end and back-end development, I turn ideas into seamless digital experiences
                                 </p>
                                 <button className="bg-oren hover:bg-orange-700 transition-all duration-200 ease-out px-5 py-3 rounded-full text-white uppercase button" onClick={() => scrollToContact()}>
@@ -161,9 +156,7 @@ const Home = () => {
                                     </a>
                                 </div>
                             </div>
-
-
-
+                            </div>
                         </div>
                     </section>
                     {/* end of section */}

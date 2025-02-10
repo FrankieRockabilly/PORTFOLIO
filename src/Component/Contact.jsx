@@ -139,6 +139,13 @@ const Contact = () => {
                                     <p className='hover:text-gray-700'>Jobstreet</p>
                                 </a>
                             </div>
+                            {/* pintarnya */}
+                            <div>
+                                <a href="https://pintarnya.com/cv/frengki-iskandar-ud19izoaeu" className='flex justify-start items-center gap-3 mt-3' target='blank'>
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRND7AiEsIirUKxQQXKfpfhI_ke1CLPMkeqQ&s" alt="" className='w-7' />
+                                    <p className='hover:text-gray-700'>Pintarnya</p>
+                                </a>
+                            </div>
                         </div>
                     </div>
 
