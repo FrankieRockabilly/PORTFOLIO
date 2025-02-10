@@ -6,7 +6,7 @@ const TechStack = () => {
         <div className='px-5 md:px-44 lg:px-48'>
         <div className='mt-7 flex justify-center items-center gap-3 lg:gap-7 flex-wrap'>
             {/* items */}
-              <div className=' w-24 h-24 lg:w-52 lg:h-52 py-2 bg-white shadow-2xl rounded-2xl overflow-hidden relative bg-contain bg-no-repeat bg-center  group' style={{backgroundImage:`url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwf9Q4qkXNJZzFWkZBFH_xr3rynMJba7O0BA&s)`}}>
+          <div className=' w-24 h-24 lg:w-52 lg:h-52 py-2 bg-white shadow-2xl rounded-2xl overflow-hidden relative bg-contain bg-no-repeat bg-center  group' style={{ backgroundImage: `url('https://cdn0.iconfinder.com/data/icons/social-network-9/50/22-512.png')` }}>
 
                 <div className='absolute w-20 h-20 rounded-lg lg:w-48 lg:h-48 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gray-400 backdrop-blur-lg bg-opacity-15 hidden group-hover:flex flex-col justify-center items-center transition-all duration-300 ease-in-out'>
                     <h1 className='font-semibold lg:text-3xl'>HTML</h1>
@@ -68,7 +68,15 @@ const TechStack = () => {
                     <p className='text-[10px] md:text-base lg:text-2xl'>Advanced</p>
                 </div>
           </div>
-           
+
+          <div className=' w-24 h-24 lg:w-52 lg:h-52 py-2 bg-white shadow-2xl rounded-2xl overflow-hidden relative bg-contain bg-no-repeat bg-center  group' style={{ backgroundImage: `url('https://cdn.jim-nielsen.com/macos/512/figma-2021-05-05.png?rf=1024')` }}>
+
+            <div className='absolute w-20 h-20 rounded-lg lg:w-48 lg:h-48 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gray-400 backdrop-blur-lg bg-opacity-15 hidden group-hover:flex flex-col justify-center items-center transition-all duration-300 ease-in-out'>
+              <h1 className='font-semibold lg:text-3xl'>Figma</h1>
+              <p className='text-[10px] md:text-base lg:text-2xl'>Basic</p>
+            </div>
+          </div>
+
         </div>
         </div>
     </>

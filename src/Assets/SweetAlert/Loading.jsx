@@ -12,8 +12,8 @@ const Loader = () => {
 const StyledWrapper = styled.div`
   .spinner {
    --size: 30px;
-   --first-block-clr: #005bba;
-   --second-block-clr: #fed500;
+   --first-block-clr: #0bc6a2;
+   --second-block-clr: #fb923c;
    --clr: #111;
    width: 100px;
    height: 100px;

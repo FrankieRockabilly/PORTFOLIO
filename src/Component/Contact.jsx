@@ -13,11 +13,20 @@ const Contact = () => {
     const [email, setEmail] = useState()
     const [phone, setPhone] = useState()
     const [message, setMessage] = useState()
+    const [loading, setLoading] = useState(false)
     const [isSuccesSendFeedback, setIsSuccessSendFeedback] = useState(false)
 
     const handleClickSendFeedback = (e) => {
         e.preventDefault()
-        setIsSuccessSendFeedback(true)
+        setLoading(true)
+        setTimeout(() => {
+            setName('')
+            setEmail('')
+            setMessage('')
+            setPhone('')
+            setLoading(false)
+            setIsSuccessSendFeedback(true)
+        }, 2000);
         console.log('oke');
     }
 
@@ -101,7 +110,11 @@ const Contact = () => {
                                 onChange={(e) => setMessage(e.target.value)}
                                 aria-required />
                         </div>
-                            <button type='submit' className='px-7 py-3 rounded-full bg-gradient-to-b from-primarySec to-primary shadow-2xl hover:from-primary hover:to-[#11856e] shadow-primarySec text-white send'>Send Message</button>
+                            <button type='submit' className={`px-2 py-3 w-40 rounded-full bg-gradient-to-b from-primarySec to-primary shadow-2xl hover:from-primary hover:to-[#11856e] shadow-primarySec text-white send ${loading ? 'cursor-not-allowed' : ''}`}>
+                                {loading ? (<span className="loading loading-spinner loading-xs"></span>) : (
+                                    <p>Send Message</p>
+                                )}
+                            </button>
                     </form>
                         <div className='pt-10 text-gray-500'>
                             <p className='mb-7'>You can also contact me through the link below</p>

@@ -3,20 +3,20 @@
         "name" : "QnA Infidea",
         "image" : "pro.jpg",
         "category"  : "Frontend Dev",
-        "link": "https://qna.infidea.id/",
+        "link": "#",
         "job": "Employee complaint service",
-        "status": "hosted"
+        "status": "employee"
     },
     {
         "name" : "Deri Store",
-        "image" : "tiwihead.png",
+        "image": "tiwiponsel.png",
         "category"  : "Fullstack Dev",
         "link": "https://deristore-tiwiponsel.vercel.app/",
         "job": "E Commerce",
         "status": "hosted"
     },
     {
-        "name" : "Personal Landing Page",
+        "name": "Landing Page",
         "image" : "personal.jpg",
         "category"  : "Frontend Dev",
         "link": "https://portfolio-ten-puce-45.vercel.app/",

@@ -112,22 +112,25 @@ const Home = () => {
                     {/* section start */}
                     <section className="relative flex flex-grow px-12 lg:px-36 bg-no-repeat bg-contain overflow-hidden">
                         {/* Background image menggunakan pseudo-element */}
-                        <div
+                        {/* <div
                             className="absolute inset-0 bg-no-repeat bg-right bg-contain hidden lg:block image"
                             style={{
                                 backgroundImage: `url(${me})`,
                                 backgroundSize: "contain",
                                 opacity: 0.8, // Opacity hanya untuk background
                             }}
-                        ></div>
+                        ></div> */}
 
                         {/* Konten utama */}
-                        <div className="relative lg:pt-24 flex flex-col lg:flex-row-reverse justify-center items-start gap-5">
-                            <div className="flex flex-col justify-start items-start gap-10 h-full max-w-[50rem] bg-white/70 p-5 rounded-lg home">
+                        <div className="relative lg:pt-32 flex flex-col lg:flex-row-reverse justify-around items-center gap-5  w-full " >
+                            <div className='h-[30rem] w-[30rem] rounded-full border hidden lg:block justify-center items-center overflow-hidden '>
+                                <img src={me} alt="" />
+                            </div>
+                            <div className="flex flex-col justify-start items-start gap-10 h-full max-w-[50rem]  p-5 rounded-lg home backdrop-blur-3xl bg-opacity-60">
                                 <h1 className="text-lg text-gray-500 lg:text-2xl tracking-widest border border-oren  px-10 py-2 rounded-full hello">
                                     Hallo Everyone
                                 </h1>
-                                <p className="text-2xl lg:text-9xl font-bold tracking-widest">
+                                <p className="text-2xl lg:text-7xl font-bold tracking-widest">
                                     I'm <span className="text-oren">Frengki</span> Iskandar
                                 </p>
                                 <div>
@@ -136,27 +139,31 @@ const Home = () => {
                                 <p className="text-lg text-gray-500 lg:text-xl lg:w-[45rem] indent-20 paragraph">
                                     I am a passionate Full-Stack Developer and Freelance Web Creator, dedicated to crafting modern, responsive, and high-performance websites. With expertise in both front-end and back-end development, I turn ideas into seamless digital experiences
                                 </p>
-                                <button className="bg-oren px-5 py-3 rounded-full text-white uppercase button" onClick={() => scrollToContact()}>
+                                <button className="bg-oren hover:bg-orange-700 transition-all duration-200 ease-out px-5 py-3 rounded-full text-white uppercase button" onClick={() => scrollToContact()}>
                                     Contact Me
                                 </button>
+                                <p>Find me on social media </p>
                                 <div className="flex justify-around lg:justify-start items-center w-full lg:gap-10 social">
                                     <a href="https://www.facebook.com/frankie.frankie.73997" target="blank">
-                                        <FaFacebookF size={20} />
+                                        <FaFacebookF size={25} />
                                     </a>
                                     <a href="https://www.instagram.com/popiceduriaan?igsh=a3ZjaXR6OWc0bGoy" target="blank">
-                                        <FaInstagram size={20} />
+                                        <FaInstagram size={25} />
                                     </a>
                                     <a href="https://wa.me/6281275691395" target="blank">
-                                        <FaWhatsapp size={20} />
+                                        <FaWhatsapp size={25} />
                                     </a>
                                     <a href="https://github.com/FrankieRockabilly" target="blank">
-                                        <FaGithub size={20} />
+                                        <FaGithub size={25} />
                                     </a>
                                     <a href="https://www.linkedin.com/in/frengki-iskandar-00586b235/" target="blank">
-                                        <FaLinkedinIn size={20} />
+                                        <FaLinkedinIn size={25} />
                                     </a>
                                 </div>
                             </div>
+
+
+
                         </div>
                     </section>
                     {/* end of section */}

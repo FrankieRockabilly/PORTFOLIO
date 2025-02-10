@@ -4,6 +4,7 @@ import project from '../Assets/Json/Project.json'
 import { useEffect } from 'react'
 import pita from '../Assets/Image/pita.png'
 import localpita from '../Assets/Image/lcoalpita.png'
+import employee from '../Assets/Image/employee.png'
 
 import ScrollTrigger from 'gsap/src/ScrollTrigger';
 import gsap from 'gsap';
@@ -60,11 +61,18 @@ const Projects = () => {
 
                                 {/* pita */}
                                 <div className='absolute -top-[4px] w-28 -right-4'>
-                                    <img src={value.status === "hosted" ? pita : localpita} alt="pita" />
+                                    <img src={value.status === "hosted" ? pita : value.status === 'employee' ? employee : localpita} alt="pita" />
                                 </div>
 
                                 <div className='py-8'>
-                                    <button className='px-8 rounded-xl border py-5 group-hover:bg-primary text-gray-400 group-hover:text-white transition-all duration-200 ease-in'><a href={value.link} target='blank'>See Project</a></button>
+                                    <button
+                                        className={`px-8 rounded-xl border py-5 group-hover:bg-primary text-gray-400 group-hover:text-white transition-all duration-200 ease-in ${value.status === 'hosted' ? 'cursor-pointer' : 'cursor-not-allowed'}`}>
+                                        {value.status === 'hosted' ? (
+                                            <a href={value.link}>See Project</a>
+                                        ) : (
+                                            <p>See Project</p>
+                                        )}
+                                    </button>
                                 </div>
                             </div>
                         )
