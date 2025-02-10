@@ -34,41 +34,50 @@ const Home = () => {
     };
 
     useEffect(() => {
-        gsap.fromTo(".home", {
+        gsap.fromTo(".hello", {
             opacity: 0,
-            x: -40,
+            x: -60,
         }, {
             opacity: 1,
             x: 0,
             duration: 2,
             ease: 'power2.inOut'
         })
-        gsap.fromTo(".paragraph", {
+        gsap.fromTo(".home", {
             opacity: 0,
-            x: -30,
+            y: 40,
         }, {
             opacity: 1,
-            x: 0,
+            y: 0,
+            duration: 2,
+            ease: 'power2.inOut'
+        })
+        gsap.fromTo(".paragraph", {
+            opacity: 0,
+            y: 30,
+        }, {
+            opacity: 1,
+            y: 0,
             duration: 2,
             delay: 1,
             ease: 'power2.inOut'
         })
         gsap.fromTo(".button", {
             opacity: 0,
-            x: -30,
+            y: 30,
         }, {
             opacity: 1,
-            x: 0,
+            y: 0,
             duration: 2,
             delay: 2,
             ease: 'power2.inOut'
         })
         gsap.fromTo(".social", {
             opacity: 0,
-            x: -30,
+            y: 30,
         }, {
             opacity: 1,
-            x: 0,
+            y: 0,
             duration: 2,
             delay: 3,
             ease: 'power2.inOut'
@@ -115,7 +124,7 @@ const Home = () => {
                         {/* Konten utama */}
                         <div className="relative lg:pt-24 flex flex-col lg:flex-row-reverse justify-center items-start gap-5">
                             <div className="flex flex-col justify-start items-start gap-10 h-full max-w-[50rem] bg-white/70 p-5 rounded-lg home">
-                                <h1 className="text-lg text-gray-500 lg:text-2xl tracking-widest border border-oren  px-10 py-2 rounded-full">
+                                <h1 className="text-lg text-gray-500 lg:text-2xl tracking-widest border border-oren  px-10 py-2 rounded-full hello">
                                     Hallo Everyone
                                 </h1>
                                 <p className="text-2xl lg:text-9xl font-bold tracking-widest">

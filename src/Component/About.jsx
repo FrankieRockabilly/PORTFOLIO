@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import Line from './Line'
 import profile from '../Assets/Image/numeri.jpg'
+import { WhatsappLogo } from '@phosphor-icons/react'
 
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/src/ScrollTrigger';
@@ -36,9 +37,15 @@ const About = () => {
                     </div>
                     <div className='flex flex-col justify-start items-start gap-6  max-w-[50rem]'>
                         <h1 className='font-medium text-xl text-oren tracking-widest'>About Me</h1>
-                        <p className='text-lg indent-28'>I am a freelancer and an active worker with a bachelor's degree in Informatics Engineering at Pasir Pengaraian University. I am also a graduate of one of the Bootcamps in Indonesia, namely  <span className='text-oren'><a href="https://www.harisenin.com/" target='blank'>Harisenin.com </a></span>Bootcamp. I have created many frontend and fullstack projects with the currently popular tech stack and I work in a hospital as an IT staff</p>
-                        <div>
-                            <button className='bg-primary px-5 py-3 text-center text-white rounded-lg hover:bg-primarySec'>Contact Me</button>
+                        <p className='text-lg indent-16'>I am a freelancer and an active worker with a bachelor's degree in Informatics Engineering at Pasir Pengaraian University. I am also a graduate of one of the Bootcamps in Indonesia, namely  <span className='text-oren'><a href="https://www.harisenin.com/" target='blank'>Harisenin.com </a></span>Bootcamp. I have created many frontend and fullstack projects with the currently popular tech stack and I work in a hospital as an IT staff</p>
+                        <div className=''>
+                            <a href="https://wa.me/6281275691395" target='blank' className=''>
+                                <button className='flex justify-center items-center gap-4 bg-primary px-5 py-3 text-center text-white rounded-lg hover:bg-primarySec'>
+                                    <p>Contact Me</p>
+                                    <WhatsappLogo size={30} weight="thin" />
+                                </button>
+                            </a>
+
                         </div>
                     </div>
                 </div>

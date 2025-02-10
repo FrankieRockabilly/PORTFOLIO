@@ -104,7 +104,7 @@ const Contact = () => {
                             <button type='submit' className='px-7 py-3 rounded-full bg-gradient-to-b from-primarySec to-primary shadow-2xl hover:from-primary hover:to-[#11856e] shadow-primarySec text-white send'>Send Message</button>
                     </form>
                         <div className='pt-10 text-gray-500'>
-                            <p className='mb-17'>You can also contact me through the link below</p>
+                            <p className='mb-7'>You can also contact me through the link below</p>
                             {/* fastwork */}
                             <div>
                                 <a href="https://fastwork.id/user/frengki23?source=web_marketplace_profile-menu_profile" className='flex justify-start items-center gap-3 ' target='blank'>
@@ -119,6 +119,13 @@ const Contact = () => {
                                     <p className='hover:text-gray-700'>Freelancer</p>
                                 </a>
                             </div>
+                            {/* jobstreet */}
+                            <div>
+                                <a href="https://id.jobstreet.com/id/profile/frengki-iskandar-Y3xtQhC8qL" className='flex justify-start items-center gap-3 mt-3' target='blank'>
+                                    <img src="https://kerjairport.com/wp-content/uploads/2020/06/JOBSTREET-BAGI-TIPS-CARA-NAK-DAPATKAN-KERJA.jpg" alt="" className='w-7' />
+                                    <p className='hover:text-gray-700'>Jobstreet</p>
+                                </a>
+                            </div>
                         </div>
                     </div>
 
@@ -128,7 +135,7 @@ const Contact = () => {
                             <div className='px-2 py-2 rounded-full border'>
                                 <Envelope size={32} weight="thin" />
                             </div>
-                            <p className='break-words text-wrap text-lg'>frankierockabill@gmail.com</p>
+                            <p className='break-words text-wrap text-lg'>frankierockabilly@gmail.com</p>
                         </div>
                         <div className='flex justify-start items-center gap-3'>
                             <div className='px-2 py-2 rounded-full border'>
