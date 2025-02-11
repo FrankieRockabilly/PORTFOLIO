@@ -3,7 +3,7 @@ import React from 'react'
 const TechStack = () => {
   return (
     <>
-        <div className='px-5 md:px-44 lg:px-48'>
+      <div className='px-5 md:px-44 lg:px-48'>
         <div className='mt-7 flex justify-center items-center gap-3 lg:gap-7 flex-wrap'>
             {/* items */}
           <div className=' w-24 h-24 lg:w-52 lg:h-52 py-2 bg-white shadow-2xl rounded-2xl overflow-hidden relative bg-contain bg-no-repeat bg-center  group' style={{ backgroundImage: `url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFBDpP5C5t_t8FjbMu-rjqndyjCmaoKMNTjA&s')` }}>
