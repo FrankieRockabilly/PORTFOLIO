@@ -123,7 +123,7 @@ const Home = () => {
                                 </div>
                                 <div className="flex flex-col justify-start items-start gap-8 h-full max-w-[50rem]  p-5 ">
                                     <h1 className="text-sm text-gray-500 lg:text-2xl tracking-widest border border-oren px-3  lg:px-10 py-2 rounded-full hello">
-                                    Hallo Everyone
+                                        Hallo Everyone ..
                                 </h1>
                                 <p className="text-2xl lg:text-7xl font-bold tracking-widest">
                                     I'm <span className="text-oren">Frengki</span> Iskandar
