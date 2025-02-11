@@ -5,6 +5,8 @@ import { useEffect } from 'react'
 import pita from '../Assets/Image/pita.png'
 import localpita from '../Assets/Image/lcoalpita.png'
 import employee from '../Assets/Image/employee.png'
+import hsbc from '../Assets/Image/hsbc.jpg'
+import growia from '../Assets/Image/growia.jpg'
 
 import ScrollTrigger from 'gsap/src/ScrollTrigger';
 import gsap from 'gsap';
@@ -32,15 +34,9 @@ const Projects = () => {
         <>
             <section className=' pb-28 pt-20 lg:pt-1 px-5 lg:px-72 project'>
                 <div className='flex flex-col justify-center items-center gap-6 pt-24 pb-10 '>
-                    <h1 className='text-center text-2xl lg:text-3xl font-bold'>Projects</h1>
+                    <h1 className='text-center text-2xl lg:text-3xl font-bold'>Projects and Certificate</h1>
                     <Line />
                 </div>
-                <div className='my-4'>
-                    <a href="/RESUME.pdf" download="RESUME.pdf">
-                        <button className="bg-gradient-to-r from-primary to-gray-700 text-white px-4 py-2 rounded">Download My CV</button>
-                    </a>
-                </div>
-
                 <div className='flex justify-center items-center gap-10 flex-wrap'>
                     {/* item project */}
                     {project.map((value, index) => {
@@ -77,8 +73,22 @@ const Projects = () => {
                             </div>
                         )
                     })}
+                </div>
 
+                <div className='flex flex-col justify-center items-center '>
+                    <div className='text-2xl lg:text-3xl font-bold  py-10'>
+                        <h1>Certificate</h1>
+                        <Line />
+                    </div>
+                    <div className='flex justify-center items-center gap-3 lg:gap-10'>
+                        <div className="lg:h-96 lg:w-[30rem] relative flex justify-center items-center group">
+                            <img src={hsbc} alt="" className="object-contain h-full w-full transition-all duration-200 ease-out hover:scale-105 " />
+                        </div>
 
+                        <div className='lg:h-96 lg:w-[30rem] relative'>
+                            <img src={growia} alt="" className='object-contain h-full w-full transition-all duration-200 ease-out hover:scale-105' />
+                        </div>
+                    </div>
                 </div>
 
 

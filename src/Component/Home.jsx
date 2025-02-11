@@ -3,7 +3,7 @@ import Line from './Line';
 import Header from './Header';
 import { FaFacebookF, FaInstagram, FaWhatsapp, FaGithub, FaLinkedinIn } from "react-icons/fa";
 
-import me from '../Assets/Image/me.png'
+import profile from '../Assets/Image/frengki.png'
 import Projects from './Projects';
 import About from './About';
 import Testimonial from './Testimonial';
@@ -96,7 +96,7 @@ const Home = () => {
 
     return (
         <>
-            <div className='font-poppins pt-16 lg:pt-0 bg-white ' ref={homeRef}>
+            <div className='font-poppins pt-16 lg:pt-0 bg-warm ' ref={homeRef}>
                 <div className='flex flex-col flex-grow   text-black  relative overflow-hidden '>
                     {/* animasi kotak oren dan hitam */}
                     {/* header start */}
@@ -111,7 +111,7 @@ const Home = () => {
 
                     {/* section start */}
                     <section className='lg:px-20 lg:py-20 '>
-                        <div className="relative flex flex-grow px-12 pb-9 lg:px-36 bg-no-repeat bg-contain overflow-hidden backdrop-blur-3xl bg-opacity-55 lg: shadow-2xl rounded-2xl ">
+                        <div className="relative flex flex-grow px-12 pb-9 lg:px-36 bg-no-repeat bg-contain overflow-hidden backdrop-blur-3xl bg-opacity-55 lg: shadow-2xl rounded-2xl bg-white ">
                             <div className='absolute top-[15%] left-[15%] transform translate-y-1/2 hidden xl:block'>
                                 <h1 className='text-[12rem] font-extrabold opacity-[0.15] tracking-widest text-gray-600'>FRENGKI </h1>
                             </div>
@@ -119,7 +119,7 @@ const Home = () => {
                         {/* Konten utama */}
                         <div className="relative lg:pt-32 flex flex-col lg:flex-row-reverse justify-around items-center gap-5  w-full " >
                                 <div className='h-[30rem] w-[30rem] bg-white rounded-full border hidden lg:block justify-center items-center overflow-hidden image'>
-                                    <img src={me} alt="" />
+                                    <img src={profile} alt="" />
                                 </div>
                                 <div className="flex flex-col justify-start items-start gap-8 h-full max-w-[50rem]  p-5 ">
                                     <h1 className="text-sm text-gray-500 lg:text-2xl tracking-widest border border-oren px-3  lg:px-10 py-2 rounded-full hello">

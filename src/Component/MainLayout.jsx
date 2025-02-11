@@ -22,7 +22,9 @@ const MainLayout = () => {
                     <Loading />
                 </div> // Tampilkan loading
             ) : (
-                <HomePage /> // Setelah loading selesai, tampilkan HomePage
+                    <div>
+                        <HomePage />
+                    </div>
             )}
         </div>
     )
