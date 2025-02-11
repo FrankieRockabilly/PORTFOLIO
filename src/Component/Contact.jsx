@@ -167,7 +167,7 @@ const Contact = () => {
                             <div className='px-2 py-2 rounded-full border'>
                                 <MapPin size={32} weight="thin" />
                             </div>
-                            <p className='break-words text-wrap text-lg'>Rokan Hulu, indonesia</p>
+                            <p className='break-words text-wrap text-lg'>Rokan Hulu,Riau, indonesia</p>
                         </div>
 
                         <div className='w-full'>
