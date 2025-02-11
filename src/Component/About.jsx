@@ -38,7 +38,7 @@ const About = () => {
     }, [])
     return (
         <>
-            <div className='lg:px-36 pt-20 px-5  '>
+            <div className='lg:px-36 pt-20 px-5 '>
                 <div className='flex flex-col justify-center items-center gap-6 pt-12'>
                     <h1 className='text-center text-5xl font-bold '>About</h1>
                     <Line />

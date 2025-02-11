@@ -2,16 +2,15 @@ import React, { useEffect, useRef } from 'react'
 import Line from './Line';
 import Header from './Header';
 import { FaFacebookF, FaInstagram, FaWhatsapp, FaGithub, FaLinkedinIn } from "react-icons/fa";
-
-import profile from '../Assets/Image/frengki.png'
+import profile from '../Assets/Image/profile.png'
 import Projects from './Projects';
 import About from './About';
 import Testimonial from './Testimonial';
 import Footer from './Footer';
 import Contact from './Contact';
 import TechStack from './TechStack';
-
 import gsap from 'gsap';
+
 
 const Home = () => {
 
@@ -116,9 +115,9 @@ const Home = () => {
                                 <h1 className='text-[12rem] font-extrabold opacity-[0.15] tracking-widest text-gray-600'>FRENGKI </h1>
                             </div>
 
-                        {/* Konten utama */}
-                        <div className="relative lg:pt-32 flex flex-col lg:flex-row-reverse justify-around items-center gap-5  w-full " >
-                                <div className='h-[30rem] w-[30rem] bg-white rounded-full border hidden lg:block justify-center items-center overflow-hidden image'>
+                            <div className="relative lg:pt-32 flex flex-col lg:flex-row-reverse justify-around items-center gap-5  w-full " >
+
+                                <div className='h-[30rem] w-[30rem]  hidden lg:block justify-center items-center overflow-hidden image'>
                                     <img src={profile} alt="" />
                                 </div>
                                 <div className="flex flex-col justify-start items-start gap-8 h-full max-w-[50rem]  p-5 ">
@@ -157,6 +156,8 @@ const Home = () => {
                                 </div>
                             </div>
                             </div>
+
+
                         </div>
                     </section>
                     {/* end of section */}
@@ -167,15 +168,38 @@ const Home = () => {
                     </div>
                     {/* end of section */}
 
-                    {/* section of education */}
+                    {/* section of tech stack */}
                     <div>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                            <path fill="#0bc6a2" fill-opacity="1" d="M0,192L48,165.3C96,139,192,85,288,96C384,107,480,181,576,208C672,235,768,213,864,202.7C960,192,1056,192,1152,208C1248,224,1344,256,1392,272L1440,288L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+                        {/* svg */}
+                        <svg
+                            data-name="Layer 1"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 1200 120"
+                            preserveAspectRatio="none"
+                            style={{ transform: "scaleY(-1)" }}
+                        >
+                            <path
+                                d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+                                fill="#0bc6a2"
+                                fillOpacity="0.25"
+                            ></path>
+
+                            <path
+                                d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+                                fill="#0bc6a2"
+                                fillOpacity="0.5"
+                            ></path>
+
+                            <path
+                                d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+                                fill="#0bc6a2"
+                            ></path>
                         </svg>
 
-                        <div className='bg-primary pb-20 lg:px-56'>
-                            <div className='flex flex-col justify-center items-center gap-6 pb-12'>
-                                <h1 className='text-center text-2xl lg:text-3xl font-bold'>Tech Stack</h1>
+
+                        <div className="bg-primary pb-20 lg:px-56">
+                            <div className="flex flex-col justify-center items-center gap-6 pb-12">
+                                <h1 className="text-center text-2xl lg:text-3xl font-bold text-white">Tech Stack</h1>
                                 <Line />
                             </div>
 
@@ -183,10 +207,33 @@ const Home = () => {
                                 <TechStack />
                             </div>
                         </div>
+
                         <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0bc6a2" fill-opacity="1" d="M0,192L48,170.7C96,149,192,107,288,80C384,53,480,43,576,42.7C672,43,768,53,864,96C960,139,1056,213,1152,208C1248,203,1344,117,1392,74.7L1440,32L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+                            <svg
+                                data-name="Layer 1"
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 1200 120"
+                                preserveAspectRatio="none"
+                            >
+                                <path
+                                    d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+                                    opacity=".25"
+                                    fill="#0bc6a2"
+                                ></path>
+                                <path
+                                    d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+                                    opacity=".5"
+                                    fill="#0bc6a2"
+                                ></path>
+                                <path
+                                    d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+                                    fill="#0bc6a2"
+                                ></path>
+                            </svg>
+
                         </div>
                     </div>
+
                     {/* end of section */}
 
                     <div ref={portfolioRef}>

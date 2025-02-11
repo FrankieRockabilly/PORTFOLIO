@@ -41,8 +41,8 @@ const Projects = () => {
                     {/* item project */}
                     {project.map((value, index) => {
                         return (
-                            <div className='w-72 flex flex-col justify-center items-center gap-5 px-5 py-2 shadow-lg  rounded-lg group relative ' key={index}>
-                                <div className='w-72 h-64'>
+                            <div className='w-72 flex flex-col justify-center items-center gap-5 px-5 py-2 shadow-lg  rounded-lg group relative border hover:border-primary' key={index}>
+                                <div className='w-72 h-64 overflow-hidden px-3 py-1'>
                                     <img src={value.image} alt="infidea" className='w-full h-full bg-contain rounded-2xl group-hover:scale-105 transition-all duration-200 ease-out' />
                                 </div>
                                 <h1 className='w-40 text-center font-semibold tracking-wider'>{value.name} </h1>
@@ -64,7 +64,7 @@ const Projects = () => {
                                     <button
                                         className={`px-8 rounded-xl border py-5 group-hover:bg-primary text-gray-400 group-hover:text-white transition-all duration-200 ease-in ${value.status === 'hosted' ? 'cursor-pointer' : 'cursor-not-allowed'}`}>
                                         {value.status === 'hosted' ? (
-                                            <a href={value.link}>See Project</a>
+                                            <a href={value.link} target='blank'>See Project</a>
                                         ) : (
                                             <p>See Project</p>
                                         )}

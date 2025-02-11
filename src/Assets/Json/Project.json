@@ -38,5 +38,13 @@
         "link": "#",
         "job": "Organization",
         "status": "local server"
+    },
+    {
+        "name": "BookBuzz",
+        "image": "bookbuzz.png",
+        "category": "Frontend Dev",
+        "link": "#",
+        "job": "E Commerce",
+        "status": "local server"
     }
 ]
