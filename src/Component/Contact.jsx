@@ -92,20 +92,20 @@ const Contact = () => {
                         <form className=' flex flex-col justify-start items-start gap-5  w-2[70%] contact' onSubmit={handleClickSendFeedback}>
                         <div className='flex flex-wrap justify-between gap-5 w-full'>
                             {/* <label htmlFor="">Full Name*</label> */}
-                            <input type="text" className='w-full lg:w-auto outline-none border-b-[1px] py-3 border-gray-500 bg-white' placeholder='Full Name*'
+                                <input type="text" className='w-full lg:w-auto outline-none border-b-[1px] py-3 border-gray-500 bg-warm' placeholder='Full Name*'
                                 value={name}
                                 onChange={(e) => setName(e.target.value)}
                                 required />
-                            <input type="email" className='w-full lg:w-auto outline-none border-b-[1px] py-3 border-gray-500 bg-white' placeholder='Email*'
+                                <input type="email" className='w-full lg:w-auto outline-none border-b-[1px] py-3 border-gray-500 bg-warm' placeholder='Email*'
                                 value={email}
                                 onChange={(e) => setEmail(e.target.value)}
                                 required />
-                            <input type="text" className='w-full lg:w-auto outline-none border-b-[1px] py-3 border-gray-500 bg-white' placeholder='Phone Number*'
+                                <input type="text" className='w-full lg:w-auto outline-none border-b-[1px] py-3 border-gray-500 bg-warm' placeholder='Phone Number*'
                                 value={phone}
                                 onChange={(e) => setPhone(e.target.value)} />
                         </div>
                         <div className='w-full'>
-                            <input type="text" className='outline-none border-b-[1px] py-3 border-gray-500 bg-white w-full' placeholder='Message'
+                                <input type="text" className='outline-none border-b-[1px] py-3 border-gray-500 bg-warm w-full' placeholder='Message'
                                 value={message}
                                 onChange={(e) => setMessage(e.target.value)}
                                 aria-required />
