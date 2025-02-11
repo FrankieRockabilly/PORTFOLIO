@@ -9,7 +9,7 @@ const Navbar = () => {
 
   return (
     <>
-    <div className="relative px-7 md:px-24 w-full">
+    <div className="relative px-7 md:px-24 w-full bg-zinc-900">
       <div className=" top-0 navbar bg-zinc-900 z-10  py-5 relative">
         <div className="flex-1">
           <div className="flex items-center">
@@ -29,8 +29,8 @@ const Navbar = () => {
             {/* Sidebar content here */}
             <Link to={'/'}><li className='uppercase'><a>Home</a></li> </Link>
             <Link to={'/about'}><li className='uppercase'><a>About</a></li> </Link>
-            <Link to={'/kontak'}><li className='uppercase'><a>Contact</a></li> </Link>
-            <Link to={'/login'}><li className='uppercase'><a>More</a></li> </Link>
+            <Link to={'/contact'}><li className='uppercase' ><a>Contact</a></li> </Link>
+            <Link to={'/moree'}><li className='uppercase'><a>More</a></li> </Link>
 
             <div className="flex flex-col gap-6 text-xs px-4 ">
               <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, sapiente!</h2>
@@ -58,7 +58,7 @@ const Navbar = () => {
           <ul className='flex justify-between text-xl gap-5 text-white font-bold'>
             <Link to={'/'}> <p className='hover:bg-kuning rounded-ss-2xl rounded-ee-2xl hover:text-white px-3 py-2 transition duration-200 ease-linear'>Home</p></Link>
             <Link to={'/about'}> <p className='hover:bg-kuning rounded-ss-2xl rounded-ee-2xl hover:text-white px-3 py-2 transition duration-200 ease-linear'>About</p></Link>
-            <Link to={'/kegiatan'}> <p className='hover:bg-kuning rounded-ss-2xl rounded-ee-2xl hover:text-white px-3 py-2 transition duration-200 ease-linear'>Contact</p></Link>
+            <Link to={'/contact'}> <p className='hover:bg-kuning rounded-ss-2xl rounded-ee-2xl hover:text-white px-3 py-2 transition duration-200 ease-linear'>Contact</p></Link>
             <Link to={'/kontak'}> <p className='hover:bg-kuning rounded-ss-2xl rounded-ee-2xl hover:text-white px-3 py-2 transition duration-200 ease-linear'>More</p></Link>
           </ul>
       </div>

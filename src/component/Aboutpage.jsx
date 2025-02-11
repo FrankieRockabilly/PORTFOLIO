@@ -2,8 +2,9 @@ import React from 'react'
 import Navbar from './Navbar'
 import Footer from './Footer'
 import Contact from './Contact'
+import frengki from '../assets/frengki.jpg'
 
-const AboutPage = () => {
+const  AboutPage = () => {
   return (
     <>
     <Navbar />
@@ -20,16 +21,16 @@ const AboutPage = () => {
           <div className='flex justify-around items-center gap-20 '>
             <div className='bg-kuning h-[23rem] w-64 hidden md:block'>
               <div className='border border-kuning h-[23rem] w-60 rotate-6 bg-cover'>
-                <img src="https://scontent.fpku3-2.fna.fbcdn.net/v/t39.30808-6/254264962_1324268078030437_5355450597161557353_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeFI0pY8Kh1r25oDx1tXOA18mBNI9dIsuEWYE0j10iy4RZfzD3SVnMiW3ID9r17pqSp0GT-immmgc8z6utOFWf9u&_nc_ohc=TIsfuwjyDH4AX_FUdVx&_nc_zt=23&_nc_ht=scontent.fpku3-2.fna&oh=00_AfCBR5WkmYba887idy5-qGk6UXQm4du-wNnGze3XejGOrA&oe=64D301D8" alt="Frengky iskandar" 
+                <img src={frengki} alt="Frengky iskandar" 
                 className='h-[23rem] w-64'/>
               </div>
             </div>
-            <div className='bg-kuning h-[23rem] w-64 hidden md:block'>
+            {/* <div className='bg-kuning h-[23rem] w-64 hidden md:block'>
               <div className='border border-kuning h-[23rem] w-60 rotate-6 bg-cover'>
                 <img src="https://scontent.fpku3-2.fna.fbcdn.net/v/t39.30808-6/273300412_1102792667179103_5245740049939953412_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=174925&_nc_eui2=AeG2DSpHeB0z5_PzBlVblBKDlPE4nRB5702U8TidEHnvTfFJlolMXv8hW6TE8ip77x_wBLEqA4od0Tpxmj8TjRqk&_nc_ohc=K7oiFNll-4UAX_5c1V6&_nc_zt=23&_nc_ht=scontent.fpku3-2.fna&oh=00_AfCDbdRxcVy6y8tBmm0xYckGLDHey-eLBNJwivZrZRh1tg&oe=64D3087A" alt="Muklas ardiansyah"
                 className="w-60 h-[23rem]"/>
               </div>
-            </div>
+            </div> */}
           </div>`
       </div>
     </div>

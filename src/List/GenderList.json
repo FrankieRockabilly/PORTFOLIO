@@ -1,0 +1,266 @@
+[
+    {
+        "id" : 1,
+        "gender" : "male"
+    },
+    {
+        "id" : 1,
+        "gender" : "female"
+    },
+    {
+        "id" : 1,
+        "gender" : "Agender"
+    },
+    {
+        "id" : 1,
+        "gender" : "ALiagender"
+    },
+    {
+        "id" : 1,
+        "gender" : "Alyha and Hwame ( Mohave )"
+    },
+    {
+        "id" : 1,
+        "gender" : "AMAB"
+    },
+    {
+        "id" : 1,
+        "gender" : "Androgynous"
+    },
+    {
+        "id" : 1,
+        "gender" : "Aporagender"
+    },
+    {
+        "id" : 1,
+        "gender" : "Aravani"
+    },
+    {
+        "id" : 1,
+        "gender" : "Ashtime"
+    },
+    {
+        "id" : 1,
+        "gender" : "Burrnesha"
+    },
+    {
+        "id" : 1,
+        "gender" : "Bakla"
+    },
+    {
+        "id" : 1,
+        "gender" : "Bigender"
+    },
+    {
+        "id" : 1,
+        "gender" : "Calabai"
+    },
+    {
+        "id" : 1,
+        "gender" : "Chuckchu Ne'uchika Shamans"
+    },
+    {
+        "id" : 1,
+        "gender" : "Cisgender"
+    },
+    {
+        "id" : 1,
+        "gender" : "Cis Female"
+    },
+    {
+        "id" : 1,
+        "gender" : "Cis Male"
+    },
+    {
+        "id" : 1,
+        "gender" : "Demiboy"
+    },
+    {
+        "id" : 1,
+        "gender" : "Demigender"
+    },
+    {
+        "id" : 1,
+        "gender" : "Demigirl"
+    },
+    {
+        "id" : 1,
+        "gender" : "Fa'afafine"
+    },
+    {
+        "id" : 1,
+        "gender" : "Fakaleiti"
+    },
+    {
+        "id" : 1,
+        "gender" : "Femme"
+    },
+    {
+        "id" : 1,
+        "gender" : "Femminielo"
+    },
+    {
+        "id" : 1,
+        "gender" : "Guevedoche"
+    },
+    {
+        "id" : 1,
+        "gender" : "FTM"
+    },
+    {
+        "id" : 1,
+        "gender" : "Gender Apathetic"
+    },
+    {
+        "id" : 1,
+        "gender" : "Gender Fluid"
+    },
+    {
+        "id" : 10,
+        "gender" : "Gender Neutral"
+    },
+    {
+        "id" : 1,
+        "gender" : "Gender Nonconforming"
+    },
+    {
+        "id" : 1,
+        "gender" : "Gender Questioning"
+    },
+    {
+        "id" : 1,
+        "gender" : "Gender Variant"
+    },
+    {
+        "id" : 1,
+        "gender" : "Genderqueer"
+    },
+    {
+        "id" : 1,
+        "gender" : "Hermaprodhite"
+    },
+    {
+        "id" : 1,
+        "gender" : "Hijra"
+    },
+    {
+        "id" : 1,
+        "gender" : "intersex"
+    },
+    {
+        "id" : 11,
+        "gender" : "Kathoey"
+    },
+    {
+        "id" : 1,
+        "gender" : "Lhamana"
+    },
+    {
+        "id" : 1,
+        "gender" : "Gender Nonconforming"
+    },
+    {
+        "id" : 1,
+        "gender" : "Gender Questioning"
+    },
+    {
+        "id" : 1,
+        "gender" : "Gender Variant"
+    },
+    {
+        "id" : 1,
+        "gender" : "Gender Nonconforming"
+    },
+    {
+        "id" : 1,
+        "gender" : "Gender Questioning"
+    },
+    {
+        "id" : 1,
+        "gender" : "Gender Variant"
+    },
+    {
+        "id" : 1,
+        "gender" : "Gender Nonconforming"
+    },
+    {
+        "id" : 1,
+        "gender" : "Gender Questioning"
+    },
+    {
+        "id" : 1,
+        "gender" : "Gender Variant"
+    },
+    {
+        "id" : 1,
+        "gender" : "Gender Nonconforming"
+    },
+    {
+        "id" : 1,
+        "gender" : "Gender Questioning"
+    },
+    {
+        "id" : 1,
+        "gender" : "Gender Variant"
+    },
+    {
+        "id" : 1,
+        "gender" : "Gender Nonconforming"
+    },
+    {
+        "id" : 1,
+        "gender" : "Gender Questioning"
+    },
+    {
+        "id" : 1,
+        "gender" : "Gender Variant"
+    },
+    {
+        "id" : 1,
+        "gender" : "Gender Nonconforming"
+    },
+    {
+        "id" : 1,
+        "gender" : "Gender Questioning"
+    },
+    {
+        "id" : 1,
+        "gender" : "Gender Variant"
+    },
+    {
+        "id" : 1,
+        "gender" : "Gender Nonconforming"
+    },
+    {
+        "id" : 1,
+        "gender" : "Gender Questioning"
+    },
+    {
+        "id" : 1,
+        "gender" : "Gender Variant"
+    },
+    {
+        "id" : 1,
+        "gender" : "Gender Nonconforming"
+    },
+    {
+        "id" : 1,
+        "gender" : "Gender Questioning"
+    },
+    {
+        "id" : 1,
+        "gender" : "Gender Variant"
+    },
+    {
+        "id" : 1,
+        "gender" : "Gender Nonconforming"
+    },
+    {
+        "id" : 1,
+        "gender" : "Gender Questioning"
+    },
+    {
+        "id" : 1,
+        "gender" : "Gender Variant"
+    }
+]

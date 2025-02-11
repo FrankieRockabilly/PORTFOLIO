@@ -1,0 +1,14 @@
+[
+    {
+        "judul" : "Website Silahul Mukmin",
+        "keterangan" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis aut architecto nam, dicta id sed dolorum delectus placeat illum aliquid eaque voluptatibus eius officiis obcaecati! Rerum rem similique sit deserunt pariatur accusantium quibusdam! Officia ullam totam, distinctio laborum est voluptate aliquam voluptatum excepturi ad, possimus delectus exercitationem reprehenderit sit ratione!",
+        "image" : "https://images.unsplash.com/photo-1597534458220-9fb4969f2df5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80",
+        "header" : "Template, framer"
+    },
+    {
+        "judul" : "Personal React Website",
+        "keterangan" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis aut architecto nam, dicta id sed dolorum delectus placeat illum aliquid eaque voluptatibus eius officiis obcaecati! Rerum rem similique sit deserunt pariatur accusantium quibusdam! Officia ullam totam, distinctio laborum est voluptate aliquam voluptatum excepturi ad, possimus delectus exercitationem reprehenderit sit ratione!",
+        "image" : "porto.png",
+        "header" : "Portfolio, framer"
+    }
+]

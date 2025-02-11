@@ -10,14 +10,14 @@ const Footer = () => {
                 <a href="#"><h1>Privacy</h1></a>
                 <a href="#"><h1>Term & Conditions</h1></a>
             </div>
-            <div className='flex justify-center gap-5'>
+            {/* <div className='flex justify-center gap-5'>
                 <AiFillInstagram color='#000000'/>
                 <AiOutlineTwitter color='#000000'/>
-            </div>
+            </div> */}
         </div>
     </div>
     </>
   )
 }
 
-export default Footer
+export default Footer;

@@ -1,0 +1,32 @@
+[
+    {
+        "tools" : "PHOTOSHOP",
+        "keahlian" : "Basic",
+        "img" : "ps.png"
+    },
+    {
+        "tools" : "SLACK",
+        "keahlian" : "Expert",
+        "img" : "slack-icon.png"
+    },
+    {
+        "tools" : "FIGMA",
+        "keahlian" : "Medium",
+        "img" : "figma.png"
+    },
+    {
+        "tools" : "FRAMER",
+        "keahlian" : "Basic",
+        "img" : "framers.png"
+    },
+    {
+        "tools" : "GIT",
+        "keahlian" : "Medium",
+        "img" : "git.png"
+    },
+    {
+        "tools" : "WEBFLOW",
+        "keahlian" : "Basic",
+        "img" : "webflow.png"
+    }
+]
