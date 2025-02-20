@@ -16,6 +16,14 @@
         "status": "hosted"
     },
     {
+        "name" : "Rijal Homecare",
+        "image": "rijalapps.png",
+        "category"  : "Fullstack Dev",
+        "link": "https://rijal-app.vercel.app/",
+        "job": "Homecare",
+        "status": "hosted"
+    },
+    {
         "name": "Landing Page",
         "image" : "personal.jpg",
         "category"  : "Frontend Dev",
