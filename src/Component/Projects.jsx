@@ -48,7 +48,7 @@ const Projects = () => {
                {project.map((value, index) => {
                   return (
                      <div
-                        className="w-72 flex flex-col justify-center items-center gap-5 px-5 py-2 shadow-lg  rounded-lg group relative border hover:border-primary"
+                        className="w-72 flex flex-col justify-center items-center gap-2 px-5 py-2 shadow-lg  rounded-lg group relative border hover:border-primary"
                         key={index}
                      >
                         <div className="w-72 h-64 overflow-hidden px-3 py-1">
@@ -62,17 +62,17 @@ const Projects = () => {
                            {value.name}{" "}
                         </h1>
 
-                        <div className="flex justify-between items-center w-full text-gray-500">
-                           <p>Project</p>
-                           <p className="text-black font-semibold">
+                        <div className="flex justify-center items-center w-full text-gray-500">
+                           {/* <p>Project</p> */}
+                           <p className=" font-light text-center text-gray-500">
                               {value.category}{" "}
                            </p>
                         </div>
-                        <div className="flex justify-center items-center w-full text-gray-500">
+                        {/* <div className="flex justify-center items-center w-full text-gray-500">
                            <p className="text-zinc-700 font-semibold text-sm">
                               '{value.job}'
                            </p>
-                        </div>
+                        </div> */}
 
                         {/* pita */}
                         <div className="absolute -top-[4px] w-28 -right-4">
@@ -97,11 +97,15 @@ const Projects = () => {
                               }`}
                            >
                               {value.status === "hosted" ? (
-                                 <div className="flex justify-center items-center gap-3">
-                                    <a href={value.link} target="blank">
+                                 <div>
+                                    <a
+                                       href={value.link}
+                                       target="blank"
+                                       className="flex justify-center items-center gap-3"
+                                    >
                                        See in Action
+                                       <ArrowRight size={32} weight="thin" />
                                     </a>
-                                    <ArrowRight size={32} weight="thin" />
                                  </div>
                               ) : (
                                  <div className="flex justify-center items-center gap-3">
