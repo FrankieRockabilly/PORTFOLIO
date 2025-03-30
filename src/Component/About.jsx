@@ -85,7 +85,7 @@ const About = () => {
                      >
                         <button className="flex justify-center items-center gap-4 bg-primary px-5 py-3 text-center text-white rounded-lg hover:bg-primarySec">
                            <p>Contact Me</p>
-                           <WhatsappLogo size={30} weight="thin" />
+                           <WhatsappLogo size={20} weight="thin" />
                         </button>
                      </a>
                      <div className="my-4">

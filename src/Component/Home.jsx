@@ -129,9 +129,9 @@ const Home = () => {
                {/* end of header */}
 
                {/* section start */}
-               <section className="lg:px-20 lg:py-20 ">
+               <section className="lg:px-20 lg:py-20 bg-white">
                   <div
-                     className="relative flex flex-grow px-12 pb-9 lg:px-36 bg-no-repeat overflow-hidden backdrop-blur-3xl bg-opacity-55 lg: shadow-2xl rounded-2xl bg-white bg-contain bg-center"
+                     className="relative flex flex-grow px-12 pb-9 lg:px-36 bg-no-repeat overflow-hidden backdrop-blur-3xl bg-opacity-55 lg:  bg-contain bg-center"
                      //   style={{
                      //      backgroundImage: `url(https://img.freepik.com/free-psd/3d-nft-icon-developer-male-illustration_629802-6.jpg?t=st=1740384777~exp=1740388377~hmac=caef512f8ce20293e590ed8fca4136cfd06fdb10c1997093c10bee3750b7bfe6&w=740)`,
                      //   }}

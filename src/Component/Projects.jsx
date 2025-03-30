@@ -140,6 +140,13 @@ const Projects = () => {
                         className="object-contain h-full w-full transition-all duration-200 ease-out hover:scale-105"
                      />
                   </div>
+                  <div className="lg:h-96 lg:w-[30rem] relative">
+                     <img
+                        src="https://res.cloudinary.com/dplikeeby/image/upload/v1743292855/certificate_f49bqs.jpg"
+                        alt=""
+                        className="object-contain h-full w-full transition-all duration-200 ease-out hover:scale-105"
+                     />
+                  </div>
                </div>
             </div>
          </section>
