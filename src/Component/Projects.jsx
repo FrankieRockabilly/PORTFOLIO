@@ -68,13 +68,6 @@ const Projects = () => {
                               {value.category}{" "}
                            </p>
                         </div>
-                        {/* <div className="flex justify-center items-center w-full text-gray-500">
-                           <p className="text-zinc-700 font-semibold text-sm">
-                              '{value.job}'
-                           </p>
-                        </div> */}
-
-                        {/* pita */}
                         <div className="absolute -top-[4px] w-28 -right-4">
                            <img
                               src={
@@ -124,7 +117,7 @@ const Projects = () => {
                   <h1>Certificate</h1>
                   <Line />
                </div>
-               <div className="flex justify-center items-center gap-3 lg:gap-10">
+               <div className="flex flex-wrap justify-center items-center gap-3 lg:gap-10">
                   <div className="lg:h-96 lg:w-[30rem] relative flex justify-center items-center group">
                      <img
                         src={hsbc}
