@@ -1,12 +1,11 @@
-import React from 'react'
-import Line from './Line'
-import project from '../Assets/Json/Project.json'
-import { useEffect } from 'react'
-import pita from '../Assets/Image/pita.png'
-import localpita from '../Assets/Image/lcoalpita.png'
-import employee from '../Assets/Image/employee.png'
-import hsbc from '../Assets/Image/hsbc.jpg'
-import growia from '../Assets/Image/growia.jpg'
+import Line from "./Line";
+import project from "../Assets/Json/Project.json";
+import { useEffect } from "react";
+import pita from "../Assets/Image/pita.png";
+import localpita from "../Assets/Image/lcoalpita.png";
+import employee from "../Assets/Image/employee.png";
+import hsbc from "../Assets/Image/hsbc.jpg";
+import growia from "../Assets/Image/growia.jpg";
 import { ArrowRight } from "@phosphor-icons/react";
 
 import ScrollTrigger from "gsap/src/ScrollTrigger";
@@ -117,7 +116,7 @@ const Projects = () => {
                   <h1>Certificate</h1>
                   <Line />
                </div>
-               <div className="flex flex-wrap justify-center items-center gap-3 lg:gap-10">
+               <div className="flex flex-wrap justify-center items-center gap-3 lg:gap-5 border border-red-700">
                   <div className="lg:h-96 lg:w-[30rem] relative flex justify-center items-center group">
                      <img
                         src={hsbc}
@@ -154,4 +153,4 @@ const Projects = () => {
    );
 };
 
-export default Projects
+export default Projects;
