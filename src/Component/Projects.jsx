@@ -116,7 +116,7 @@ const Projects = () => {
                   <h1>Certificate</h1>
                   <Line />
                </div>
-               <div className="flex flex-wrap justify-center items-center gap-3 lg:gap-5 border border-red-700">
+               <div className="flex flex-wrap justify-center items-center gap-3 lg:gap-5 ">
                   <div className="lg:h-96 lg:w-[30rem] relative flex justify-center items-center group">
                      <img
                         src={hsbc}
