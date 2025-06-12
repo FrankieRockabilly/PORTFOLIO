@@ -2,57 +2,57 @@
     {
         "name": "Christian Jessica ",
         "project": "e commerce",
-        "location": "kota tengah",
-        "bisnis": "Furniture and Electronic Store Owner",
-        "profilImage": "https://res.cloudinary.com/dplikeeby/image/upload/v1738547118/cld-sample.jpg",
+        "location": "UK",
+        "bisnis": "Furniture Store Owner",
+        "profilImage": "https://thehealthfulideas.com/wp-content/uploads/2015/03/profile-picture-2.jpg",
         "comment": "This website is very professional! Great design, easy navigation, complete product information, and extremely helpful in boosting my electronics store sales!"
     },
     {
-        "name": "Rizki",
+        "name": "Cici",
         "project": "QnA Apps",
-        "location": "kota tengah",
-        "bisnis": "Software Engineer",
-        "profilImage": "https://scontent.fkno6-1.fna.fbcdn.net/v/t1.6435-9/54256754_1991518754279941_3665268044650774528_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeHSMnQ9c7ehFlweRd0BSfn0NMh4nbv34FA0yHidu_fgUAPBSdKOJiSnPsdLE7ulAiQ02BJQwX3547c24dmg02M3&_nc_ohc=9owtFeHz1eEQ7kNvgEzeLFA&_nc_oc=AdgJ6cLKEatbYroXVH7rLpx9B7uPllKxBxUXlGbHTjdacgNlh0Th0XyxJe4X9PZkXqU&_nc_zt=23&_nc_ht=scontent.fkno6-1.fna&_nc_gid=ARWpaqJxMqg1-xw3aeCFZ0_&oh=00_AYDpjRmObIGTJPDJjh1zFrYTLImNhyyNoM5dxYW3T16opg&oe=67CD2968",
+        "location": "Rokan Hulu",
+        "bisnis": "Casemix",
+        "profilImage": "https://res.cloudinary.com/dplikeeby/image/upload/v1738722301/payments/lepp94gnnqgpxhakmovh.png",
         "comment": "This website is well-designed, responsive, fast, and follows best coding practices. A great example of clean and efficient development"
     },
     {
-        "name": "Muhammad R",
+        "name": "Daniel Sebastian",
         "project": "e commerce",
-        "location": "kota tengah",
+        "location": "USA",
         "bisnis": "Nurse",
-        "profilImage": "https://res.cloudinary.com/dplikeeby/image/upload/v1739505009/rjl_dhznpo.png",
+        "profilImage": "https://img.freepik.com/premium-photo/happy-man-ai-generated-portrait-user-profile_1119669-1.jpg?w=2000",
         "comment": "This website is excellent! Professional design, user-friendly, informative, and truly supports my business growth and customer engagement ⭐⭐⭐⭐⭐"
     },
     {
-        "name": "Santoso",
+        "name": "Scarlett",
         "project": "School Website",
-        "location": "kota tengah",
-        "bisnis": "Teacher",
-        "profilImage": "https://res.cloudinary.com/dplikeeby/image/upload/v1740838566/11_t3xmhn.jpg",
+        "location": "United Kingdom",
+        "bisnis": "Celebrity",
+        "profilImage": "https://cdn2.f-cdn.com/files/download/38545966/4bce6b.jpg",
         "comment": "This website is truly amazing! Great design, complete information, easy to access, interactive, and very helpful for students and teachers!"
     },
     {
         "name": "M Rijal",
         "project": "e commerce",
-        "location": "kota tengah",
+        "location": "Indonesia",
         "bisnis": "Businessman",
         "profilImage": "https://res.cloudinary.com/dplikeeby/image/upload/v1740124767/www_wgkiuq.jpg",
         "comment": "This website is very easy to use, well-designed, informative, and perfect for beginners like me"
     },
     {
-        "name": "Muhammad Riski",
+        "name": "Lukas Benjamin",
         "project": "e commerce",
-        "location": "kota tengah",
+        "location": "USA",
         "bisnis": "Chief of Staff",
-        "profilImage": "https://res.cloudinary.com/dplikeeby/image/upload/v1738674037/payments/gofbqhcsrsjn2ttrluze.png",
+        "profilImage": "https://blog-pixomatic.s3.appcnt.com/default/0001/01/4da7f14d19c31ef5782e9f4c736ac74d7f4e9d44.jpeg",
         "comment": "This website is modern, engaging, easy to use, and very inspiring for young people like me"
     },
     {
-        "name": "Mutia Lubis ❤️",
+        "name": "Jack Harper",
         "project": "e commerce",
-        "location": "Rokan Hulu",
+        "location": "Aussie",
         "bisnis": "Observer",
-        "profilImage": "https://res.cloudinary.com/dplikeeby/image/upload/v1740388421/mutia_zzerwc.jpg",
+        "profilImage": "http://images.unsplash.com/photo-1535713875002-d1d0cf377fde?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMjA3fDB8MXxzZWFyY2h8NHx8bWFsZSUyMHByb2ZpbGV8fDB8fHx8MTYyNTY2NzI4OQ&ixlib=rb-1.2.1&q=80&w=1080",
         "comment": "Being a part of this program has truly transformed my perspective. The guidance, resources, and supportive community have given me the confidence to excel. I feel more motivated, focused, and ready to take on new challenges. The learning experience here goes beyond just academic knowledge"
     }
 ]
