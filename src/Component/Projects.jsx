@@ -85,7 +85,7 @@ const Projects = () => {
                               className={`px-8 rounded-xl border py-2 group-hover:bg-primary text-gray-400 group-hover:text-white transition-all duration-200 ease-in ${
                                  value.status === "hosted"
                                     ? "cursor-pointer"
-                                    : "cursor-not-allowed"
+                                    : "cursor-not-allowed "
                               }`}
                            >
                               {value.status === "hosted" ? (
@@ -95,7 +95,7 @@ const Projects = () => {
                                        target="blank"
                                        className="flex justify-center items-center gap-3"
                                     >
-                                       See in Action
+                                       View Project
                                        <ArrowRight size={32} weight="thin" />
                                     </a>
                                  </div>
@@ -111,7 +111,9 @@ const Projects = () => {
                })}
             </div>
 
-            <div className="flex flex-col justify-center items-center ">
+
+{/* CERTIFICATE */}
+            <div className="flex flex-col justify-center items-center">
                <div className="text-2xl lg:text-3xl font-bold  py-10">
                   <h1>Certificate</h1>
                   <Line />

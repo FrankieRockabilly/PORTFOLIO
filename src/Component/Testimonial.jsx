@@ -42,7 +42,7 @@ const Testimonial = () => {
                                <img
                                   src={value.profilImage}
                                   alt="profil"
-                                  className="w-full h-full object-cover rounded-full border border-red-500"
+                                  className="w-full h-full object-cover rounded-full "
                                />
                             </div>
                             <div>
