@@ -3,9 +3,7 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import { FaHome, FaClipboardList, FaPhone, FaFacebook, FaWhatsapp, FaInstagram } from "react-icons/fa";
 import { LuLayoutList } from "react-icons/lu";
 
-
 const Header = ({ scrollToAbout, scrollToHome, scrollToPortfolio, scrollToContact }) => {
-
     const [scroll, setScroll] = useState(false)
 
     const refresh = () => {
@@ -13,17 +11,20 @@ const Header = ({ scrollToAbout, scrollToHome, scrollToPortfolio, scrollToContac
     };
 
     const handleScroll = () => {
-       console.log(window.scrollY);
-
        if (window.scrollY > 50) {
           setScroll(true);
        } else {
           setScroll(false);
        }
     };
+
+    const closeDrawer = () => {
+       const drawer = document.getElementById("my-drawer");
+       if (drawer) drawer.checked = false;
+    };
+
     useEffect(() => {
        window.addEventListener("scroll", handleScroll);
-
        return () => {
           window.removeEventListener("scroll", handleScroll);
        };
@@ -54,7 +55,6 @@ const Header = ({ scrollToAbout, scrollToHome, scrollToPortfolio, scrollToContac
                          className="drawer-toggle"
                       />
                       <div className="drawer-content">
-                         {/* Page content here */}
                          <label htmlFor="my-drawer" className=" drawer-button">
                             <RxHamburgerMenu />
                          </label>
@@ -68,28 +68,40 @@ const Header = ({ scrollToAbout, scrollToHome, scrollToPortfolio, scrollToContac
                          <div className="menu bg-white min-h-full w-72 p-4 gap-10 text-base font-light py-10 shadow-xl text-black">
                             <div
                                className="flex justify-start items-center gap-5 hover:text-oren cursor-pointer"
-                               onClick={() => scrollToHome()}
+                               onClick={() => {
+                                  scrollToHome();
+                                  closeDrawer();
+                               }}
                             >
                                <FaHome />
                                <p>Home</p>
                             </div>
                             <div
                                className="flex justify-start items-center gap-5 hover:text-oren cursor-pointer"
-                               onClick={() => scrollToAbout()}
+                               onClick={() => {
+                                  scrollToAbout();
+                                  closeDrawer();
+                               }}
                             >
                                <FaClipboardList />
                                <p>About</p>
                             </div>
                             <div
                                className="flex justify-start items-center gap-5 hover:text-oren cursor-pointer"
-                               onClick={() => scrollToPortfolio()}
+                               onClick={() => {
+                                  scrollToPortfolio();
+                                  closeDrawer();
+                               }}
                             >
                                <LuLayoutList />
                                <p>Portfolio</p>
                             </div>
                             <div
                                className="flex justify-start items-center gap-5 hover:text-oren cursor-pointer"
-                               onClick={() => scrollToContact()}
+                               onClick={() => {
+                                  scrollToContact();
+                                  closeDrawer();
+                               }}
                             >
                                <FaPhone />
                                <p>Contact</p>
@@ -128,9 +140,6 @@ const Header = ({ scrollToAbout, scrollToHome, scrollToPortfolio, scrollToContac
                    >
                       Contact
                    </button>
-                   {/* <div className='hidden md:block text-xl'>
-                            <button className='bg-secondary px-7 py-3 rounded-lg text-black'>Contact Me</button>
-                        </div> */}
                 </div>
              </div>
           </header>
