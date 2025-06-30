@@ -30,12 +30,13 @@ const Projects = () => {
             x: 0,
             duration: 1,
             ease: "power2.inOut",
+            stagger : 0.2
          }
       );
    }, []);
    return (
       <>
-         <section className=" pb-28 pt-20 lg:pt-1 px-5 lg:px-72 project">
+         <section className=" pb-28 pt-20 lg:pt-1 px-5 lg:px-72 ">
             <div className="flex flex-col justify-center items-center gap-6 pt-24 pb-10 ">
                <h1 className="text-center text-2xl lg:text-3xl font-bold">
                   Projects and Certificate
@@ -47,10 +48,10 @@ const Projects = () => {
                {project.map((value, index) => {
                   return (
                      <div
-                        className="w-72 flex flex-col justify-center items-center gap-2 px-5 py-2 shadow-lg  rounded-lg group relative border hover:border-primary"
+                        className="w-72 flex flex-col justify-center items-center gap-2 px-5 py-2 shadow-lg  rounded-lg group relative border hover:border-primary project"
                         key={index}
                      >
-                        <div className="w-72 h-64 overflow-hidden px-3 py-1">
+                        <div className="w-72 h-64 overflow-hidden px-3 py-1 ">
                            <img
                               src={value.image}
                               alt="infidea"

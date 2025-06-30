@@ -17,7 +17,7 @@ const About = () => {
          {
             scrollTrigger: {
                trigger: ".aboutbox",
-               start: "top 80%",
+               start: "top 90%",
                once: true,
             },
             opacity: 1,
