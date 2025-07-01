@@ -108,6 +108,7 @@ const Contact = () => {
                                 <input type="text" className='outline-none border-b-[1px] py-3 border-gray-500 bg-white w-full' placeholder='Message'
                                 value={message}
                                 onChange={(e) => setMessage(e.target.value)}
+                                disabled
                                 aria-required />
                         </div>
                             <button type='submit' className={`px-2 py-3 w-40 rounded-full bg-gradient-to-b from-primarySec to-primary shadow-2xl hover:from-primary hover:to-[#11856e] shadow-primarySec text-white send ${loading ? 'cursor-not-allowed' : ''}`}>
@@ -155,19 +156,19 @@ const Contact = () => {
                             <div className='px-2 py-2 rounded-full border'>
                                 <Envelope size={32} weight="thin" />
                             </div>
-                            <p className='break-words text-wrap text-lg'>frankierockabilly@gmail.com</p>
+                            <p className='break-words text-wrap text-base'>frankierockabilly@gmail.com</p>
                         </div>
                         <div className='flex justify-start items-center gap-3'>
                             <div className='px-2 py-2 rounded-full border'>
                                 <Phone size={32} weight="thin" />
                             </div>
-                            <p className='break-words text-wrap text-lg'>+62 812 7569 1395</p>
+                            <p className='break-words text-wrap text-base'>+62 812 7569 1395</p>
                         </div>
                         <div className='flex justify-start items-center gap-3'>
                             <div className='px-2 py-2 rounded-full border'>
                                 <MapPin size={32} weight="thin" />
                             </div>
-                            <p className='break-words text-wrap text-lg'>Rokan Hulu,Riau, indonesia</p>
+                            <p className='break-words text-wrap text-base'>Rokan Hulu,Riau, indonesia</p>
                         </div>
 
                         <div className='w-full'>
