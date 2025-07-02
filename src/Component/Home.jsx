@@ -79,7 +79,7 @@ const Home = () => {
 
    return (
       <>
-         <div className="font-poppins pt-16 lg:pt-0 bg-warm " ref={homeRef}>
+         <div className="font-poppins pt-16 lg:pt-0 bg-white " ref={homeRef}>
             <div className="flex flex-col flex-grow   text-black  relative overflow-hidden ">
                {/* animasi kotak oren dan hitam */}
                {/* header start */}
@@ -105,8 +105,8 @@ const Home = () => {
                         </h1>
                      </div>
 
-                     <div className="relative lg:pt-32 flex flex-col lg:flex-row-reverse justify-around items-center gap-5  w-full border border-red-600">
-                        <div className="h-[80%] w-[30rem]  hidden lg:block justify-center items-center overflow-hidden image border">
+                     <div className="relative lg:pt-32 flex flex-col lg:flex-row justify-start items-start gap-5  w-full">
+                        <div className="h-[80%] w-[60%]  hidden xl:block absolute right-0 justify-center items-center overflow-hidden image">
                            <img
                               src={image}
                               alt=""
