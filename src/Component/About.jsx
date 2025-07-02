@@ -3,7 +3,7 @@ import Line from './Line'
 import { WhatsappLogo } from '@phosphor-icons/react'
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/src/ScrollTrigger';
-import website from "../Assets/Image/website.png";
+import website from "../Assets/Image/ger.png";
 
 const About = () => {
    gsap.registerPlugin(ScrollTrigger);
@@ -52,18 +52,18 @@ const About = () => {
                <h1 className="text-center text-5xl font-bold ">About</h1>
                <Line />
             </div>
-            <div className="flex flex-wrap justify-center items-start gap-14 py-20">
-               <div className="w-[28rem] h-[25rem] lg:w-[35rem] lg:h-[30rem] aboutbox shadow-2xl">
+            <div className="flex flex-wrap justify-center items-center gap-14 py-20 ">
+               <div className="w-[15rem] h-[25rem] lg:w-[20rem] lg:h-[38rem] aboutbox ">
                   <img
                      src={website}
-                     className="rounded-xl w-full h-full object-cover"
+                     className="rounded-xl w-full h-full object-fit"
                   />
                </div>
                <div className="flex flex-col justify-start items-start gap-6  max-w-[50rem] aboutbox2">
                   <h1 className="font-medium text-xl text-oren tracking-widest">
                      About Me
                   </h1>
-                  <p className="text-lg indent-16">
+                  <p className="text-lg indent-16 text-gray-500">
                      I am a freelancer and an active worker with a bachelor's
                      degree in Informatics Engineering at Pasir Pengaraian
                      University. I am also a graduate of one of the Bootcamps in

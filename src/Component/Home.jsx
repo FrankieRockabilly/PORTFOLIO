@@ -3,6 +3,7 @@ import Line from './Line';
 import Header from './Header';
 import { FaFacebookF, FaInstagram, FaWhatsapp, FaGithub, FaLinkedinIn } from "react-icons/fa";
 import mobile from "../Assets/Image/mobile.png";
+import image from "../Assets/Image/ger.png"
 import Projects from "./Projects";
 import About from "./About";
 import Testimonial from "./Testimonial";
@@ -44,19 +45,7 @@ const Home = () => {
             ease: "power2.inOut",
          }
       );
-      gsap.fromTo(
-         ".home",
-         {
-            opacity: 0,
-            y: 40,
-         },
-         {
-            opacity: 1,
-            y: 0,
-            duration: 2,
-            ease: "power2.inOut",
-         }
-      );
+    
       gsap.fromTo(
          ".paragraph",
          {
@@ -66,39 +55,13 @@ const Home = () => {
          {
             opacity: 1,
             y: 0,
-            duration: 2,
-            delay: 1,
+            duration: 1,
+            delay: 0,
             ease: "power2.inOut",
+            stagger:0.2
          }
       );
-      gsap.fromTo(
-         ".button",
-         {
-            opacity: 0,
-            y: 30,
-         },
-         {
-            opacity: 1,
-            y: 0,
-            duration: 2,
-            delay: 2,
-            ease: "power2.inOut",
-         }
-      );
-      gsap.fromTo(
-         ".social",
-         {
-            opacity: 0,
-            y: 30,
-         },
-         {
-            opacity: 1,
-            y: 0,
-            duration: 2,
-            delay: 3,
-            ease: "power2.inOut",
-         }
-      );
+     
       gsap.fromTo(
          ".image",
          {
@@ -142,12 +105,12 @@ const Home = () => {
                         </h1>
                      </div>
 
-                     <div className="relative lg:pt-32 flex flex-col lg:flex-row-reverse justify-around items-center gap-5  w-full ">
-                        <div className="h-full w-[30rem]  hidden lg:block justify-center items-center overflow-hidden image ">
+                     <div className="relative lg:pt-32 flex flex-col lg:flex-row-reverse justify-around items-center gap-5  w-full border border-red-600">
+                        <div className="h-[80%] w-[30rem]  hidden lg:block justify-center items-center overflow-hidden image border">
                            <img
-                              src={mobile}
+                              src={image}
                               alt=""
-                              className="object-cover w-full h-full"
+                              className="object-contain w-full h-full"
                            />
                         </div>
                         <div className="flex flex-col justify-start items-start gap-8 h-full max-w-[50rem]  p-5 ">
@@ -170,13 +133,13 @@ const Home = () => {
                               experiences
                            </p>
                            <button
-                              className="bg-oren hover:bg-orange-700 transition-all duration-200 ease-out px-5 py-3 rounded-full text-white uppercase button"
+                              className="bg-oren hover:bg-orange-700 transition-all duration-200 ease-out px-5 py-3 rounded-full text-white uppercase paragraph"
                               onClick={() => scrollToContact()}
                            >
                               Contact Me
                            </button>
-                           <p>Find me on social media </p>
-                           <div className="flex justify-around lg:justify-start items-center w-full lg:gap-10 social">
+                           <p className='paragraph'>Find me on social media </p>
+                           <div className="flex justify-around lg:justify-start items-center w-full lg:gap-10 paragraph">
                               <a
                                  href="https://www.facebook.com/frankie.frankie.73997"
                                  target="blank"
