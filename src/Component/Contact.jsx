@@ -86,26 +86,26 @@ const Contact = () => {
                 {isSuccesSendFeedback && (
                     <SuksesKirimPesan />
                 )}
-                <div className='flex flex-wrap  rounded-2xl shadow-xl bg-white py-2 mt-5'>
+                <div className='flex flex-wrap  rounded-2xl shadow-xl bg-gray-50 py-2 mt-5'>
                     {/* 1 */}
                     <div className='px-16 py-16 '>
                         <form className=' flex flex-col justify-start items-start gap-5  w-2[70%] contact' onSubmit={handleClickSendFeedback}>
                         <div className='flex flex-wrap justify-between gap-5 w-full'>
                             {/* <label htmlFor="">Full Name*</label> */}
-                                <input type="text" className='w-full lg:w-auto outline-none border-b-[1px] py-3 border-gray-500 bg-white' placeholder='Full Name*'
+                                <input type="text" className='w-full lg:w-auto outline-none border-b-[1px] py-3 border-gray-500 bg-gray-50' placeholder='Full Name*'
                                 value={name}
                                 onChange={(e) => setName(e.target.value)}
                                 required />
-                                <input type="email" className='w-full lg:w-auto outline-none border-b-[1px] py-3 border-gray-500 bg-white' placeholder='Email*'
+                                <input type="email" className='w-full lg:w-auto outline-none border-b-[1px] py-3 border-gray-500 bg-gray-50' placeholder='Email*'
                                 value={email}
                                 onChange={(e) => setEmail(e.target.value)}
                                 required />
-                                <input type="text" className='w-full lg:w-auto outline-none border-b-[1px] py-3 border-gray-500 bg-white' placeholder='Phone Number*'
+                                <input type="text" className='w-full lg:w-auto outline-none border-b-[1px] py-3 border-gray-500 bg-gray-50' placeholder='Phone Number*'
                                 value={phone}
                                 onChange={(e) => setPhone(e.target.value)} />
                         </div>
                         <div className='w-full'>
-                                <input type="text" className='outline-none border-b-[1px] py-3 border-gray-500 bg-white w-full' placeholder='Message'
+                                <input type="text" className='outline-none border-b-[1px] py-3 border-gray-500 bg-gray-50 w-full' placeholder='Message'
                                 value={message}
                                 onChange={(e) => setMessage(e.target.value)}
                                 disabled

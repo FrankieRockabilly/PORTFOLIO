@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import pita from "../Assets/Image/pita.png";
 import localpita from "../Assets/Image/lcoalpita.png";
 import employee from "../Assets/Image/employee.png";
+import task from "../Assets/Image/task.png"
 import hsbc from "../Assets/Image/hsbc.jpg";
 import growia from "../Assets/Image/growia.jpg";
 import { ArrowRight } from "@phosphor-icons/react";
@@ -36,14 +37,15 @@ const Projects = () => {
    }, []);
    return (
       <>
-         <section className=" pb-28 pt-20 lg:pt-1 px-5 lg:px-72 ">
-            <div className="flex flex-col justify-center items-center gap-6 pt-24 pb-10 ">
+         <section className=" pt-20 lg:pt-1 px-5 lg:px-24">
+            <div className="w-full flex flex-col justify-center items-center gap-6 pt-24 pb-10 relative ">
                <h1 className="text-center text-2xl lg:text-3xl font-bold">
                   Projects and Certificate
                </h1>
                <Line />
+               <img src={task} alt="" className="absolute top-2/4 -right-40 w-[15rem] hidden lg:block z-10"/>
             </div>
-            <div className="flex justify-center items-center gap-10 flex-wrap">
+            <div className="flex justify-center items-center gap-10 flex-wrap w-full">
                {/* item project */}
                {project.map((value, index) => {
                   return (
@@ -115,12 +117,12 @@ const Projects = () => {
 
 {/* CERTIFICATE */}
             <div className="flex flex-col justify-center items-center">
-               <div className="text-2xl lg:text-3xl font-bold  py-10">
+               <div className="text-2xl lg:text-3xl font-bold pt-16 pb-5">
                   <h1>Certificate</h1>
                   <Line />
                </div>
-               <div className="flex flex-wrap justify-center items-center gap-3 lg:gap-5 ">
-                  <div className="lg:h-96 lg:w-[30rem] relative flex justify-center items-center group">
+               <div className="flex flex-wrap justify-center items-center gap-1 lg:gap-4 ">
+                  <div className="h-48 w-64 lg:h-72 lg:w-[20rem] relative flex justify-center items-center group">
                      <img
                         src={hsbc}
                         alt=""
@@ -128,21 +130,21 @@ const Projects = () => {
                      />
                   </div>
 
-                  <div className="lg:h-96 lg:w-[30rem] relative">
+                  <div className="h-48 w-64 lg:h-72 lg:w-[20rem] relative">
                      <img
                         src={growia}
                         alt=""
                         className="object-contain h-full w-full transition-all duration-200 ease-out hover:scale-105"
                      />
                   </div>
-                  <div className="lg:h-96 lg:w-[30rem] relative">
+                  <div className="h-48 w-64 lg:h-72 lg:w-[20rem] relative">
                      <img
                         src="https://res.cloudinary.com/dplikeeby/image/upload/v1743292855/certificate_f49bqs.jpg"
                         alt=""
                         className="object-contain h-full w-full transition-all duration-200 ease-out hover:scale-105"
                      />
                   </div>
-                  <div className="lg:h-96 lg:w-[30rem] relative">
+                  <div className="h-48 w-64 lg:h-72 lg:w-[20rem] relative">
                      <img
                         src="https://res.cloudinary.com/dplikeeby/image/upload/v1748308271/dcoding_bf1f5p.jpg"
                         alt=""

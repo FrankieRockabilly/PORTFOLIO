@@ -41,11 +41,11 @@ const Footer = ({ scrollToAbout, scrollToHome, scrollToPortfolio, scrollToContac
                         <h1 className='font-bold text-primary'>Frengki <span className='text-oren'>Iskandar</span></h1>
                         <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour</p>
                         <div className='flex justify-end items-end gap-5 w-full'>
-                            <a href="https://www.facebook.com/frankie.frankie.73997" target='blank'><FacebookLogo size={32} weight="thin" /></a>
-                            <a href="https://www.instagram.com/popiceduriaan?igsh=a3ZjaXR6OWc0bGoy" target='blank'><InstagramLogo size={32} weight="thin" /></a>
-                            <a href="https://www.linkedin.com/in/frengki-iskandar-00586b235/" target='blank'><LinkedinLogo size={32} weight="thin" /></a>
-                            <a href="https://wa.me/6281275691395" target='blank'><WhatsappLogo size={32} weight="thin" /></a>
-                            <a href="https://github.com/FrankieRockabilly" target='blank'><GithubLogo size={32} weight="thin" /></a>
+                            <a href="https://www.facebook.com/frankie.frankie.73997" target='blank' className='hover:text-oren'><FacebookLogo size={32} weight="thin" /></a>
+                            <a href="https://www.instagram.com/popiceduriaan?igsh=a3ZjaXR6OWc0bGoy" target='blank' className='hover:text-oren'><InstagramLogo size={32} weight="thin" /></a>
+                            <a href="https://www.linkedin.com/in/frengki-iskandar-00586b235/" target='blank' className='hover:text-oren'><LinkedinLogo size={32} weight="thin" /></a>
+                            <a href="https://wa.me/6281275691395" target='blank' className='hover:text-oren'><WhatsappLogo size={32} weight="thin" /></a>
+                            <a href="https://github.com/FrankieRockabilly" target='blank' className='hover:text-oren'><GithubLogo size={32} weight="thin" /></a>
                         </div>
                     </div>
 
@@ -76,9 +76,9 @@ const Footer = ({ scrollToAbout, scrollToHome, scrollToPortfolio, scrollToContac
                         <div className='flex flex-col justify-start items-start gap-2'>
                             <p className='font-light'>There are many variations of passages</p>
                             <form onSubmit={handleSubmitEmail} className='flex flex-col justify-center items-center gap-2 w-full'>
-                                <input type="email" className='px-3 py-3 bg-zinc-500 outline-none rounded-lg w-full' placeholder='Email Address'
+                                <input type="email" className='px-3 py-3 bg-zinc-500 outline-none rounded-lg w-full' placeholder='Email Address '
                                     value={email}
-                                    onChange={(e) => setEmail(e.target.value)} />
+                                    onChange={(e) => setEmail(e.target.value)} disabled/>
                                 <button className='text-center py-3 bg-primary hover:bg-primarySec rounded-lg w-full text-white font-light' type='submit'>Subscribe</button>
                             </form>
                         </div>

@@ -17,6 +17,20 @@ module.exports = {
         'poppins': ['poppins', 'sans-serif'],
         'anton' : ['anton', 'serif']
       },
+      keyframes: {
+        typing: {
+          '0%': { width: '0ch' },
+          '100%': { width: '24ch' } // Ganti sesuai jumlah karakter
+        },
+        blink: {
+          '50%': { borderColor: 'transparent' },
+          '100%': { borderColor: 'black' },
+        }
+      },
+      animation: {
+        typing: 'typing 5s steps(24) forwards',
+        blink: 'blink 1s step-end infinite',
+      }
     },
   },
   plugins: [
