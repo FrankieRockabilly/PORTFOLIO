@@ -73,7 +73,7 @@ const Home = () => {
             opacity: 1,
             x: 0,
             duration: 2,
-            ease: "sine.in",
+            ease: "sine.out",
             stagger:{
                each: 0.5,
                from : "end"
@@ -105,15 +105,15 @@ const Home = () => {
                         </div>
                      </div>
 
-                     <div className="relative lg:pt-32 flex flex-col lg:flex-row justify-start items-start gap-5 w-full">
-                        <div className="hidden xl:block absolute top-10 right-28 justify-center items-center overflow-hidden framesection">
+                     <div className="relative lg:pt-32 flex flex-col lg:flex-row justify-start items-start gap-5 w-full ">
+                        <div className="xl:block absolute right-0 bottom-32  xl:top-44 xl:right-28 justify-center items-center overflow-hidden framesection">
                            <img
                               src='https://res.cloudinary.com/dplikeeby/image/upload/v1751529607/imageprofile_b2hvyf.png'
                               alt=""
-                              className="h-full w-[25rem]"
+                              className="w-[10rem] h-[15rem] xl:h-auto xl:w-[25rem] opacity-20 xl:opacity-100"
                            />
                         </div>
-                        <div className="flex flex-col justify-start items-start gap-8 h-full max-w-[50rem] p-5">
+                        <div className="flex flex-col justify-start items-start gap-8 h-full max-w-[50rem] p-5 py-36">
                            <h1 className="text-sm text-gray-500 lg:text-2xl tracking-widest border border-oren px-3 lg:px-10 py-2 rounded-full hello">
                               Hallo Everyone ..
                            </h1>
@@ -124,7 +124,7 @@ const Home = () => {
                            <div>
                               <Line />
                            </div>
-                           <p className="text-base text-gray-500 lg:text-xl lg:w-[45rem] indent-20 paragraph">
+                           <p className="text-sm text-gray-500 lg:text-xl lg:w-[45rem] indent-20 paragraph">
                               I am a passionate Full-Stack Developer and
                               Freelance Web Creator, dedicated to crafting
                               modern, responsive, and high-performance websites.
