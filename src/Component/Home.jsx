@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import Line from "./Line";
 import Header from "./Header";
 import Projects from "./Projects";
@@ -7,9 +7,7 @@ import Testimonial from "./Testimonial";
 import Footer from "./Footer";
 import Contact from "./Contact";
 import TypingText from "./ChildComponent/TypingText";
-// import TechStack from "./TechStack";
 import gsap from "gsap";
-import TechStack from "./TechStack";
 
 const Home = () => {
    const aboutRef = useRef(null);
@@ -19,18 +17,29 @@ const Home = () => {
 
 
    // ✅ Scroll Functions (tetap)
-   const scrollToAbout = () => {
-      aboutRef.current?.scrollIntoView({ behavior: "smooth" });
-   };
-   const scrollToHome = () => {
-      homeRef.current?.scrollIntoView({ behavior: "smooth" });
-   };
-   const scrollToPortfolio = () => {
-      portfolioRef.current?.scrollIntoView({ behavior: "smooth" });
-   };
-   const scrollToContact = () => {
-      contactRef.current?.scrollIntoView({ behavior: "smooth" });
-   };
+   const scrollWithOffset = (ref, offset = 10) => {
+   const top = ref.current?.offsetTop || 0;
+   window.scrollTo({
+      top: top + offset,
+      behavior: "smooth",
+   });
+};
+const scrollToAbout = () => scrollWithOffset(aboutRef, -110);
+const scrollToHome = () => scrollWithOffset(homeRef, -110);
+const scrollToPortfolio = () => scrollWithOffset(portfolioRef, -110);
+const scrollToContact = () => scrollWithOffset(contactRef, -100);
+   // const scrollToAbout = () => {
+   //    aboutRef.current?.scrollIntoView({ behavior: "smooth" });
+   // };
+   // const scrollToHome = () => {
+   //    homeRef.current?.scrollIntoView({ behavior: "smooth" });
+   // };
+   // const scrollToPortfolio = () => {
+   //    portfolioRef.current?.scrollIntoView({ behavior: "smooth" });
+   // };
+   // const scrollToContact = () => {
+   //    contactRef.current?.scrollIntoView({ behavior: "smooth" });
+   // };
 
    // ✅ GSAP (tetap)
    useEffect(() => {
@@ -85,18 +94,17 @@ const Home = () => {
    return (
       <>
          <div className="font-poppins pt-16 lg:pt-0 bg-white " ref={homeRef}>
-            <div className="flex flex-col flex-grow text-black relative overflow-hidden">
+            <div className="flex flex-col flex-grow text-black relative overflow-hidden ">
                <Header
                   scrollToAbout={scrollToAbout}
                   scrollToContact={scrollToContact}
                   scrollToHome={scrollToHome}
                   scrollToPortfolio={scrollToPortfolio}
                />
-               <section className="lg:px-20 lg:py-20 bg-white relative">
-                  {/* gambar awan */}
-                  {/* <div className="absolute -top-20 -right-36 z-10 w-[30%] opacity-45 framesection">
-                     <img src='https://res.cloudinary.com/dplikeeby/image/upload/v1751530936/cloud-min_xnkllz.png' alt="" className="w-full "/>
-                  </div> */}
+               <section className="lg:px-20 lg:py-5 bg-white relative ">
+                  
+                  {/* gambar awan gajadi deng*/}
+
                   <div className="relative flex flex-grow px-12 pb-9 lg:px-36 bg-no-repeat overflow-hidden backdrop-blur-3xl bg-opacity-55 lg: bg-contain bg-center">
                      <div className="absolute top-[10%] left-[10%] transform translate-y-1/2 hidden xl:block">
                         {/* ✅ Typing effect display */}
@@ -146,13 +154,6 @@ const Home = () => {
                {/* Bagian lain tetap */}
                <div ref={aboutRef}>
                   <About />
-               </div>
-
-               <div>
-                  {/* svg */}
-                  {/* ... (tidak diubah) */}
-                  <TechStack />
-                  {/* ... */}
                </div>
 
                <div ref={portfolioRef}>

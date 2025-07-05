@@ -37,36 +37,36 @@ const Projects = () => {
    }, []);
    return (
       <>
-         <section className=" pt-20 lg:pt-1 px-5 lg:px-24">
-            <div className="w-full flex flex-col justify-center items-center gap-6 pt-24 pb-10 relative ">
+         <section className=" pt-20 lg:pt-1 px-5 lg:px-24 ">
+            <div className="w-full flex flex-col justify-center items-center gap-6 pb-10 relative ">
                <h1 className="text-center text-2xl lg:text-3xl font-bold">
                   Projects and Certificate
                </h1>
                <Line />
                <img src={task} alt="" className="absolute top-2/4 -right-40 w-[15rem] hidden lg:block z-10"/>
             </div>
-            <div className="flex justify-center items-center gap-10 flex-wrap w-full">
+            <div className="flex justify-center items-center gap-4 xl:gap-10 flex-wrap w-full">
                {/* item project */}
                {project.map((value, index) => {
                   return (
                      <div
-                        className="w-72 flex flex-col justify-center items-center gap-2 px-5 py-2 shadow-lg  rounded-lg group relative border hover:border-primary project"
+                        className="w-36 xl:w-72 h-96 flex flex-col justify-center items-center gap-2 px-5 py-2 shadow-lg  rounded-lg group relative border hover:border-primary project"
                         key={index}
                      >
-                        <div className="w-72 h-64 overflow-hidden px-3 py-1 ">
+                        <div className="w-40 lg:w-72 h-64 overflow-hidden px-3 py-1 ">
                            <img
                               src={value.image}
                               alt="infidea"
                               className="w-full h-full bg-contain rounded-2xl group-hover:scale-105 transition-all duration-200 ease-out"
                            />
                         </div>
-                        <h1 className="w-40 text-center font-semibold tracking-wider">
+                        <h1 className="w-20 text-sm xl:w-40 text-center font-light lg:font-semibold tracking-wider">
                            {value.name}{" "}
                         </h1>
 
                         <div className="flex justify-center items-center w-full text-gray-500">
                            {/* <p>Project</p> */}
-                           <p className=" font-light text-center text-gray-500">
+                           <p className="text-sm lg:text-base font-light text-center text-gray-500">
                               {value.category}{" "}
                            </p>
                         </div>
@@ -85,7 +85,7 @@ const Projects = () => {
 
                         <div className="py-2">
                            <button
-                              className={`px-8 rounded-xl border py-2 group-hover:bg-primary text-gray-400 group-hover:text-white transition-all duration-200 ease-in ${
+                              className={`px-2 lg:px-8 rounded-xl border py-2 group-hover:bg-primary text-gray-400 group-hover:text-white transition-all duration-200 ease-in ${
                                  value.status === "hosted"
                                     ? "cursor-pointer"
                                     : "cursor-not-allowed "
@@ -96,15 +96,15 @@ const Projects = () => {
                                     <a
                                        href={value.link}
                                        target="blank"
-                                       className="flex justify-center items-center gap-3"
+                                       className="text-[12px] lg:text-base flex justify-center items-center gap-3"
                                     >
-                                       View Project
-                                       <ArrowRight size={32} weight="thin" />
+                                       View
+                                       <ArrowRight size={15} weight="thin" />
                                     </a>
                                  </div>
                               ) : (
-                                 <div className="flex justify-center items-center gap-3">
-                                    <p>Not Available</p>
+                                 <div className="text-sm xl:text-base flex justify-center items-center gap-3">
+                                    <p>-</p>
                                  </div>
                               )}
                            </button>

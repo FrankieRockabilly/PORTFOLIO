@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import Line from './Line'
 import { SiMysql, SiHtml5, SiTailwindcss ,SiExpress } from "react-icons/si";
 import { FaFacebookF, FaInstagram, FaGithub, FaLinkedinIn, FaCss3, FaReact, FaNodeJs  } from "react-icons/fa";
@@ -9,6 +9,22 @@ import ScrollTrigger from 'gsap/src/ScrollTrigger';
 
 const About = () => {
    gsap.registerPlugin(ScrollTrigger);
+   const [size, setSize] = useState(0)
+
+   const getSize = ()=>{
+      if(window.innerWidth <= 768 ){
+         setSize(12)
+      }
+      else if(window.innerWidth <= 1024){
+         setSize(14)
+      }else{
+         setSize(25)
+      }
+   }
+   useEffect(()=>{
+      getSize()
+   }, [])
+
    useEffect(() => {
       gsap.fromTo(
          ".head",
@@ -69,8 +85,8 @@ const About = () => {
    }, []);
    return (
       <>
-         <div className="lg:px-36 pt-20 px-12 ">
-            <div className="flex flex-col justify-center items-center gap-6 pt-12 relative">
+         <div className="lg:px-36 px-12">
+            <div className="flex flex-col justify-center items-center gap-6 relative">
                <h1 className="text-center text-2xl lg:text-3xl font-bold">
                   About
                </h1>
@@ -131,35 +147,35 @@ const About = () => {
                      </a>
                   </div>
                      {/* tech stack */}
-                     <div className='flex flex-wrap justify-start items-center gap-2 max-w-[35rem]'>
-                        <div className='w-20 h-20 lg:w-24 lg:h-24 bg-orange-600 shadow-xl shadow-orange-400 hover:bg-orange-700 rounded-xl flex justify-center items-center gap-2 text-white aboutbox'>
-                           <SiHtml5 size={30}/>
+                     <div className='flex flex-wrap justify-center lg:justify-start items-center gap-1 lg:gap-2 max-w-[35rem]'>
+                        <div className='w-12 h-12 lg:h-24 lg:w-24 bg-orange-600 shadow-xl shadow-orange-400 hover:bg-orange-700 rounded-xl flex justify-center items-center gap-2 text-white aboutbox'>
+                           <SiHtml5 size={size}/>
                         </div>
-                        <div className='w-20 h-20 lg:w-24 lg:h-24 bg-blue-600 shadow-xl shadow-blue-400 hover:bg-blue-700 rounded-xl flex justify-center items-center gap-2 text-white aboutbox'>
-                           <FaCss3 size={30}/>
+                        <div className='w-12 h-12 lg:h-24 lg:w-24 bg-blue-600 shadow-xl shadow-blue-400 hover:bg-blue-700 rounded-xl flex justify-center items-center gap-2 text-white aboutbox'>
+                           <FaCss3 size={size}/>
                         </div>
-                        <div className='w-20 h-20 lg:w-24 lg:h-24 bg-yellow-600 shadow-xl shadow-yellow-400 hover:bg-yellow-700 rounded-xl flex justify-center items-center gap-2 text-white aboutbox'>
-                           <RiJavascriptFill size={30}/>
+                        <div className='w-12 h-12 lg:h-24 lg:w-24 bg-yellow-600 shadow-xl shadow-yellow-400 hover:bg-yellow-700 rounded-xl flex justify-center items-center gap-2 text-white aboutbox'>
+                           <RiJavascriptFill size={size}/>
                         </div>
-                        <div className='w-20 h-20 lg:w-24 lg:h-24 bg-cyan-600 shadow-xl shadow-cyan-400 hover:bg-cyan-700 rounded-xl flex justify-center items-center gap-2 text-white aboutbox'>
-                           <FaReact size={30}/>
+                        <div className='w-12 h-12 lg:h-24 lg:w-24 bg-cyan-600 shadow-xl shadow-cyan-400 hover:bg-cyan-700 rounded-xl flex justify-center items-center gap-2 text-white aboutbox'>
+                           <FaReact size={size}/>
                         </div>
-                        <div className='w-20 h-20 lg:w-24 lg:h-24 bg-green-600 shadow-xl shadow-green-400 hover:bg-green-700 rounded-xl flex justify-center items-center gap-2 text-white aboutbox'>
-                           <FaNodeJs size={30}/>
+                        <div className='w-12 h-12 lg:h-24 lg:w-24 bg-green-600 shadow-xl shadow-green-400 hover:bg-green-700 rounded-xl flex justify-center items-center gap-2 text-white aboutbox'>
+                           <FaNodeJs size={size}/>
                         </div>
-                        <div className='w-20 h-20 lg:w-24 lg:h-24 bg-blue-400 shadow-xl shadow-purple-200 hover:bg-blue-500 rounded-xl flex justify-center items-center gap-2 text-white aboutbox'>
-                           <SiTailwindcss size={30}/>
+                        <div className='w-12 h-12 lg:h-24 lg:w-24 bg-blue-400 shadow-xl shadow-purple-200 hover:bg-blue-500 rounded-xl flex justify-center items-center gap-2 text-white aboutbox'>
+                           <SiTailwindcss size={size}/>
                         </div>
-                        <div className='w-20 h-20 lg:w-24 lg:h-24 bg-purple-400 shadow-xl shadow-purple-200 hover:bg-purpe-500 rounded-xl flex justify-center items-center gap-2 text-white aboutbox'>
-                           <SiMysql size={50}/>
+                        <div className='w-12 h-12 lg:h-24 lg:w-24 bg-purple-400 shadow-xl shadow-purple-200 hover:bg-purpe-500 rounded-xl flex justify-center items-center gap-2 text-white aboutbox'>
+                           <SiMysql size={size}/>
                         </div>
-                        <div className='w-20 h-20 lg:w-24 lg:h-24 bg-gray-600 shadow-xl shadow-gray-400 hover:bg-gray-700 rounded-xl flex justify-center items-center gap-2 text-white aboutbox'>
-                           <SiExpress size={30}/>
+                        <div className='w-12 h-12 lg:h-24 lg:w-24 bg-gray-600 shadow-xl shadow-gray-400 hover:bg-gray-700 rounded-xl flex justify-center items-center gap-2 text-white aboutbox'>
+                           <SiExpress size={size}/>
                         </div>
                      </div>
-                     <div className="z-10 text-sm lg:text-lg">
+                     <div className="z-10 text-sm lg:text-base">
                         <a href="/RESUME.pdf" download="RESUME.pdf">
-                           <button className="bg-primary text-white px-5 py-3 rounded-lg ">
+                           <button className="bg-primary text-white px-3 py-2 lg:px-4 lg:py-3 rounded-lg ">
                               Download My CV
                            </button>
                         </a>

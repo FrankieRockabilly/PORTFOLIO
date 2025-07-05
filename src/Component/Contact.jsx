@@ -79,7 +79,7 @@ const Contact = () => {
     return (
         <>
             <div className='px-5 lg:px-36 py-10'>
-                <div className='flex flex-col justify-center items-center gap-6 pt-16'>
+                <div className='flex flex-col justify-center items-center gap-6 '>
                     <h1 className='text-center text-2xl lg:text-3xl font-bold '>Get In Touch</h1>
                     <Line />
                 </div>
