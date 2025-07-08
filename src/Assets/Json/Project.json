@@ -2,7 +2,7 @@
     {
         "name" : "QnA Infidea",
         "image" : "pro.jpg",
-        "category"  : "Frontend Dev",
+        "category"  : "Frontend",
         "link": "#",
         "job": "Employee complaint service",
         "status": "employee"
@@ -10,7 +10,7 @@
     {
         "name" : "Deri Store",
         "image": "tiwiponsel.png",
-        "category"  : "Fullstack Dev",
+        "category"  : "Fullstack",
         "link": "https://deristore-tiwiponsel.vercel.app/",
         "job": "E Commerce",
         "status": "hosted"
@@ -18,7 +18,7 @@
     {
         "name" : "Rijal Homecare",
         "image": "rijalapps.png",
-        "category"  : "Fullstack Dev",
+        "category"  : "Fullstack",
         "link": "https://rijal-app.vercel.app/",
         "job": "Homecare",
         "status": "hosted"
@@ -26,7 +26,7 @@
     {
         "name": "Landing Page",
         "image" : "personal.jpg",
-        "category"  : "Frontend Dev",
+        "category"  : "Frontend",
         "link": "https://frengkyportfolio-git-main-frankierockabillys-projects.vercel.app/",
         "job": "Landing Page",
         "status": "hosted"
@@ -34,7 +34,7 @@
     {
         "name" : "Nexcent UI",
         "image" : "nexcent.jpg",
-        "category"  : "Frontend Dev",
+        "category"  : "Frontend",
         "job": "Landing Page",
         "link": "#",
         "status": "local server"
@@ -42,7 +42,7 @@
     {
         "name": "Silahul Mukmin",
         "image": "silahul.png",
-        "category": "Fullstack Dev",
+        "category": "Fullstack",
         "link": "#",
         "job": "Organization",
         "status": "local server"
@@ -50,7 +50,7 @@
     {
         "name": "BookBuzz",
         "image": "bookbuzz.png",
-        "category": "Frontend Dev",
+        "category": "Frontend",
         "link": "#",
         "job": "E Commerce",
         "status": "local server"

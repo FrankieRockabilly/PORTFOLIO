@@ -33,7 +33,7 @@ const Header = ({ scrollToAbout, scrollToHome, scrollToPortfolio, scrollToContac
       return (
          <>
             <header
-               className={`flex justify-between items-center px-[10%] py-10 flex-grow-0 h-20 w-full fixed top-0 z-30 right-0 left-0  ${
+               className={`bg-none flex justify-between items-center px-[10%] py-10 flex-grow-0 h-20 w-full fixed top-0 z-30 right-0 left-0  ${
                   scroll ? "shadow-md backdrop-blur-3xl bg-opacity-60" : ""
                }`}
             >

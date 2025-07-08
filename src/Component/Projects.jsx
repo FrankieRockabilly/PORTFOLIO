@@ -13,6 +13,7 @@ import ScrollTrigger from "gsap/src/ScrollTrigger";
 import gsap from "gsap";
 
 const Projects = () => {
+
    gsap.registerPlugin(ScrollTrigger);
    useEffect(() => {
       gsap.fromTo(
@@ -38,7 +39,7 @@ const Projects = () => {
    return (
       <>
          <section className=" pt-20 lg:pt-1 px-5 lg:px-24 ">
-            <div className="w-full flex flex-col justify-center items-center gap-6 pb-10 relative ">
+            <div className="w-full flex flex-col justify-center items-center gap-2 lg:gap-6 pb-10 relative ">
                <h1 className="text-center text-2xl lg:text-3xl font-bold">
                   Projects and Certificate
                </h1>
@@ -50,7 +51,7 @@ const Projects = () => {
                {project.map((value, index) => {
                   return (
                      <div
-                        className="w-36 xl:w-72 h-96 flex flex-col justify-center items-center gap-2 px-5 py-2 shadow-lg  rounded-lg group relative border hover:border-primary project"
+                        className="w-36 h-64 lg:h-96 xl:w-72  flex flex-col justify-center items-center gap-2 px-5 py-2 shadow-lg  rounded-lg group relative border hover:border-primary project"
                         key={index}
                      >
                         <div className="w-40 lg:w-72 h-64 overflow-hidden px-3 py-1 ">
@@ -60,7 +61,7 @@ const Projects = () => {
                               className="w-full h-full bg-contain rounded-2xl group-hover:scale-105 transition-all duration-200 ease-out"
                            />
                         </div>
-                        <h1 className="w-20 text-sm xl:w-40 text-center font-light lg:font-semibold tracking-wider">
+                        <h1 className="w-20 text-[12px] xl:text-base xl:w-40 text-center font-light lg:font-semibold tracking-wider">
                            {value.name}{" "}
                         </h1>
 
@@ -85,7 +86,7 @@ const Projects = () => {
 
                         <div className="py-2">
                            <button
-                              className={`px-2 lg:px-8 rounded-xl border py-2 group-hover:bg-primary text-gray-400 group-hover:text-white transition-all duration-200 ease-in ${
+                              className={`px-4 lg:px-8 rounded-xl border py-2 group-hover:bg-primary text-gray-400 group-hover:text-white transition-all duration-200 ease-in ${
                                  value.status === "hosted"
                                     ? "cursor-pointer"
                                     : "cursor-not-allowed "
@@ -96,7 +97,7 @@ const Projects = () => {
                                     <a
                                        href={value.link}
                                        target="blank"
-                                       className="text-[12px] lg:text-base flex justify-center items-center gap-3"
+                                       className="text-[12px] lg:text-base flex justify-center items-center gap-1 lg:gap-3"
                                     >
                                        View
                                        <ArrowRight size={15} weight="thin" />
@@ -117,7 +118,8 @@ const Projects = () => {
 
 {/* CERTIFICATE */}
             <div className="flex flex-col justify-center items-center">
-               <div className="text-2xl lg:text-3xl font-bold pt-16 pb-5">
+               {/* <div className="text-2xl lg:text-3xl font-bold gap-2 flex flex-col justify-start items-start lg:gap-6 pt-16 pb-5"> */}
+                  <div className="flex flex-col justify-center items-center lg:text-3xl font-bold gap-2 lg:gap-6 relative pt-16 pb-5 ">
                   <h1>Certificate</h1>
                   <Line />
                </div>

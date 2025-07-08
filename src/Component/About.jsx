@@ -85,8 +85,8 @@ const About = () => {
    }, []);
    return (
       <>
-         <div className="lg:px-36 px-12">
-            <div className="flex flex-col justify-center items-center gap-6 relative">
+         <div className="px-7 lg:px-36">
+            <div className="flex flex-col justify-center items-center gap-2 lg:gap-6 relative ">
                <h1 className="text-center text-2xl lg:text-3xl font-bold">
                   About
                </h1>
@@ -148,29 +148,29 @@ const About = () => {
                   </div>
                      {/* tech stack */}
                      <div className='flex flex-wrap justify-center lg:justify-start items-center gap-1 lg:gap-2 max-w-[35rem]'>
-                        <div className='w-12 h-12 lg:h-24 lg:w-24 bg-orange-600 shadow-xl shadow-orange-400 hover:bg-orange-700 rounded-xl flex justify-center items-center gap-2 text-white aboutbox'>
-                           <SiHtml5 size={size}/>
+                        <div className='w-12 h-12 lg:h-24 lg:w-24 bg-orange-600 shadow-xl shadow-orange-400 hover:bg-orange-700 rounded-xl flex justify-center items-center gap-2 text-white aboutbox group'>
+                           <SiHtml5 size={size} className='group-hover:scale-125 transition-all duration-300 ease-out'/>
                         </div>
-                        <div className='w-12 h-12 lg:h-24 lg:w-24 bg-blue-600 shadow-xl shadow-blue-400 hover:bg-blue-700 rounded-xl flex justify-center items-center gap-2 text-white aboutbox'>
-                           <FaCss3 size={size}/>
+                        <div className='w-12 h-12 lg:h-24 lg:w-24 bg-blue-600 shadow-xl shadow-blue-400 hover:bg-blue-700 rounded-xl flex justify-center items-center gap-2 text-white aboutbox group'>
+                           <FaCss3 size={size} className='group-hover:scale-125 transition-all duration-300 ease-out'/>
                         </div>
-                        <div className='w-12 h-12 lg:h-24 lg:w-24 bg-yellow-600 shadow-xl shadow-yellow-400 hover:bg-yellow-700 rounded-xl flex justify-center items-center gap-2 text-white aboutbox'>
-                           <RiJavascriptFill size={size}/>
+                        <div className='w-12 h-12 lg:h-24 lg:w-24 bg-yellow-600 shadow-xl shadow-yellow-400 hover:bg-yellow-700 rounded-xl flex justify-center items-center gap-2 text-white aboutbox group'>
+                           <RiJavascriptFill size={size} className='group-hover:scale-125 transition-all duration-300 ease-out'/>
                         </div>
-                        <div className='w-12 h-12 lg:h-24 lg:w-24 bg-cyan-600 shadow-xl shadow-cyan-400 hover:bg-cyan-700 rounded-xl flex justify-center items-center gap-2 text-white aboutbox'>
-                           <FaReact size={size}/>
+                        <div className='w-12 h-12 lg:h-24 lg:w-24 bg-cyan-600 shadow-xl shadow-cyan-400 hover:bg-cyan-700 rounded-xl flex justify-center items-center gap-2 text-white aboutbox group'>
+                           <FaReact size={size} className='group-hover:scale-125 transition-all duration-300 ease-out'/>
                         </div>
-                        <div className='w-12 h-12 lg:h-24 lg:w-24 bg-green-600 shadow-xl shadow-green-400 hover:bg-green-700 rounded-xl flex justify-center items-center gap-2 text-white aboutbox'>
-                           <FaNodeJs size={size}/>
+                        <div className='w-12 h-12 lg:h-24 lg:w-24 bg-green-600 shadow-xl shadow-green-400 hover:bg-green-700 rounded-xl flex justify-center items-center gap-2 text-white aboutbox group'>
+                           <FaNodeJs size={size} className='group-hover:scale-125 transition-all duration-300 ease-out'/>
                         </div>
-                        <div className='w-12 h-12 lg:h-24 lg:w-24 bg-blue-400 shadow-xl shadow-purple-200 hover:bg-blue-500 rounded-xl flex justify-center items-center gap-2 text-white aboutbox'>
-                           <SiTailwindcss size={size}/>
+                        <div className='w-12 h-12 lg:h-24 lg:w-24 bg-blue-400 shadow-xl shadow-purple-400 hover:bg-blue-500 rounded-xl flex justify-center items-center gap-2 text-white aboutbox group'>
+                           <SiTailwindcss size={size} className='group-hover:scale-125 transition-all duration-300 ease-out'/>
                         </div>
-                        <div className='w-12 h-12 lg:h-24 lg:w-24 bg-purple-400 shadow-xl shadow-purple-200 hover:bg-purpe-500 rounded-xl flex justify-center items-center gap-2 text-white aboutbox'>
-                           <SiMysql size={size}/>
+                        <div className='w-12 h-12 lg:h-24 lg:w-24 bg-purple-400 shadow-xl shadow-purple-400 hover:bg-purpe-500 rounded-xl flex justify-center items-center gap-2 text-white aboutbox group'>
+                           <SiMysql size={size} className='group-hover:scale-125 transition-all duration-300 ease-out'/>
                         </div>
-                        <div className='w-12 h-12 lg:h-24 lg:w-24 bg-gray-600 shadow-xl shadow-gray-400 hover:bg-gray-700 rounded-xl flex justify-center items-center gap-2 text-white aboutbox'>
-                           <SiExpress size={size}/>
+                        <div className='w-12 h-12 lg:h-24 lg:w-24 bg-gray-600 shadow-xl shadow-gray-400 hover:bg-gray-700 rounded-xl flex justify-center items-center gap-2 text-white aboutbox group'>
+                           <SiExpress size={size} className='group-hover:scale-125 transition-all duration-300 ease-out'/>
                         </div>
                      </div>
                      <div className="z-10 text-sm lg:text-base">
