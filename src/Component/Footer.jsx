@@ -16,36 +16,38 @@ const Footer = ({ scrollToAbout, scrollToHome, scrollToPortfolio, scrollToContac
     useEffect(() => {
         gsap.registerPlugin(ScrollTrigger)
 
-        gsap.fromTo('.footer', {
+        gsap.fromTo('.footerEffect', {
             opacity: 0,
-            x: 40,
+            y: 40,
         }, {
             opacity: 1,
-            x: 0,
+            y: 0,
             duration: 1.5,
             scrollTrigger: {
-                trigger: '.footer',
+                trigger: '.footerEffect',
                 start: 'top 90%',
                 once: true
-            }
+            },
+            ease:"sine.out",
+            stagger:0.1
         })
     })
 
     return (
         <>
             <div className='px-12  lg:px-36 py-20 bg-zinc-800 text-gray-400 '>
-                <div className='flex flex-wrap justify-start items-start gap-20 footer'>
+                <div className='flex flex-wrap justify-start items-start gap-20 footerEffect'>
 
                     {/* 1 */}
                     <div className='w-[28rem] flex flex-col justify-start items-start gap-5'>
-                        <h1 className='font-bold text-primary'>Frengki <span className='text-oren'>Iskandar</span></h1>
-                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour</p>
+                        <h1 className='font-bold text-primary'>Frengki <span className='text-oren footerEffect'>Iskandar</span></h1>
+                        <p className='text-base'>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour</p>
                         <div className='flex justify-end items-end gap-5 w-full'>
-                            <a href="https://www.facebook.com/frankie.frankie.73997" target='blank' className='hover:text-oren'><FacebookLogo size={32} weight="thin" /></a>
-                            <a href="https://www.instagram.com/popiceduriaan?igsh=a3ZjaXR6OWc0bGoy" target='blank' className='hover:text-oren'><InstagramLogo size={32} weight="thin" /></a>
-                            <a href="https://www.linkedin.com/in/frengki-iskandar-00586b235/" target='blank' className='hover:text-oren'><LinkedinLogo size={32} weight="thin" /></a>
-                            <a href="https://wa.me/6281275691395" target='blank' className='hover:text-oren'><WhatsappLogo size={32} weight="thin" /></a>
-                            <a href="https://github.com/FrankieRockabilly" target='blank' className='hover:text-oren'><GithubLogo size={32} weight="thin" /></a>
+                            <a href="https://www.facebook.com/frankie.frankie.73997" target='blank' className='hover:text-oren footerEffect'><FacebookLogo size={32} weight="thin" /></a>
+                            <a href="https://www.instagram.com/popiceduriaan?igsh=a3ZjaXR6OWc0bGoy" target='blank' className='hover:text-oren footerEffect'><InstagramLogo size={32} weight="thin" /></a>
+                            <a href="https://www.linkedin.com/in/frengki-iskandar-00586b235/" target='blank' className='hover:text-oren footerEffect'><LinkedinLogo size={32} weight="thin" /></a>
+                            <a href="https://wa.me/6281275691395" target='blank' className='hover:text-oren footerEffect'><WhatsappLogo size={32} weight="thin" /></a>
+                            <a href="https://github.com/FrankieRockabilly" target='blank' className='hover:text-oren footerEffect'><GithubLogo size={32} weight="thin" /></a>
                         </div>
                     </div>
 
@@ -74,7 +76,7 @@ const Footer = ({ scrollToAbout, scrollToHome, scrollToPortfolio, scrollToContac
                     <div className=' w-full lg:w-80 flex flex-col justify-start items-start gap-5'>
                         <h1 className='text-white'>Subscribe</h1>
                         <div className='flex flex-col justify-start items-start gap-2'>
-                            <p className='font-light'>There are many variations of passages</p>
+                            <p className='font-light text-sm'>There are many variations of passages</p>
                             <form onSubmit={handleSubmitEmail} className='flex flex-col justify-center items-center gap-2 w-full'>
                                 <input type="email" className='px-3 py-3 bg-zinc-500 outline-none rounded-lg w-full' placeholder='Email Address '
                                     value={email}
