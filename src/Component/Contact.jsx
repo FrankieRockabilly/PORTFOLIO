@@ -88,7 +88,7 @@ const Contact = () => {
                 )}
                 <div className='flex flex-wrap  rounded-2xl shadow-xl bg-gray-50 py-2 mt-5'>
                     {/* 1 */}
-                    <div className='px-16 py-16 '>
+                    <div className='px-7 lg:px-16 py-16 '>
                         <form className=' flex flex-col justify-start items-start gap-5  w-2[70%] contact' onSubmit={handleClickSendFeedback}>
                         <div className='flex flex-wrap justify-between gap-5 w-full'>
                             {/* <label htmlFor="">Full Name*</label> */}
