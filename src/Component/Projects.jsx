@@ -20,7 +20,7 @@ const Projects = () => {
          ".project",
          {
             opacity: 0,
-            x: 40,
+            y: 40,
          },
          {
             scrollTrigger: {
@@ -29,7 +29,7 @@ const Projects = () => {
                once: true,
             },
             opacity: 1,
-            x: 0,
+            y: 0,
             duration: 1,
             ease: "power2.inOut",
             stagger : 0.2
@@ -124,7 +124,7 @@ const Projects = () => {
                   <Line />
                </div>
                <div className="flex flex-wrap justify-center items-center gap-1 lg:gap-4 ">
-                  <div className="h-48 w-64 lg:h-72 lg:w-[20rem] relative flex justify-center items-center group">
+                  <div className="h-28 w-36 lg:h-72 lg:w-[20rem] relative flex justify-center items-center group">
                      <img
                         src={hsbc}
                         alt=""
@@ -132,21 +132,21 @@ const Projects = () => {
                      />
                   </div>
 
-                  <div className="h-48 w-64 lg:h-72 lg:w-[20rem] relative">
+                  <div className="h-28 w-36 lg:h-72 lg:w-[20rem] relative">
                      <img
                         src={growia}
                         alt=""
                         className="object-contain h-full w-full transition-all duration-200 ease-out hover:scale-105"
                      />
                   </div>
-                  <div className="h-48 w-64 lg:h-72 lg:w-[20rem] relative">
+                  <div className="h-28 w-36 lg:h-72 lg:w-[20rem] relative">
                      <img
                         src="https://res.cloudinary.com/dplikeeby/image/upload/v1743292855/certificate_f49bqs.jpg"
                         alt=""
                         className="object-contain h-full w-full transition-all duration-200 ease-out hover:scale-105"
                      />
                   </div>
-                  <div className="h-48 w-64 lg:h-72 lg:w-[20rem] relative">
+                  <div className="h-28 w-36 lg:h-72 lg:w-[20rem] relative">
                      <img
                         src="https://res.cloudinary.com/dplikeeby/image/upload/v1748308271/dcoding_bf1f5p.jpg"
                         alt=""
