@@ -10,7 +10,7 @@ import TypingText from "./ChildComponent/TypingText";
 import gsap from "gsap";
 
 // icon 
-import { FaFileCode , FaLaptop , FaLayerGroup } from "react-icons/fa";
+import { FaFileCode , FaLaptop } from "react-icons/fa";
 import { RiExchangeBoxFill,RiLayout3Fill  } from "react-icons/ri";
 
 const Home = () => {
@@ -80,39 +80,6 @@ const scrollToContact = () => scrollWithOffset(contactRef, -100);
                   
                   <div className="relative flex flex-grow px-7 pb-9 lg:px-36 bg-no-repeat overflow-visible backdrop-blur-3xl bg-opacity-55 lg: bg-contain bg-center ">
                   {/* what we do */}
-<<<<<<< HEAD
-                  
-=======
-                  <div className="absolute z-10 -bottom-14 xl:-bottom-5 flex flex-col lg:flex-row  items-start gap-2 xl:gap-5 flex-wrap  lg:w-[40rem]">
-                     <div className="flex justify-start items-center gap-3 xl:w-72">
-                        <div className="w-8 h-8 lg:w-16 lg:h-16 rounded-lg flex justify-center items-center bg-green-600 text-white ">
-                           <FaLaptop size={size}/>
-                        </div>
-                        <h2 className=" text-gray-500 font-medium">Website Developent</h2>
-                     </div>
-                     
-                     <div className="flex justify-start items-center gap-3 xl:w-72">
-                        <div className="w-8 h-8 lg:w-16 lg:h-16 rounded-lg flex justify-center items-center bg-yellow-600 text-white ">
-                           <FaFileCode size={size}/>
-                        </div>
-                        <h2 className=" text-gray-500 font-medium">Clean Code</h2>
-                     </div>
-
-                     <div className="flex justify-start items-center gap-3 xl:w-72">
-                        <div className="w-8 h-8 lg:w-16 lg:h-16 rounded-lg flex justify-center items-center bg-red-600 text-white ">
-                           <RiExchangeBoxFill size={size}/>
-                        </div>
-                        <h2 className=" text-gray-500 font-medium">API Integration</h2>
-                     </div>
-
-                     <div className="flex justify-start items-center gap-3 xl:w-72">
-                        <div className="w-8 h-8 lg:w-16 lg:h-16 rounded-lg flex justify-center items-center bg-fuchsia-600 text-white ">
-                           <RiLayout3Fill size={size}/>
-                        </div>
-                        <h2 className=" text-gray-500 font-medium">UI/UX Implementation</h2>
-                     </div>
-                  </div>
->>>>>>> 7d535c1a7f236cb3f2c81735bd9d3b6a90cc659d
                      <div className="absolute top-[10%] left-[10%] transform translate-y-1/2 hidden xl:block ">
                         {/* ✅ Typing effect display */}
                         <div className="absolute top-[40%] left-[10%] transform translate-y-1/2 hidden xl:block ">
@@ -121,11 +88,7 @@ const scrollToContact = () => scrollWithOffset(contactRef, -100);
                      </div>
 
                      <div className="relative flex flex-col lg:flex-row justify-start items-start gap-5 w-full">
-<<<<<<< HEAD
-                        <div className="flex flex-col justify-start items-start gap-5 h-full max-w-[50rem] py-20 lg:py-44">
-=======
                         <div className="flex flex-col justify-start items-start gap-2 h-full max-w-[50rem] py-20 lg:py-44">
->>>>>>> 7d535c1a7f236cb3f2c81735bd9d3b6a90cc659d
                            <h1 className="text-sm text-gray-500 lg:text-2xl tracking-widest border border-oren px-3 lg:px-10 py-2 rounded-full hello">
                               Hallo Everyone ..
                            </h1>
@@ -145,11 +108,7 @@ const scrollToContact = () => scrollWithOffset(contactRef, -100);
                               experiences
                            </p>
                            <button
-<<<<<<< HEAD
-                              className="bg-oren hover:bg-orange-700 transition-all duration-200 ease-out px-3 py-2 mt-5 mb-5 lg:px-5 lg:py-3 rounded-full text-[12px] lg:text-lg text-white uppercase features"
-=======
-                              className="bg-oren hover:bg-orange-700 transition-all duration-200 ease-out px-3 py-2 mt-5 lg:mt-10 lg:px-5 lg:py-3 rounded-full text-[12px] lg:text-lg text-white uppercase paragraph"
->>>>>>> 7d535c1a7f236cb3f2c81735bd9d3b6a90cc659d
+                              className="bg-oren hover:bg-orange-700 transition-all duration-200 ease-out px-3 py-2 mb-5 lg:mt-10 lg:px-5 lg:py-3 rounded-full text-[12px] lg:text-lg text-white uppercase paragraph"
                               onClick={() => scrollToContact()}
                            >
                               Contact Me
