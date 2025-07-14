@@ -100,7 +100,7 @@ const About = () => {
                      className="rounded-xl w-full h-full object-fit" alt="frengky"
                   />
                </div>
-               <div className="flex flex-col justify-start items-start gap-8  max-w-[55rem]  ">
+               <div className="flex flex-col justify-start items-start gap-8  xl:w-[35rem] 2xl:w-[40rem]">
                   <h1 className="font-semibold text-center lg:text-start text-2xl xl:text-6xl text-oren -tracking-tight w-full head">
                      Meet the <span className='text-primary'>Developer</span>
                   </h1>

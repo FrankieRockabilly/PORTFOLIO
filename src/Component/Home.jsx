@@ -99,7 +99,7 @@ const scrollToContact = () => scrollWithOffset(contactRef, -100);
                            <div>
                               <Line />
                            </div>
-                           <p className="text-sm text-gray-500 lg:text-lg lg:w-[45rem] indent-20 paragraph">
+                           <p className="text-sm text-black lg:text-base lg:w-[30rem] xl:text-lg xl:w-[30rem] indent-20 paragraph">
                               I am a passionate Full-Stack Developer and
                               Freelance Web Creator, dedicated to crafting
                               modern, responsive, and high-performance websites.
@@ -143,11 +143,11 @@ const scrollToContact = () => scrollWithOffset(contactRef, -100);
                               </div>
                   </div>
                         </div>
-                        <div className="xl:block absolute right-0 -bottom-24  xl:top-12 xl:right-28 justify-center items-center overflow-hidden framesection">
+                        <div className="hidden xl:block absolute right-0 -bottom-24  xl:top-12 xl:right-0 2xl:right-28 justify-center items-center overflow-hidden framesection">
                            <img
                               src='https://res.cloudinary.com/dplikeeby/image/upload/v1751529607/imageprofile_b2hvyf.png'
                               alt=""
-                              className="w-[10rem] h-[15rem] xl:h-auto xl:w-[35rem] opacity-20 xl:opacity-100"
+                              className="w-[10rem] h-[15rem] xl:h-auto xl:w-[25rem] 2xl:w-[35rem] opacity-20 xl:opacity-100"
                            />
                         </div>
                      </div>

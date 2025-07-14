@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import pita from "../Assets/Image/pita.png";
 import localpita from "../Assets/Image/lcoalpita.png";
 import employee from "../Assets/Image/employee.png";
-import task from "../Assets/Image/task.png"
+// import task from "../Assets/Image/task.png"
 import hsbc from "../Assets/Image/hsbc.jpg";
 import growia from "../Assets/Image/growia.jpg";
 import { ArrowRight } from "@phosphor-icons/react";
@@ -44,7 +44,7 @@ const Projects = () => {
                   Projects and Certificate
                </h1>
                <Line />
-               <img src={task} alt="" className="absolute top-2/4 -right-40 w-[15rem] hidden lg:block z-10"/>
+               {/* <img src={task} alt="" className="absolute top-2/4 -right-40 w-[15rem] hidden lg:block z-10"/> */}
             </div>
             <div className="flex justify-center items-center gap-4 xl:gap-10 flex-wrap w-full">
                {/* item project */}
