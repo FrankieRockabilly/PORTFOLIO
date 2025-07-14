@@ -36,12 +36,12 @@ const Footer = ({ scrollToAbout, scrollToHome, scrollToPortfolio, scrollToContac
     return (
         <>
             <div className='px-12  lg:px-36 py-20 bg-zinc-800 text-gray-400 '>
-                <div className='flex flex-wrap justify-start items-start gap-20 footerEffect'>
+                <div className='flex flex-wrap justify-between xl:justify-between items-start gap-5 footerEffect'>
 
                     {/* 1 */}
-                    <div className='w-[28rem] flex flex-col justify-start items-start gap-5'>
+                    <div className='w-[28rem] flex flex-col justify-start items-start gap-5   text-sm'>
                         <h1 className='font-bold text-primary'>Frengki <span className='text-oren footerEffect'>Iskandar</span></h1>
-                        <p className='text-base'>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour</p>
+                        <p className='text-sm xl:text-base'>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour</p>
                         <div className='flex justify-end items-end gap-5 w-full'>
                             <a href="https://www.facebook.com/frankie.frankie.73997" target='blank' className='hover:text-oren footerEffect'><FacebookLogo size={32} weight="thin" /></a>
                             <a href="https://www.instagram.com/popiceduriaan?igsh=a3ZjaXR6OWc0bGoy" target='blank' className='hover:text-oren footerEffect'><InstagramLogo size={32} weight="thin" /></a>
@@ -52,7 +52,7 @@ const Footer = ({ scrollToAbout, scrollToHome, scrollToPortfolio, scrollToContac
                     </div>
 
                     {/* 2 */}
-                    <div className='w-64 flex flex-col justify-start items-start gap-5'>
+                    <div className='w-64 flex flex-col justify-start items-start gap-5 text-sm lg:text-base  '>
                         <h1 className='text-white'>Quick Links</h1>
                         <div className='flex flex-col justify-start items-start gap-5'>
                             <button className='hover:text-oren' onClick={() => scrollToHome()}>Home</button>
@@ -63,7 +63,7 @@ const Footer = ({ scrollToAbout, scrollToHome, scrollToPortfolio, scrollToContac
                     </div>
 
                     {/* 3 */}
-                    <div className=' w-full lg:w-80 flex flex-col justify-start items-start gap-5'>
+                    <div className=' w-full lg:w-80 flex flex-col justify-start items-start gap-5  '>
                         <h1 className='text-white'>Contact Me</h1>
                         <div className='flex flex-col justify-start items-start gap-2'>
                             <p className='font-semibold text-white'>Adress : <span className='text-gray-400 font-light'>Pasir Pengaraian, Rokan Hulu, Indonesia</span></p>
@@ -73,7 +73,7 @@ const Footer = ({ scrollToAbout, scrollToHome, scrollToPortfolio, scrollToContac
                     </div>
 
                     {/* 4 */}
-                    <div className=' w-full lg:w-80 flex flex-col justify-start items-start gap-5'>
+                    <div className=' w-full lg:w-80 flex flex-col justify-start items-start gap-5  '>
                         <h1 className='text-white'>Subscribe</h1>
                         <div className='flex flex-col justify-start items-start gap-2'>
                             <p className='font-light text-sm'>There are many variations of passages</p>
