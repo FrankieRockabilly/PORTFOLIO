@@ -86,7 +86,7 @@ const About = () => {
    return (
       <>
          <div className="px-7 lg:px-36">
-            <div className="flex flex-col justify-center items-center gap-2 lg:gap-6 relative ">
+            <div className="flex flex-col justify-center items-center gap-2 lg:gap-6 relative">
                <h1 className="text-center text-2xl lg:text-3xl font-bold">
                   About
                </h1>

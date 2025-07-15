@@ -99,7 +99,7 @@ const scrollToContact = () => scrollWithOffset(contactRef, -100);
                            <div>
                               <Line />
                            </div>
-                           <p className="text-sm text-black lg:text-base lg:w-[30rem] xl:text-lg xl:w-[30rem] indent-20 paragraph">
+                           <p className="text-sm text-gray-700 lg:text-base lg:w-[30rem] xl:text-lg xl:w-[30rem] 2xl:w-[40rem] indent-20 paragraph">
                               I am a passionate Full-Stack Developer and
                               Freelance Web Creator, dedicated to crafting
                               modern, responsive, and high-performance websites.
