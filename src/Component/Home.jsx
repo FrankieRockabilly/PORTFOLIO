@@ -4,6 +4,7 @@ import Header from "./Header";
 import Projects from "./Projects";
 import About from "./About";
 import Testimonial from "./Testimonial";
+import Whatsapp from "./Whatssapp";
 import Footer from "./Footer";
 import Contact from "./Contact";
 import TypingText from "./ChildComponent/TypingText";
@@ -13,12 +14,15 @@ import gsap from "gsap";
 import { FaFileCode , FaLaptop } from "react-icons/fa";
 import { RiExchangeBoxFill,RiLayout3Fill  } from "react-icons/ri";
 
+
 const Home = () => {
    const aboutRef = useRef(null);
    const homeRef = useRef(null);
    const portfolioRef = useRef(null);
    const contactRef = useRef(null);
    const [size, setSize] = useState(0)
+
+   
    
       const getSize = ()=>{
          if(window.innerWidth <= 768 ){
@@ -66,7 +70,11 @@ const scrollToContact = () => scrollWithOffset(contactRef, -100);
 
    return (
       <>
-         <div className="font-poppins lg:pt-0 bg-white" ref={homeRef}>
+         <div className="font-poppins lg:pt-0 bg-white relative" ref={homeRef}>
+            {/* icon whatsapp */}
+            <div className="fixed bottom-10 right-10 z-50" >
+               <Whatsapp />
+            </div>
             <div className="flex flex-col flex-grow text-black relative overflow-hidden ">
                <Header
                   scrollToAbout={scrollToAbout}
