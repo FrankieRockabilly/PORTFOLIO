@@ -3,8 +3,8 @@ import { Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/autoplay";
 import Line from "./Line";
-import pencil from '../Assets/Image/pencil.png'
-import sandwatch from '../Assets/Image/sandwatch.png'
+// import pencil from '../Assets/Image/pencil.png'
+// import sandwatch from '../Assets/Image/sandwatch.png'
 import testimonial from "../Assets/Json/testimonial.json";
 
 const Testimonial = () => {
@@ -15,20 +15,22 @@ const Testimonial = () => {
          </div>
          <div className="bg-gradient-to-b from-gray-50 to-white pb-20  relative ">
             <div className="flex flex-col justify-center items-center gap-6 relative">
-               <img src={sandwatch} alt="" className="absolute -top-10 right-96"/>
+               {/* <img src={sandwatch} alt="" className="absolute -top-10 right-96"/> */}
                <h1 className="text-center text-2xl lg:text-3xl font-bold">
                   Testimonial
                </h1>
                <Line />
-                  <img src={pencil} alt="" className="absolute top-10 right-64 z-20 hidden xl:block "/>
+                  {/* <img src={pencil} alt="" className="absolute top-10 right-64 z-20 hidden xl:block "/> */}
+                  <div className="w-[50%] text-center">
+                     <h2 className="capitalize text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl h-[50%]">We care about our customers experience too</h2>
+                  </div>
             </div>
 
             {/* Infinite Carousel */}
             <div className="flex justify-start items-center w-full overflow-hidden px-10 =">
-               <div className="absolute -top-24 left-20 hidden xl:block">
+               {/* <div className="absolute -top-24 left-20 hidden xl:block">
                   <img src='https://res.cloudinary.com/dplikeeby/image/upload/v1751529592/testi_lpfwq0.png' alt="" className="w-[30rem]" />
-               </div>
-
+               </div> */}
                <div className="w-[60%] flex-grow">
                   <div className="py-12 w-full flex flex-grow">
                      <Swiper
@@ -49,7 +51,7 @@ const Testimonial = () => {
                      >
                         {testimonial.map((value, index) => (
                            <SwiperSlide key={index} className="flex justify-center">
-                              <div className="bg-white rounded-lg px-4 md:px-12 py-5 border shadow-inner w-[19rem] 2xl:w-[26rem] h-60 overflow-hidden flex flex-col justify-start items-start gap-2">
+                              <div className="bg-white px-4 md:px-12 py-5 border shadow-md w-[19rem] 2xl:w-[26rem] h-60 overflow-hidden flex flex-col justify-start items-start gap-2">
                                  <div className="flex justify-center items-center gap-4 ">
                                     <div className="w-20 h-20 rounded-full border flex justify-center items-center">
                                        <img
