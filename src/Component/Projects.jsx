@@ -51,26 +51,27 @@ const Projects = () => {
                {project.map((value, index) => {
                   return (
                      <div
-                        className="w-36 h-64 lg:h-96 xl:w-72  flex flex-col justify-center items-center gap-2 px-5 py-2 shadow-lg  rounded-lg group relative border hover:border-primary project"
+                        className="w-36 h-auto lg:h-auto xl:w-auto  flex flex-col justify-center items-center gap-2 px-5 py-2 shadow-lg  rounded-lg group relative border hover:border-primary project"
                         key={index}
                      >
-                        <div className="w-40 lg:w-72 h-64 overflow-hidden px-3 py-1 ">
+                        <div className="w-40 lg:w-72 h-64 overflow-hidden px-3 py-1">
                            <img
                               src={value.image}
                               alt="infidea"
                               className="w-full h-full bg-contain rounded-2xl group-hover:scale-105 transition-all duration-200 ease-out"
                            />
                         </div>
-                        <h1 className="w-20 text-[12px] xl:text-base xl:w-40 text-center font-light lg:font-semibold tracking-wider">
+                        {/* <h1 className="w-20 text-[12px] xl:text-base xl:w-40 text-center font-light lg:font-semibold tracking-wider">
                            {value.name}{" "}
                         </h1>
 
                         <div className="flex justify-center items-center w-full text-gray-500">
-                           {/* <p>Project</p> */}
                            <p className="text-sm lg:text-base font-light text-center text-gray-500">
                               {value.category}{" "}
                            </p>
-                        </div>
+                        </div> */}
+
+                        {/* pita hosting */}
                         <div className="absolute -top-[4px] w-28 -right-4">
                            <img
                               src={
@@ -84,7 +85,7 @@ const Projects = () => {
                            />
                         </div>
 
-                        <div className="py-2">
+                        {/* <div className="py-2">
                            <button
                               className={`px-4 lg:px-8 rounded-xl border py-2 group-hover:bg-primary text-gray-400 group-hover:text-white transition-all duration-200 ease-in ${
                                  value.status === "hosted"
@@ -109,7 +110,7 @@ const Projects = () => {
                                  </div>
                               )}
                            </button>
-                        </div>
+                        </div> */}
                      </div>
                   );
                })}
