@@ -5,31 +5,26 @@
         "category"  : "Frontend",
         "link": "#",
         "job": "Employee complaint service",
-        "status": "employee"
+        "status": "employee",
+        "date": "July, 2024"
     },
     {
         "name" : "Deri Store",
-        "image": "tiwiponsel.png",
+        "image": "deri.png",
         "category"  : "Fullstack",
         "link": "https://deristore-tiwiponsel.vercel.app/",
         "job": "E Commerce",
-        "status": "hosted"
+        "status": "hosted",
+        "date": "August, 2024"
     },
     {
-        "name" : "Rijal Homecare",
-        "image": "rijalapps.png",
+        "name" : "Homecare",
+        "image": "rijall.png",
         "category"  : "Fullstack",
         "link": "https://rijal-app.vercel.app/",
         "job": "Homecare",
-        "status": "hosted"
-    },
-    {
-        "name": "Landing Page",
-        "image" : "personal.jpg",
-        "category"  : "Frontend",
-        "link": "https://frengkyportfolio-git-main-frankierockabillys-projects.vercel.app/",
-        "job": "Landing Page",
-        "status": "hosted"
+        "status": "hosted",
+        "date": "July, 2023"
     },
     {
         "name" : "Nexcent UI",
@@ -37,22 +32,43 @@
         "category"  : "Frontend",
         "job": "Landing Page",
         "link": "#",
-        "status": "local server"
+        "status": "local server",
+        "date": "December, 2024"
     },
     {
-        "name": "Web Organization",
+        "name": "Landing Page",
+        "image": "dibimbing.png",
+        "category": "Frontend",
+        "link": "#",
+        "job": "Dibimbing.id",
+        "status": "local server",
+        "date": "January, 2025"
+    },
+    {
+        "name": "Silahul Mukmin",
         "image": "silahul.png",
         "category": "Fullstack",
         "link": "#",
-        "job": "Organization",
-        "status": "local server"
+        "job": "Silahul Mukmin",
+        "status": "local server",
+        "date": "March, 2023"
     },
     {
         "name": "BookBuzz",
-        "image": "bookbuzz.png",
+        "image": "mblbkbzz.png",
         "category": "Frontend",
         "link": "#",
-        "job": "E Commerce",
-        "status": "local server"
+        "job": "Book Buzz",
+        "status": "local server",
+        "date": "Mei, 2023"
+    },
+    {
+        "name": "Landing Page",
+        "image" : "port.png",
+        "category"  : "Frontend",
+        "link": "https://frengkyportfolio-git-main-frankierockabillys-projects.vercel.app/",
+        "job": "Landing Page",
+        "status": "hosted",
+        "date": "February, 2024"
     }
 ]

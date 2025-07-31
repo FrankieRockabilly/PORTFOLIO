@@ -1,8 +1,12 @@
 import { useEffect, useState } from 'react'
 import Line from './Line'
+
+// icons
 import { SiMysql, SiHtml5, SiTailwindcss ,SiExpress } from "react-icons/si";
-import { FaFacebookF, FaInstagram, FaGithub, FaLinkedinIn, FaCss3, FaReact, FaNodeJs  } from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaGithub, FaLinkedinIn, FaCss3, FaReact, FaNodeJs,FaGitAlt  } from "react-icons/fa";
 import { RiJavascriptFill } from "react-icons/ri";
+import { GoDownload } from "react-icons/go";
+
 import pattern from "../Assets/Image/watercolor.png"
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/src/ScrollTrigger';
@@ -18,7 +22,7 @@ const About = () => {
       else if(window.innerWidth <= 1024){
          setSize(14)
       }else{
-         setSize(25)
+         setSize(18)
       }
    }
    useEffect(()=>{
@@ -148,35 +152,42 @@ const About = () => {
                   </div>
                      {/* tech stack */}
                      <div className='flex flex-wrap justify-center lg:justify-start items-center gap-1 lg:gap-2 max-w-[35rem]'>
-                        <div className='w-12 h-12 lg:h-24 lg:w-24 bg-orange-600 shadow-xl shadow-orange-400 hover:bg-orange-700 rounded-xl flex justify-center items-center gap-2 text-white aboutbox group'>
-                           <SiHtml5 size={size} className='group-hover:scale-125 transition-all duration-300 ease-out'/>
+                        <div className='w-12 h-12 lg:h-16 lg:w-16 bg-orange-600 shadow-xl shadow-orange-400 hover:bg-orange-700 rounded-md flex justify-center items-center gap-2 text-white aboutbox group'>
+                           <SiHtml5 size={size} className=' transition-all duration-300 ease-out'/>
                         </div>
-                        <div className='w-12 h-12 lg:h-24 lg:w-24 bg-blue-600 shadow-xl shadow-blue-400 hover:bg-blue-700 rounded-xl flex justify-center items-center gap-2 text-white aboutbox group'>
-                           <FaCss3 size={size} className='group-hover:scale-125 transition-all duration-300 ease-out'/>
+                        <div className='w-12 h-12 lg:h-16 lg:w-16 bg-blue-600 shadow-xl shadow-blue-400 hover:bg-blue-700 rounded-md flex justify-center items-center gap-2 text-white aboutbox group'>
+                           <FaCss3 size={size} className=' transition-all duration-300 ease-out'/>
                         </div>
-                        <div className='w-12 h-12 lg:h-24 lg:w-24 bg-yellow-600 shadow-xl shadow-yellow-400 hover:bg-yellow-700 rounded-xl flex justify-center items-center gap-2 text-white aboutbox group'>
-                           <RiJavascriptFill size={size} className='group-hover:scale-125 transition-all duration-300 ease-out'/>
+                        <div className='w-12 h-12 lg:h-16 lg:w-16 bg-yellow-600 shadow-xl shadow-yellow-400 hover:bg-yellow-700 rounded-md flex justify-center items-center gap-2 text-white aboutbox group'>
+                           <RiJavascriptFill size={size} className=' transition-all duration-300 ease-out'/>
                         </div>
-                        <div className='w-12 h-12 lg:h-24 lg:w-24 bg-cyan-600 shadow-xl shadow-cyan-400 hover:bg-cyan-700 rounded-xl flex justify-center items-center gap-2 text-white aboutbox group'>
-                           <FaReact size={size} className='group-hover:scale-125 transition-all duration-300 ease-out'/>
+                        <div className='w-12 h-12 lg:h-16 lg:w-16 bg-cyan-600 shadow-xl shadow-cyan-400 hover:bg-cyan-700 rounded-md flex justify-center items-center gap-2 text-white aboutbox group'>
+                           <FaReact size={size} className=' transition-all duration-300 ease-out'/>
                         </div>
-                        <div className='w-12 h-12 lg:h-24 lg:w-24 bg-green-600 shadow-xl shadow-green-400 hover:bg-green-700 rounded-xl flex justify-center items-center gap-2 text-white aboutbox group'>
-                           <FaNodeJs size={size} className='group-hover:scale-125 transition-all duration-300 ease-out'/>
+                        <div className='w-12 h-12 lg:h-16 lg:w-16 bg-green-600 shadow-xl shadow-green-400 hover:bg-green-700 rounded-md flex justify-center items-center gap-2 text-white aboutbox group'>
+                           <FaNodeJs size={size} className=' transition-all duration-300 ease-out'/>
                         </div>
-                        <div className='w-12 h-12 lg:h-24 lg:w-24 bg-blue-400 shadow-xl shadow-purple-400 hover:bg-blue-500 rounded-xl flex justify-center items-center gap-2 text-white aboutbox group'>
-                           <SiTailwindcss size={size} className='group-hover:scale-125 transition-all duration-300 ease-out'/>
+                        <div className='w-12 h-12 lg:h-16 lg:w-16 bg-blue-400 shadow-xl shadow-purple-400 hover:bg-blue-500 rounded-md flex justify-center items-center gap-2 text-white aboutbox group'>
+                           <SiTailwindcss size={size} className=' transition-all duration-300 ease-out'/>
                         </div>
-                        <div className='w-12 h-12 lg:h-24 lg:w-24 bg-purple-400 shadow-xl shadow-purple-400 hover:bg-purpe-500 rounded-xl flex justify-center items-center gap-2 text-white aboutbox group'>
-                           <SiMysql size={size} className='group-hover:scale-125 transition-all duration-300 ease-out'/>
+                        <div className='w-12 h-12 lg:h-16 lg:w-16 bg-purple-400 shadow-xl shadow-purple-400 hover:bg-purpe-500 rounded-md flex justify-center items-center gap-2 text-white aboutbox group'>
+                           <SiMysql size={size} className=' transition-all duration-300 ease-out'/>
                         </div>
-                        <div className='w-12 h-12 lg:h-24 lg:w-24 bg-gray-600 shadow-xl shadow-gray-400 hover:bg-gray-700 rounded-xl flex justify-center items-center gap-2 text-white aboutbox group'>
-                           <SiExpress size={size} className='group-hover:scale-125 transition-all duration-300 ease-out'/>
+                        <div className='w-12 h-12 lg:h-16 lg:w-16 bg-gray-600 shadow-xl shadow-gray-400 hover:bg-gray-700 rounded-md flex justify-center items-center gap-2 text-white aboutbox group'>
+                           <SiExpress size={size} className=' transition-all duration-300 ease-out'/>
+                        </div>
+                        <div className='w-12 h-12 lg:h-16 lg:w-16 bg-gray-900 shadow-xl shadow-gray-700 hover:bg-gray-700 rounded-md flex justify-center items-center gap-2 text-white aboutbox group'>
+                           <FaGithub size={size} className=' transition-all duration-300 ease-out'/>
+                        </div>
+                        <div className='w-12 h-12 lg:h-16 lg:w-16 bg-orange-500 shadow-xl shadow-orange-400 hover:bg-gray-700 rounded-md flex justify-center items-center gap-2 text-white aboutbox group'>
+                           <FaGitAlt size={size} className=' transition-all duration-300 ease-out'/>
                         </div>
                      </div>
-                     <div className="z-10 text-sm lg:text-base">
+                     <div className="z-10 text-sm lg:text-sm flex justify-start items-center gap-3 bg-primary text-white px-3 py-2 lg:px-4 lg:py-3 rounded-lg">
+                        <GoDownload />
                         <a href="/RESUME.pdf" download="RESUME.pdf">
-                           <button className="bg-primary text-white px-3 py-2 lg:px-4 lg:py-3 rounded-lg ">
-                              Download My CV
+                           <button className="  ">
+                              Download My Resume
                            </button>
                         </a>
                      </div>

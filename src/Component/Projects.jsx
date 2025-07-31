@@ -1,13 +1,17 @@
 import Line from "./Line";
 import project from "../Assets/Json/Project.json";
 import { useEffect } from "react";
-import pita from "../Assets/Image/pita.png";
-import localpita from "../Assets/Image/lcoalpita.png";
-import employee from "../Assets/Image/employee.png";
+// import pita from "../Assets/Image/pita.png";
+// import localpita from "../Assets/Image/lcoalpita.png";
+// import employee from "../Assets/Image/employee.png";
 // import task from "../Assets/Image/task.png"
 import hsbc from "../Assets/Image/hsbc.jpg";
 import growia from "../Assets/Image/growia.jpg";
-import { ArrowRight } from "@phosphor-icons/react";
+import { FaReact } from "react-icons/fa";
+import { RiTailwindCssFill } from "react-icons/ri";
+import { SiMysql } from "react-icons/si";
+import { SiExpress } from "react-icons/si";
+import { FaNodeJs } from "react-icons/fa";
 
 import ScrollTrigger from "gsap/src/ScrollTrigger";
 import gsap from "gsap";
@@ -38,7 +42,7 @@ const Projects = () => {
    }, []);
    return (
       <>
-         <section className=" pt-20 lg:pt-1 px-5 lg:px-24 ">
+         <section className=" pt-20 lg:pt-1 px-5 lg:px-24 mt-10">
             <div className="w-full flex flex-col justify-center items-center gap-2 lg:gap-6 pb-10 relative ">
                <h1 className="text-center text-2xl lg:text-3xl font-bold">
                   Projects and Certificate
@@ -51,28 +55,37 @@ const Projects = () => {
                {project.map((value, index) => {
                   return (
                      <div
-                        className="w-36 h-auto lg:h-auto xl:w-auto  flex flex-col justify-center items-center gap-2 px-5 py-2 shadow-lg  rounded-lg group relative border hover:border-primary project"
+                        className=" h-auto lg:h-auto w-auto  flex flex-col justify-start items-start gap-2 p-2 shadow-lg  rounded-2xl group relative border hover:border-primary project overflow-hidden"
                         key={index}
                      >
-                        <div className="w-40 lg:w-72 h-64 overflow-hidden px-3 py-1">
+                        <div className="w-72 h-52 overflow-hidden rounded-2xl relative">
+                           {/* <div className="absolute top-2 left-2 z-10 rounded-full px-3 py-1 bg-gray-900 border  text-gray-300 text-[12px]">
+                              helo
+                           </div> */}
                            <img
                               src={value.image}
                               alt="infidea"
-                              className="w-full h-full bg-contain rounded-2xl group-hover:scale-105 transition-all duration-200 ease-out"
+                              className="w-auto h-auto bg-contain rounded-2xl transition-all duration-[92000ms] ease-out shadow-lg brightness-95 hover:brightness-75"
                            />
                         </div>
-                        {/* <h1 className="w-20 text-[12px] xl:text-base xl:w-40 text-center font-light lg:font-semibold tracking-wider">
-                           {value.name}{" "}
-                        </h1>
-
-                        <div className="flex justify-center items-center w-full text-gray-500">
-                           <p className="text-sm lg:text-base font-light text-center text-gray-500">
-                              {value.category}{" "}
-                           </p>
-                        </div> */}
-
+                        <div className="w-full xl:flex flex-col justify-start items-start gap-1 hidden p-2">
+                           <p className="text-gray-400 text-sm font-light">{value.date} </p>
+                           <p className="font-semibold">{value.name} </p>
+                           <div className="w-full flex justify-between items-center">
+                              {/* stack icons */}
+                              <p className="text-blue-500">{value.category} </p>
+                              <div className="flex justify-start items-center gap-1">
+                                 <FaReact />
+                                 <RiTailwindCssFill />
+                                 <SiExpress />
+                                 <FaNodeJs />
+                                 <SiMysql size={25}/>
+                              </div>
+                           </div>
+                        </div>
+   
                         {/* pita hosting */}
-                        <div className="absolute -top-[4px] w-28 -right-4">
+                        {/* <div className="absolute -top-[4px] w-28 -right-4">
                            <img
                               src={
                                  value.status === "hosted"
@@ -83,34 +96,8 @@ const Projects = () => {
                               }
                               alt="pita"
                            />
-                        </div>
-
-                        {/* <div className="py-2">
-                           <button
-                              className={`px-4 lg:px-8 rounded-xl border py-2 group-hover:bg-primary text-gray-400 group-hover:text-white transition-all duration-200 ease-in ${
-                                 value.status === "hosted"
-                                    ? "cursor-pointer"
-                                    : "cursor-not-allowed "
-                              }`}
-                           >
-                              {value.status === "hosted" ? (
-                                 <div>
-                                    <a
-                                       href={value.link}
-                                       target="blank"
-                                       className="text-[12px] lg:text-base flex justify-center items-center gap-1 lg:gap-3"
-                                    >
-                                       View
-                                       <ArrowRight size={15} weight="thin" />
-                                    </a>
-                                 </div>
-                              ) : (
-                                 <div className="text-sm xl:text-base flex justify-center items-center gap-3">
-                                    <p>-</p>
-                                 </div>
-                              )}
-                           </button>
                         </div> */}
+
                      </div>
                   );
                })}

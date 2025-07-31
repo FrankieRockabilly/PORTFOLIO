@@ -31,7 +31,7 @@ const Home = () => {
          else if(window.innerWidth <= 1024){
             setSize(18)
          }else{
-            setSize(30)
+            setSize(25)
          }
       }
       useEffect(()=>{
@@ -116,7 +116,7 @@ const scrollToContact = () => scrollWithOffset(contactRef, -100);
                               experiences
                            </p>
                            <button
-                              className="bg-oren hover:bg-orange-700 transition-all duration-200 ease-out px-3 py-2 mb-5 lg:mt-10 lg:px-5 lg:py-3 rounded-full text-[12px] lg:text-lg text-white uppercase paragraph"
+                              className="bg-oren hover:bg-orange-700 transition-all duration-200 ease-out px-3 py-2 mb-5 lg:mt-10 lg:px-5 lg:py-3 rounded-full text-[12px] lg:text-base text-white paragraph"
                               onClick={() => scrollToContact()}
                            >
                               Contact Me
