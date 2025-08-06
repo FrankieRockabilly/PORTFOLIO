@@ -7,6 +7,9 @@ import { useEffect } from "react";
 // import task from "../Assets/Image/task.png"
 import hsbc from "../Assets/Image/hsbc.jpg";
 import growia from "../Assets/Image/growia.jpg";
+
+// react icons
+import { SiAxios } from "react-icons/si";
 import { FaReact } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { SiMysql } from "react-icons/si";
@@ -65,7 +68,7 @@ const Projects = () => {
                            <img
                               src={value.image}
                               alt="infidea"
-                              className="w-auto h-auto bg-contain rounded-2xl transition-all duration-[92000ms] ease-out shadow-lg brightness-95 hover:brightness-75"
+                              className="w-auto h-auto bg-contain group-hover:scale-105 rounded-2xl transition-all duration-200 ease-out shadow-lg brightness-95 hover:brightness-75"
                            />
                         </div>
                         <div className="w-full xl:flex flex-col justify-start items-start gap-1 hidden p-2">
@@ -74,30 +77,27 @@ const Projects = () => {
                            <div className="w-full flex justify-between items-center">
                               {/* stack icons */}
                               <p className="text-blue-500">{value.category} </p>
-                              <div className="flex justify-start items-center gap-1">
-                                 <FaReact />
-                                 <RiTailwindCssFill />
-                                 <SiExpress />
-                                 <FaNodeJs />
-                                 <SiMysql size={25}/>
-                              </div>
+                              {value.category == "Fullstack" ? 
+                              (
+                                 <div className="flex justify-start items-center gap-1 text-emerald-400">
+                                    <FaReact />
+                                    <RiTailwindCssFill />
+                                    <SiExpress />
+                                    <SiAxios />
+                                    <FaNodeJs />
+                                    <SiMysql size={25}/>
+                                 </div> 
+                              ):(
+                                 <div className="flex justify-start items-center gap-1 text-emerald-400">
+                                    <FaReact />
+                                    <RiTailwindCssFill />
+                                    <SiAxios />
+                                 </div>
+                              )
+                              }
                            </div>
                         </div>
    
-                        {/* pita hosting */}
-                        {/* <div className="absolute -top-[4px] w-28 -right-4">
-                           <img
-                              src={
-                                 value.status === "hosted"
-                                    ? pita
-                                    : value.status === "employee"
-                                    ? employee
-                                    : localpita
-                              }
-                              alt="pita"
-                           />
-                        </div> */}
-
                      </div>
                   );
                })}

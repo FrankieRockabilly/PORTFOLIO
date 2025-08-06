@@ -22,7 +22,7 @@ const Testimonial = () => {
                <Line />
                   {/* <img src={pencil} alt="" className="absolute top-10 right-64 z-20 hidden xl:block "/> */}
                   <div className="w-[50%] text-center">
-                     <h2 className="capitalize text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl h-[50%]">We care about our customers experience too</h2>
+                     <h2 className="capitalize text-3xl lg:text-2xl xl:text-3xl 2xl:text-4xl h-[50%]">We care about our customers experience too</h2>
                   </div>
             </div>
 
