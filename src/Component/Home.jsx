@@ -91,19 +91,19 @@ const scrollToContact = () => scrollWithOffset(contactRef, -100);
                   {/* what we do */}
                      <div className="absolute top-[10%] left-[10%] transform translate-y-1/2 hidden xl:block ">
                         {/* ✅ Typing effect display */}
-                        <div className="absolute top-[40%] left-[10%] transform translate-y-1/2 hidden xl:block ">
+                        {/* <div className="absolute top-[40%] left-[10%] transform translate-y-1/2 hidden xl:block ">
                            <TypingText />
-                        </div>
+                        </div> */}
                      </div>
 
                      <div className="relative flex flex-col lg:flex-row justify-start items-start gap-5 w-full">
                         <div className="flex flex-col justify-start items-start gap-2 h-full max-w-[50rem] py-20 lg:py-44">
-                           <h1 className="text-sm text-gray-500 lg:text-2xl tracking-widest border border-oren px-3 lg:px-10 py-2 rounded-full hello">
+                           <h1 className="text-sm text-gray-500 lg:text-2xl tracking-widest border border-oren px-3 lg:px-10 py-2 rounded-full hello mb-5">
                               Hallo Everyone ..
                            </h1>
                            <p className="text-2xl lg:text-7xl font-bold tracking-widest hello">
                               I'm <span className="text-oren">Frengki</span> <br /> {" "}
-                              Iskandar
+                              Iskandar | <span className="text-oren tracking-wide"><TypingText /> </span>
                            </p>
                            <div>
                               <Line />

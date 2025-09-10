@@ -1,7 +1,7 @@
     // src/components/TypingText.jsx
     import { useEffect, useRef, useState } from "react";
 
-    const titles = ["WEB DEVELOPER", "PROGRAMMER", "IT SUPPPORT"];
+    const titles = ["Developer", "Programmer", "IT Support", "UI/UX"];
 
     const TypingText = () => {
     const [displayText, setDisplayText] = useState("");
@@ -38,8 +38,9 @@
     }, []);
 
     return (
-        <h1 className="text-[11rem] font-extrabold opacity-[0.09] tracking-wide text-gray-500 overflow-hidden whitespace-nowrap absolute top-0 left-0 z-[-1] pointer-events-none pt-56">
-        {displayText}
+        // <h1 className="text-[11rem] font-extrabold opacity-[0.09] tracking-wide text-gray-500 overflow-hidden whitespace-nowrap absolute top-0 left-0 z-[-1] pointer-events-none pt-56">
+        <h1>
+        I'm {displayText}
         </h1>
     );
     };
