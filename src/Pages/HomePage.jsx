@@ -3,7 +3,7 @@ import Home from '../Component/Home'
 const HomePage = () => {
     return (
         <>
-            <div>
+            <div className='relative'>
                 <Home />
             </div>
         </>

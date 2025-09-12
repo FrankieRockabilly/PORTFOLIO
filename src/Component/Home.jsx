@@ -22,6 +22,7 @@ const Home = () => {
    const portfolioRef = useRef(null);
    const contactRef = useRef(null);
    const [size, setSize] = useState(0)
+   const imageUrl = 'https://res.cloudinary.com/dplikeeby/image/upload/v1757641795/blur1_rjjgqo.png'
 
    
    
@@ -85,30 +86,26 @@ const scrollToContact = () => scrollWithOffset(contactRef, -100);
                />
 
                {/* hero section */}
-               <section className="lg:px-20 lg:py-5 bg-white relative mb-20 lg:mb-0 ">
+               <section className="lg:px-20 lg:py-5 bg-white relative mb-20 lg:mb-0">
+                  <div className="absolute top-32 right-32 z-0 w-[42rem] h-[42rem] ">
+                     <img src="https://res.cloudinary.com/dplikeeby/image/upload/v1757641795/blur1_rjjgqo.png" alt="" className="w-full h-full opacity-80"/>
+                  </div>
                   
                   <div className="relative flex flex-grow px-7 pb-9 lg:px-36 bg-no-repeat overflow-visible backdrop-blur-3xl bg-opacity-55 lg: bg-contain bg-center ">
                   {/* what we do */}
-                     <div className="absolute top-[10%] left-[10%] transform translate-y-1/2 hidden xl:block ">
-                        {/* ✅ Typing effect display */}
-                        {/* <div className="absolute top-[40%] left-[10%] transform translate-y-1/2 hidden xl:block ">
-                           <TypingText />
-                        </div> */}
-                     </div>
-
-                     <div className="relative flex flex-col lg:flex-row justify-start items-start gap-5 w-full">
+                     <div className="relative flex flex-col lg:flex-row justify-start items-start gap-5 w-full" >
                         <div className="flex flex-col justify-start items-start gap-2 h-full max-w-[50rem] py-20 lg:py-44">
                            <h1 className="text-sm text-gray-500 lg:text-2xl tracking-widest border border-oren px-3 lg:px-10 py-2 rounded-full hello mb-5">
                               Hallo Everyone ..
                            </h1>
                            <p className="text-2xl lg:text-7xl font-bold tracking-widest hello">
-                              I'm <span className="text-oren">Frengki</span> <br /> {" "}
-                              Iskandar | <span className="text-oren tracking-wide"><TypingText /> </span>
+                              Here <span className="text-oren">Frengki</span> <br /> {" "}
+                              Iskandar <span className="text-oren tracking-wide"><TypingText /> </span>
                            </p>
                            <div>
                               <Line />
                            </div>
-                           <p className="text-sm text-gray-700 lg:text-base lg:w-[30rem] xl:text-lg xl:w-[30rem] 2xl:w-[40rem] indent-20 paragraph">
+                           <p className="text-sm text-gray-700 lg:text-base lg:w-[30rem] xl:text-lg xl:w-[30rem] 2xl:w-[40rem] indent-20 paragraph ">
                               I am a passionate Full-Stack Developer and
                               Freelance Web Creator, dedicated to crafting
                               modern, responsive, and high-performance websites.
@@ -117,7 +114,7 @@ const scrollToContact = () => scrollWithOffset(contactRef, -100);
                               experiences
                            </p>
                            <button
-                              className="bg-oren hover:bg-orange-700 transition-all duration-200 ease-out px-3 py-2 mb-5 lg:mt-10 lg:px-5 lg:py-3 rounded-full text-[12px] lg:text-base text-white paragraph"
+                              className=" bg-oren hover:bg-orange-700 transition-all duration-200 ease-out px-3 py-2 mb-5 mt-2 lg:px-5 lg:py-3 rounded-full text-[12px] lg:text-base text-white paragraph"
                               onClick={() => scrollToContact()}
                            >
                               Contact Me
