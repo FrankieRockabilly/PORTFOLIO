@@ -22,7 +22,7 @@ const Testimonial = () => {
                <Line />
                   {/* <img src={pencil} alt="" className="absolute top-10 right-64 z-20 hidden xl:block "/> */}
                   <div className="w-[50%] text-center">
-                     <h2 className="capitalize text-3xl lg:text-2xl xl:text-3xl 2xl:text-4xl h-[50%]">We care about our customers experience too</h2>
+                     <h2 className="capitalize text-base lg:text-2xl xl:text-3xl 2xl:text-4xl h-[50%]">We care about our customers experience too</h2>
                   </div>
             </div>
 
@@ -53,7 +53,7 @@ const Testimonial = () => {
                            <SwiperSlide key={index} className="flex justify-center">
                               <div className="bg-white px-4 md:px-12 py-5 border shadow-md w-[19rem] 2xl:w-[26rem] h-60 overflow-hidden flex flex-col justify-start items-start gap-2">
                                  <div className="flex justify-center items-center gap-4 ">
-                                    <div className="w-20 h-20 rounded-full border flex justify-center items-center">
+                                    <div className="w-10 h-10  lg:w-20 lg:h-20 rounded-full border flex justify-center items-center">
                                        <img
                                           src={value.profilImage}
                                           alt="profil"
@@ -61,8 +61,8 @@ const Testimonial = () => {
                                        />
                                     </div>
                                     <div>
-                                       <p className="font-semibold ">{value.name}</p>
-                                       <p className="text-sm text-gray-400">
+                                       <p className="font-semibold text-sm lg:text-base">{value.name}</p>
+                                       <p className="text-[10px] lg:text-sm text-gray-400 ">
                                           {value.bisnis} - {value.location}
                                        </p>
                                     </div>

@@ -22,7 +22,6 @@ const Home = () => {
    const portfolioRef = useRef(null);
    const contactRef = useRef(null);
    const [size, setSize] = useState(0)
-   const imageUrl = 'https://res.cloudinary.com/dplikeeby/image/upload/v1757641795/blur1_rjjgqo.png'
 
    
    
