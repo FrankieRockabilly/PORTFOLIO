@@ -45,7 +45,7 @@ const Projects = () => {
    }, []);
    return (
       <>
-         <section className=" pt-20 lg:pt-1 px-5 lg:px-24 mt-10">
+         <section className=" pt-20 lg:pt-1 px-5 lg:px-24 mt-10" style={{backgroundImage : "url('https://res.cloudinary.com/dplikeeby/image/upload/v1757641795/blur1_rjjgqo.png')", backgroundSize:"40%", backgroundPosition:"center", backgroundRepeat:"no-repeat" }}>
             <div className="w-full flex flex-col justify-center items-center gap-2 lg:gap-6 pb-10 relative ">
                <h1 className="text-center text-2xl lg:text-3xl font-bold">
                   Projects and Certificate
@@ -58,7 +58,7 @@ const Projects = () => {
                {project.map((value, index) => {
                   return (
                      <div
-                        className=" h-auto lg:h-auto w-auto  flex flex-col justify-start items-start gap-2 p-2 shadow-lg  rounded-2xl group relative border hover:border-primary project overflow-hidden"
+                        className=" h-auto lg:h-auto w-auto  flex flex-col justify-start items-start gap-2 p-2 shadow-lg  rounded-2xl bg-white group relative border hover:border-primary project overflow-hidden"
                         key={index}
                      >
                         <div className="w-72 h-52 overflow-hidden rounded-2xl relative">

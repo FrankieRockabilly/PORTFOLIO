@@ -121,7 +121,7 @@ const About = () => {
                      projects with the currently popular tech stack and I work
                      in a hospital as an IT staff
                   </p>
-                  {/* <div className="flex justify-start items-center gap-7 w-full lg:gap-10 paragraph text-gray-500 ">
+                  <div className="flex justify-start items-center gap-7 w-full lg:gap-10 paragraph text-gray-500 ">
                      <a
                         href="https://www.facebook.com/frankie.frankie.73997"
                         target="blank"
@@ -150,7 +150,7 @@ const About = () => {
                      >
                         <FaLinkedinIn size={25} />
                      </a>
-                  </div> */}
+                  </div>
                      {/* tech stack */}
                      <div className='flex flex-wrap justify-center lg:justify-start items-center gap-1 lg:gap-2 max-w-[35rem]'>
                         <div className='w-12 h-12 lg:h-16 lg:w-16 bg-orange-600 shadow-xl shadow-orange-400 hover:bg-orange-700 rounded-md flex justify-center items-center gap-2 text-white aboutbox group tooltip' data-tip="HTML">
