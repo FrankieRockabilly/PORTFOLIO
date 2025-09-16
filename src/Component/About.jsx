@@ -91,7 +91,7 @@ const About = () => {
       <>
          <div className="px-7 lg:px-36">
             <div className="flex flex-col justify-center items-center gap-2 lg:gap-6 relative ">
-                  <h1 className="font-semibold text-center text-3xl xl:text-4xl text-oren -tracking-tight w-full head">
+                  <h1 className="font-semibold text-center text-xl lg:text-2xl xl:text-4xl text-oren -tracking-tight w-full head">
                      Meet the <span className='text-primary'>Developer</span>
                   </h1>
                <Line />
@@ -106,10 +106,10 @@ const About = () => {
                   />
                </div>
                <div className="flex flex-col justify-start items-start gap-8  xl:w-[35rem] 2xl:w-[40rem] ">
-                  <h1 className="font-semibold text-center lg:text-start text-xl xl:text-3xl text-gray-500 -tracking-tight w-full head">
+                  {/* <h1 className="font-semibold text-center lg:text-start text-xl xl:text-3xl text-gray-500 -tracking-tight w-full head">
                      About
-                  </h1>
-                  <p className="text-sm lg:text-lg indent-16 text-gray-500 text-justify aboutbox2">
+                  </h1> */}
+                  <p className="text-[12px] lg:text-lg indent-16 text-gray-500 text-justify aboutbox2">
                      I am a freelancer and an active worker with a bachelor's
                      degree in Informatics Engineering at Pasir Pengaraian University. I graduated in 2022 and took part in a bootcamp program majoring in fullstack developer{" "}
                      <span className="text-oren">

@@ -5,6 +5,7 @@ import { LuLayoutList } from "react-icons/lu";
 
 const Header = ({ scrollToAbout, scrollToHome, scrollToPortfolio, scrollToContact }) => {
       const [scroll, setScroll] = useState(false)
+      const [activeMenu, setActiveMenu] = useState("home")
 
       const refresh = () => {
          window.location.reload();
@@ -38,7 +39,7 @@ const Header = ({ scrollToAbout, scrollToHome, scrollToPortfolio, scrollToContac
                }`}
             >
                <div
-                  className="flex justify-center items-center gap-20 cursor-pointer"
+                  className="flex justify-center items-center ga0 cursor-pointer"
                   onClick={refresh}
                >
                   <p className="font-bold text-xl text-primary">
@@ -59,54 +60,58 @@ const Header = ({ scrollToAbout, scrollToHome, scrollToPortfolio, scrollToContac
                               <RxHamburgerMenu />
                            </label>
                         </div>
-                        <div className="drawer-side ">
+                        <div className="drawer-side">
                            <label
                               htmlFor="my-drawer"
                               aria-label="close sidebar"
                               className="drawer-overlay"
                            ></label>
-                           <div className="menu bg-white min-h-full w-72 p-4 gap-10 text-base font-light py-10 shadow-xl text-black">
+                           <div className="menu  min-h-full w-72 p-4 gap-10 text-base font-light py-10 shadow-xl text-black bg-white">
                               <div
-                                 className="flex justify-start items-center gap-5 hover:text-oren cursor-pointer"
+                                 className={`flex justify-start  items-center gap-5 p-2 hover:text-oren cursor-pointer ${activeMenu ==="home"? "bg-primary  text-white" : "bg-none"} rounded-md`}
                                  onClick={() => {
                                     scrollToHome();
                                     closeDrawer();
+                                    setActiveMenu("home")
                                  }}
                               >
                                  <FaHome />
                                  <p>Home</p>
                               </div>
                               <div
-                                 className="flex justify-start items-center gap-5 hover:text-oren cursor-pointer"
+                                 className={`flex justify-start  items-center gap-5 p-2 hover:text-oren cursor-pointer ${activeMenu ==="about"? "bg-primary  text-white" : "bg-none"} rounded-md`}
                                  onClick={() => {
                                     scrollToAbout();
                                     closeDrawer();
+                                    setActiveMenu("about")
                                  }}
                               >
                                  <FaClipboardList />
                                  <p>About</p>
                               </div>
                               <div
-                                 className="flex justify-start items-center gap-5 hover:text-oren cursor-pointer"
+                                 className={`flex justify-start  items-center gap-5 p-2 hover:text-oren cursor-pointer ${activeMenu ==="portfolio" ? "bg-primary  text-white" : "bg-none"} rounded-md`}
                                  onClick={() => {
                                     scrollToPortfolio();
                                     closeDrawer();
+                                    setActiveMenu("portfolio")
                                  }}
                               >
                                  <LuLayoutList />
                                  <p>Portfolio</p>
                               </div>
                               <div
-                                 className="flex justify-start items-center gap-5 hover:text-oren cursor-pointer"
+                                 className={`flex justify-start  items-center gap-5 p-2 hover:text-oren cursor-pointer ${activeMenu ==="contact" ? "bg-primary  text-white" : "bg-none"} rounded-md`}
                                  onClick={() => {
                                     scrollToContact();
                                     closeDrawer();
+                                    setActiveMenu("contact")
                                  }}
                               >
                                  <FaPhone />
                                  <p>Contact</p>
                               </div>
-                              <div className="flex justify-start items-center gap-5">
+                              <div className="flex justify-start  items-center gap-5">
                                  <FaFacebook size={20} />
                                  <FaInstagram size={20} />
                                  <FaWhatsapp size={20} />
@@ -115,7 +120,7 @@ const Header = ({ scrollToAbout, scrollToHome, scrollToPortfolio, scrollToContac
                         </div>
                      </div>
                   </div>
-                  <div className="hidden lg:flex justify-center items-center gap-20 text-xl text-zinc-500">
+                  <div className="hidden lg:flex justify-center items-center ga0 text-xl text-zinc-500">
                      <button
                         className="font-light py-2 hover:text-primary"
                         onClick={() => scrollToHome()}

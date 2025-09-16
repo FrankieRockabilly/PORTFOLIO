@@ -21,7 +21,7 @@
             if (subIndexRef.current === currentWord.length) {
                 setTimeout(() => {
                     deletingRef.current = true;
-                }, 1000); // delay 1 detik sebelum mulai menghapus
+                }, 500); // delay 1 detik sebelum mulai menghapus
                 }
         } else {
             setDisplayText(currentWord.substring(0, subIndexRef.current - 1));

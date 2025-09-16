@@ -1,8 +1,10 @@
-import React, { useEffect, useState } from 'react'
+import  { useEffect, useState } from 'react'
 import { Envelope, MapPin, Phone } from '@phosphor-icons/react'
 import Maps from './Maps'
 import SuksesKirimPesan from '../Assets/SweetAlert/SuksesKirimPesan'
 import Line from './Line'
+
+import { IoIosCheckmarkCircle  } from "react-icons/io";
 
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/src/ScrollTrigger'
@@ -52,7 +54,7 @@ const Contact = () => {
             opacity: 1,
             y: 0,
             delay: 1,
-            duration: 1.5,
+            duration: 0.5,
             scrollTrigger: {
                 trigger: '.send',
                 start: 'top 80%',
@@ -79,8 +81,10 @@ const Contact = () => {
     return (
         <>
             <div className='px-5 lg:px-36 py-10'>
-                <div className='flex flex-col justify-center items-center gap-6 '>
-                    <h1 className='text-center text-2xl lg:text-3xl font-bold '>Get In Touch</h1>
+                <div className='flex flex-col justify-center items-center gap-3'>
+                    <h1 className="font-semibold text-center text-xl lg:text-2xl xl:text-4xl text-oren -tracking-tight w-full head">
+                        Get in <span className='text-primary'>Touch</span>
+                    </h1>
                     <Line />
                 </div>
                 {isSuccesSendFeedback && (
@@ -88,8 +92,8 @@ const Contact = () => {
                 )}
                 <div className='flex flex-wrap  rounded-2xl shadow-xl bg-gray-50 py-2 mt-5'>
                     {/* 1 */}
-                    <div className='px-7 lg:px-16 py-16 '>
-                        <form className=' flex flex-col justify-start items-start gap-5  w-2[70%] contact' onSubmit={handleClickSendFeedback}>
+                    <div className='px-7 lg:px-16 py-5 '>
+                        <form className=' flex flex-col justify-start items-start gap-5 text-sm lg:text-base  w-2[70%] contact' onSubmit={handleClickSendFeedback}>
                         <div className='flex flex-wrap justify-between gap-5 w-full'>
                             {/* <label htmlFor="">Full Name*</label> */}
                                 <input type="text" className='w-full lg:w-auto outline-none border-b-[1px] py-3 border-gray-500 bg-gray-50' placeholder='Full Name*'
@@ -108,20 +112,20 @@ const Contact = () => {
                                 <input type="text" className='outline-none border-b-[1px] py-3 border-gray-500 bg-gray-50 w-full' placeholder='Message'
                                 value={message}
                                 onChange={(e) => setMessage(e.target.value)}
-                                disabled
                                 aria-required />
                         </div>
-                            <button type='submit' className={`px-2 py-3 w-40 rounded-full bg-gradient-to-b from-primarySec to-primary shadow-2xl hover:from-primary hover:to-[#11856e] shadow-primarySec text-white send ${loading ? 'cursor-not-allowed' : ''}`}>
+                            <button type='submit' className={`send px-2 py-3 w-40 text-sm rounded-full bg-gradient-to-b from-primarySec to-primary shadow-2xl hover:from-primary hover:to-[#11856e] shadow-primarySec text-white  ${loading ? 'cursor-not-allowed' : ''}`}>
                                 {loading ? (<span className="loading loading-spinner loading-xs"></span>) : (
                                     <p>Send Message</p>
                                 )}
                             </button>
                     </form>
-                        <div className='pt-10 text-gray-500'>
+                        <div className='pt-10 text-gray-500 text-sm lg:text-base'>
                             <p className='mb-7'>You can also contact me through the link below</p>
                             {/* fastwork */}
                             <div>
                                 <a href="https://fastwork.id/user/frengki23?source=web_marketplace_profile-menu_profile" className='flex justify-start items-center gap-3 ' target='blank'>
+                                <IoIosCheckmarkCircle  color='#18DE50' size={20}/>
                                     <img src="https://pbs.twimg.com/profile_images/1040434908185808898/_uldxS5Y_400x400.jpg" alt="" className='w-7' />
                                     <p className='hover:text-gray-700'>Fastwork</p>
                                 </a>
@@ -129,6 +133,7 @@ const Contact = () => {
                             {/* freelancer */}
                             <div>
                                 <a href="https://www.freelancer.co.id/u/Frengki023" className='flex justify-start items-center gap-3 mt-3' target='blank'>
+                                    <IoIosCheckmarkCircle color='#18DE50' size={20} />
                                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTClYe1kHtbUV-E2d7NuF2pdPxljtu4nlXutg&s" alt="" className='w-7' />
                                     <p className='hover:text-gray-700'>Freelancer</p>
                                 </a>
@@ -136,6 +141,7 @@ const Contact = () => {
                             {/* jobstreet */}
                             <div>
                                 <a href="https://id.jobstreet.com/id/profile/frengki-iskandar-Y3xtQhC8qL" className='flex justify-start items-center gap-3 mt-3' target='blank'>
+                                    <IoIosCheckmarkCircle  color='#18DE50' size={20}/>
                                     <img src="https://kerjairport.com/wp-content/uploads/2020/06/JOBSTREET-BAGI-TIPS-CARA-NAK-DAPATKAN-KERJA.jpg" alt="" className='w-7' />
                                     <p className='hover:text-gray-700'>Jobstreet</p>
                                 </a>
@@ -143,6 +149,7 @@ const Contact = () => {
                             {/* pintarnya */}
                             <div>
                                 <a href="https://pintarnya.com/cv/frengki-iskandar-ud19izoaeu" className='flex justify-start items-center gap-3 mt-3' target='blank'>
+                                    <IoIosCheckmarkCircle color='#18DE50' size={20} />
                                     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRND7AiEsIirUKxQQXKfpfhI_ke1CLPMkeqQ&s" alt="" className='w-7' />
                                     <p className='hover:text-gray-700'>Pintarnya</p>
                                 </a>
@@ -151,24 +158,24 @@ const Contact = () => {
                     </div>
 
                     {/* 2 */}
-                    <div className='grow w-auto px-5 py-5 flex flex-col justify-start items-start gap-3 text-gray-700 maps'>
+                    <div className='grow text-sm lg:text-base w-auto px-5 py-5 flex flex-col justify-start items-start gap-3 text-gray-700 maps'>
                         <div className='flex justify-start items-center gap-3'>
-                            <div className='px-2 py-2 rounded-full border'>
-                                <Envelope size={32} weight="thin" />
+                            <div className='p-1 lg:p-2 rounded-full border'>
+                                <Envelope size={25} weight="thin" />
                             </div>
-                            <p className='break-words text-wrap text-base'>frankierockabilly@gmail.com</p>
+                            <p className='break-words text-wrap'>frankierockabilly@gmail.com</p>
                         </div>
                         <div className='flex justify-start items-center gap-3'>
-                            <div className='px-2 py-2 rounded-full border'>
-                                <Phone size={32} weight="thin" />
+                            <div className='p-1 lg:p-2 rounded-full border'>
+                                <Phone size={25} weight="thin" />
                             </div>
-                            <p className='break-words text-wrap text-base'>+62 812 7569 1395</p>
+                            <p className='break-words text-wrap'>+62 812 7569 1395</p>
                         </div>
                         <div className='flex justify-start items-center gap-3'>
-                            <div className='px-2 py-2 rounded-full border'>
-                                <MapPin size={32} weight="thin" />
+                            <div className='p-1 lg:p-2 rounded-full border'>
+                                <MapPin size={25} weight="thin" />
                             </div>
-                            <p className='break-words text-wrap text-base'>Rokan Hulu,Riau, indonesia</p>
+                            <p className='break-words text-wrap'>Rokan Hulu,Riau, indonesia</p>
                         </div>
 
                         <div className='w-full'>

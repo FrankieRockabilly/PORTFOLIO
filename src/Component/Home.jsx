@@ -85,7 +85,7 @@ const scrollToContact = () => scrollWithOffset(contactRef, -100);
                />
 
                {/* hero section */}
-               <section className="lg:px-20 lg:py-5 bg-white relative mb-20 lg:mb-0">
+               <section className="lg:px-20 lg:py-5 bg-white relative ">
                   <div className="absolute top-32 right-32 z-0 w-[42rem] h-[42rem] ">
                      <img src="https://res.cloudinary.com/dplikeeby/image/upload/v1757641795/blur1_rjjgqo.png" alt="" className="w-full h-full opacity-80"/>
                   </div>
@@ -93,7 +93,7 @@ const scrollToContact = () => scrollWithOffset(contactRef, -100);
                   <div className="relative flex flex-grow px-7 pb-9 lg:px-36 bg-no-repeat overflow-visible backdrop-blur-3xl bg-opacity-55 lg: bg-contain bg-center ">
                   {/* what we do */}
                      <div className="relative flex flex-col lg:flex-row justify-start items-start gap-5 w-full" >
-                        <div className="flex flex-col justify-start items-start gap-2 h-full max-w-[50rem] py-20 lg:py-44">
+                        <div className="flex flex-col justify-start items-start gap-2 h-full max-w-[50rem] pt-20 pb-5 lg:pt-44 lg:pb-10">
                            <h1 className="text-sm text-gray-500 lg:text-2xl tracking-widest border border-oren px-3 lg:px-10 py-2 rounded-full hello mb-5">
                               Hallo Everyone ..
                            </h1>
@@ -146,7 +146,7 @@ const scrollToContact = () => scrollWithOffset(contactRef, -100);
                                  </div>
                                  <h2 className=" text-gray-500 font-medium">UI/UX Implementation</h2>
                               </div>
-                  </div>
+                           </div>
                         </div>
                         <div className="hidden xl:block absolute right-0 -bottom-24  xl:top-12 xl:right-0 2xl:top-56 justify-center items-center overflow-hidden framesection ">
                            <img

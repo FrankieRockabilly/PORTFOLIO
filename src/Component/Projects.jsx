@@ -45,15 +45,15 @@ const Projects = () => {
    }, []);
    return (
       <>
-         <section className=" pt-20 lg:pt-1 px-5 lg:px-24 mt-10" style={{backgroundImage : "url('https://res.cloudinary.com/dplikeeby/image/upload/v1757641795/blur1_rjjgqo.png')", backgroundSize:"40%", backgroundPosition:"center", backgroundRepeat:"no-repeat" }}>
+         <section className="  px-5 lg:px-24 mt-10" style={{backgroundImage : "url('https://res.cloudinary.com/dplikeeby/image/upload/v1757641795/blur1_rjjgqo.png')", backgroundSize:"40%", backgroundPosition:"center", backgroundRepeat:"no-repeat" }}>
             <div className="w-full flex flex-col justify-center items-center gap-2 lg:gap-6 pb-10 relative ">
-               <h1 className="text-center text-2xl lg:text-3xl font-bold">
-                  Projects and Certificate
-               </h1>
+               <h1 className="font-semibold text-center text-xl lg:text-2xl xl:text-4xl text-oren -tracking-tight w-full head">
+                     Project and <span className='text-primary'>Certificate</span>
+                  </h1>
                <Line />
                {/* <img src={task} alt="" className="absolute top-2/4 -right-40 w-[15rem] hidden lg:block z-10"/> */}
             </div>
-            <div className="flex justify-center items-center gap-4 xl:gap-10 flex-wrap w-full">
+            <div className="flex justify-center items-center gap-4 xl:gap-10 flex-wrap w-full ">
                {/* item project */}
                {project.map((value, index) => {
                   return (
@@ -61,23 +61,38 @@ const Projects = () => {
                         className=" h-auto lg:h-auto w-auto  flex flex-col justify-start items-start gap-2 p-2 shadow-lg  rounded-2xl bg-white group relative border hover:border-primary project overflow-hidden"
                         key={index}
                      >
-                        <div className="w-72 h-52 overflow-hidden rounded-2xl relative">
-                           {/* <div className="absolute top-2 left-2 z-10 rounded-full px-3 py-1 bg-gray-900 border  text-gray-300 text-[12px]">
-                              helo
-                           </div> */}
+                        <div className="w-72 h-52 overflow-hidden rounded-2xl relative group">
+                           <div className="absolute w-full h-full z-10 px-3 py-1 rounded-2xl border text-gray-300 text-[12px] flex-col justify-center items-center backdrop-blur-sm
+                                       hidden 
+                                       hover:block 
+                                       group-hover:flex
+                                       xl:!hidden">
+                                          <div className="text-black my-5 font-semibold text-base">{value.name} </div>
+                              <div className="bg-primary px-4 py-2 rounded-md text-center text-white">
+                                 {value.link === "#" ? (
+                                    <button className="cursor-not-allowed " onClick={(e)=> e.preventDefault()}>
+                                       <a href={value.link} target="blank" >Not Allowed</a>
+                                    </button>
+                                 ) : (
+                                    <button >
+                                       <a href={value.link} target="blank" >View Demo</a>
+                                    </button>
+                                 )}
+                              </div>
+                           </div>
                            <img
                               src={value.image}
                               alt="infidea"
-                              className="w-auto h-auto bg-contain group-hover:scale-105 rounded-2xl transition-all duration-200 ease-out shadow-lg brightness-95 hover:brightness-75"
+                              className="w-auto h-auto bg-contain group-hover:scale-105 rounded-2xl transition-all duration-200 ease-out shadow-lg brightness-95 "
                            />
                         </div>
-                        <div className="w-full xl:flex flex-col justify-start items-start gap-1 hidden p-2">
+                        <div className="w-full hidden xl:flex flex-col justify-start items-start gap-1  p-2">
                            <p className="text-gray-400 text-sm font-light">{value.date} </p>
                            <p className="font-semibold">{value.name} </p>
                            <div className="w-full flex justify-between items-center">
                               {/* stack icons */}
                               <p className="text-blue-500">{value.category} </p>
-                              {value.category == "Fullstack" ? 
+                              {value.category === "Fullstack" ? 
                               (
                                  <div className="flex justify-start items-center gap-1 text-emerald-400">
                                     <FaReact />
@@ -108,7 +123,9 @@ const Projects = () => {
             <div className="flex flex-col justify-center items-center">
                {/* <div className="text-2xl lg:text-3xl font-bold gap-2 flex flex-col justify-start items-start lg:gap-6 pt-16 pb-5"> */}
                   <div className="flex flex-col justify-center items-center lg:text-3xl font-bold gap-2 lg:gap-6 relative pt-16 pb-5 ">
-                  <h1>Certificate</h1>
+                  <h1 className="font-semibold text-center text-xl lg:text-2xl xl:text-4xl text-oren -tracking-tight w-full head">
+                     Certificate
+                  </h1>
                   <Line />
                </div>
                <div className="flex flex-wrap justify-center items-center gap-1 lg:gap-4 ">
