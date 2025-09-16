@@ -120,7 +120,7 @@ const Header = ({ scrollToAbout, scrollToHome, scrollToPortfolio, scrollToContac
                         </div>
                      </div>
                   </div>
-                  <div className="hidden lg:flex justify-center items-center ga0 text-xl text-zinc-500">
+                  <div className="hidden lg:flex justify-center items-center gap-20 text-xl text-zinc-500">
                      <button
                         className="font-light py-2 hover:text-primary"
                         onClick={() => scrollToHome()}
