@@ -97,30 +97,32 @@ const About = () => {
                <Line />
                <img src={pattern} alt="" className='w-[60rem] absolute top-1/2 right-1/2 transform translate-x-1/2 opacity-15 blur-sm' />
             </div>
-            <div className="flex flex-wrap justify-center items-center gap-14 py-5 ">
+            <div className="flex flex-wrap justify-center items-start gap-1 py-5 relative ">
                {/* letakkan gambar disini ya guys */}
-               <div className="w-[15rem] h-[25rem] lg:w-[22rem] lg:h-[42rem] aboutbox hidden xl:block">
+               <div className="w-[15rem] h-[25rem] lg:w-[43rem] lg:h-auto aboutbox hidden xl:block absolute right-0 opacity-45">
                   <img
-                     src='https://res.cloudinary.com/dplikeeby/image/upload/v1751529568/ger_l2mpyr.png'
-                     className="rounded-xl w-full h-full object-fit" alt="frengky"
+                     src='https://res.cloudinary.com/dplikeeby/image/upload/v1758180582/dd_wfmzzc.png'
+                     className="rounded-xl w-full h-auto object-cover opacity-40" alt="frengky"
                   />
                </div>
-               <div className="flex flex-col justify-start items-start gap-8  xl:w-[35rem] 2xl:w-[40rem] ">
-                  {/* <h1 className="font-semibold text-center lg:text-start text-xl xl:text-3xl text-gray-500 -tracking-tight w-full head">
-                     About
-                  </h1> */}
-                  <p className="text-[12px] lg:text-lg indent-16 text-gray-500 text-justify aboutbox2">
-                     I am a freelancer and an active worker with a bachelor's
-                     degree in Informatics Engineering at Pasir Pengaraian University. I graduated in 2022 and took part in a bootcamp program majoring in fullstack developer{" "}
-                     <span className="text-oren">
-                        <a href="https://www.harisenin.com/" target="blank">
-                           Harisenin.com{" "}
-                        </a>
-                     </span>
-                     Bootcamp. I have created many frontend and fullstack
-                     projects with the currently popular tech stack and I work
-                     in a hospital as an IT staff
-                  </p>
+               <div className="flex flex-col justify-start items-start gap-8  xl:w-[35rem] 2xl:w-[60rem] text-black ">
+                  <div>
+                        <h1 className="font-semibold text-start text-xl xl:text-3xl py-3 text-gray-500 -tracking-tight w-full head">
+                        Something about me
+                        </h1>
+                        <p className="text-[12px] lg:text-lg indent-16 text-gray-700 text-justify aboutbox2">
+                           I am a freelancer and an active worker with a bachelor's
+                           degree in Informatics Engineering at Pasir Pengaraian University. I graduated in 2022 and took part in a bootcamp program majoring in fullstack developer{" "}
+                           <span className="text-oren">
+                              <a href="https://www.harisenin.com/" target="blank">
+                                 Harisenin.com{" "}
+                              </a>
+                           </span>
+                           Bootcamp. I have created many frontend and fullstack
+                           projects with the currently popular tech stack and I work
+                           in a hospital as an IT staff
+                        </p>
+                  </div>
                   <div className="flex justify-start items-center gap-7 w-full lg:gap-10 paragraph text-gray-500 ">
                      <a
                         href="https://www.facebook.com/frankie.frankie.73997"

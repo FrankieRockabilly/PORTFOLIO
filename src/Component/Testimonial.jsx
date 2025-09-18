@@ -13,7 +13,7 @@ const Testimonial = () => {
          <div>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgb(249 250 251" fill-opacity="1" d="M0,64L48,80C96,96,192,128,288,128C384,128,480,96,576,101.3C672,107,768,149,864,154.7C960,160,1056,128,1152,112C1248,96,1344,96,1392,96L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
          </div>
-         <div className="bg-gradient-to-b from-gray-50 to-white relative ">
+         <div className="bg-gradient-to-b from-gray-50 to-white relative py-10">
             <div className="flex flex-col justify-center items-center gap-3 relative">
                {/* <img src={sandwatch} alt="" className="absolute -top-10 right-96"/> */}
                <h1 className="font-semibold text-center text-xl lg:text-2xl xl:text-4xl  text-oren -tracking-tight w-full head">

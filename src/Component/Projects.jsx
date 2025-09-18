@@ -45,7 +45,7 @@ const Projects = () => {
    }, []);
    return (
       <>
-         <section className="  px-5 lg:px-24 mt-10" style={{backgroundImage : "url('https://res.cloudinary.com/dplikeeby/image/upload/v1757641795/blur1_rjjgqo.png')", backgroundSize:"40%", backgroundPosition:"center", backgroundRepeat:"no-repeat" }}>
+         <section className="  px-5 lg:px-24 mt-10" style={{backgroundImage : "url('https://res.cloudinary.com/dplikeeby/image/upload/v1757641795/blur2_pfolgz.png')", backgroundSize:"50%", backgroundPosition:"center", backgroundRepeat:"no-repeat" }}>
             <div className="w-full flex flex-col justify-center items-center gap-2 lg:gap-6 pb-10 relative ">
                <h1 className="font-semibold text-center text-xl lg:text-2xl xl:text-4xl text-oren -tracking-tight w-full head">
                      Project and <span className='text-primary'>Certificate</span>

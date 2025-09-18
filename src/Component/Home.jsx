@@ -61,7 +61,7 @@ const scrollToContact = () => scrollWithOffset(contactRef, -100);
          ".paragraph",{opacity: 0,y: 30,}, {  opacity: 1, y: 0, duration: 1,delay: 0, ease: "power2.inOut",stagger: 0.2, }
       );
       gsap.fromTo(
-         ".framesection", {opacity: 0, x: 70,  },{opacity: 1,x: 0,duration: 2, ease: "expo.out", stagger:{each: 0.5,from : "end"}
+         ".framesection", {opacity: 0, x: 70,  },{opacity: 1,x: 0,duration: 2, ease: "power2.inOut", stagger:{each: 0.5,from : "end"}
          }
       );
       gsap.fromTo(
@@ -86,7 +86,7 @@ const scrollToContact = () => scrollWithOffset(contactRef, -100);
 
                {/* hero section */}
                <section className="lg:px-20 lg:py-5 bg-white relative ">
-                  <div className="absolute top-32 right-32 z-0 w-[42rem] h-[42rem] ">
+                  <div className="absolute top-32 right-32 z-0 w-[42rem] h-[42rem] hidden lg:block ">
                      <img src="https://res.cloudinary.com/dplikeeby/image/upload/v1757641795/blur1_rjjgqo.png" alt="" className="w-full h-full opacity-80"/>
                   </div>
                   
